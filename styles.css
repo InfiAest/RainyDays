@@ -1,6 +1,5 @@
 header {
-   padding-left: 100px; 
-   padding-top: 100px;
+   padding-left: 100px; ;
 }
 body {
     background-color: #F2ECE9;
@@ -17,7 +16,6 @@ h1{
 }
 nav li {
     display: inline-block;
-    padding-top: 0px;
 }
 nav a {
     color: #0A3641;
@@ -31,7 +29,11 @@ nav a:hover {
 nav ul {
     padding-left: 550px;
 }
-
+nav::before, nav::after{
+    content: '|';
+    color: #0A3641;
+    font-size: 42pt;
+}
 
 footer::before, footer::after{
     content: '/';
