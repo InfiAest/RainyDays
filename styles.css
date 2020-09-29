@@ -1,9 +1,13 @@
 body {
     background-color: #F2ECE9;
     font-family: 'DIN', sans-serif, Verdana;
+    font-size: 20pt;
+    font-weight: condensed lighter;
     color: #48736F;
 }
 h1{
     font-family: 'DIN', sans-serif, Verdana;
+    font-size: 42pt;
+    font-weight: condensed;
     color: #0A3641;
 }
