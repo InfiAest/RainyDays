@@ -16,11 +16,12 @@ h1{
 }
 nav li {
     display: inline-block;
+    padding: 0px;
 }
 nav a {
     color: #0A3641;
     text-decoration: none;
-    padding: 50px;
+    padding: 100px;
 }
 nav a:hover {
     background-color: #48736F;
@@ -33,7 +34,6 @@ nav li::before, nav::after{
     content: '|';
     color: #0A3641;
     font-size: 42pt;
-    padding: 0px;
 }
 
 footer::before, footer::after{
