@@ -11,3 +11,17 @@ h1{
     font-weight: condensed;
     color: #0A3641;
 }
+nav li {
+    display: inline-block;
+}
+nav a {
+    color: #0A3641;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    padding: 0px;
+}
