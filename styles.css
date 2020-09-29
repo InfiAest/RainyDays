@@ -33,6 +33,7 @@ nav li::before, nav::after{
     content: '|';
     color: #0A3641;
     font-size: 42pt;
+    padding: 0px;
 }
 
 footer::before, footer::after{
