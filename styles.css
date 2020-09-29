@@ -19,8 +19,8 @@ nav li {
 }
 nav a {
     color: #0A3641;
-    font-family: 'DIN';
-    font-size: 42px;
+    font-family: 'DIN', sans-serif, Verdana;
+    font-size: 42pt;
     font-weight: condensed;
     text-decoration: none;
     padding: 90px;
