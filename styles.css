@@ -23,14 +23,14 @@ nav a {
     font-size: 42pt;
     font-weight: condensed;
     text-decoration: none;
-    padding: 90px;
+    padding: 80px;
 }
 nav a:hover {
     background-color: #48736F;
     color: #F2ECE9;
 }
 nav ul {
-    padding-left: 550px;
+    padding-left: 350px;
 }
 nav li::before, nav::after{
     content: '|';
