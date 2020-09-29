@@ -1,5 +1,5 @@
 header {
-   padding-left: 100px; ;
+   padding-left: 50px; ;
 }
 body {
     background-color: #F2ECE9;
@@ -30,7 +30,7 @@ nav a:hover {
     color: #F2ECE9;
 }
 nav ul {
-    padding-left: 150px;
+    padding-left: 100px;
 }
 nav li::before, nav::after{
     content: '|';
