@@ -29,7 +29,7 @@ nav a:hover {
 nav ul {
     padding-left: 550px;
 }
-nav::before, nav::after{
+nav li::before, nav::after{
     content: '|';
     color: #0A3641;
     font-size: 42pt;
