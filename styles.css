@@ -17,11 +17,11 @@ nav li {
 nav a {
     color: #0A3641;
     text-decoration: none;
-    padding: 10px;
+    padding: 300px;
 }
 nav a:hover {
     text-decoration: underline;
 }
 nav ul {
-    padding-left: 300px;
+    padding-left: 550px;
 }
