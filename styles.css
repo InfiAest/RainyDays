@@ -6,29 +6,38 @@
 header {
    padding-left: 25px; 
    padding-top: 50px;
+   float: left;
 }
 body {
     background-color: #F2ECE9;
-    font-family: 'din-condensed', sans-serif, Verdana;
+    font-family: 'din-condensed', sans-serif, Trebuchet;
     font-size: 20pt;
     font-weight: 300;
     font-style: normal;
     color: #48736F;
 }
 h1{
-    font-family: 'din-condensed', sans-serif, Verdana;
+    font-family: 'din-condensed', sans-serif, Trebuchet;
     font-size: 42pt;
     text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
     color: #0A3641;
 }
+h2{
+    font-family: 'din-condensed', sans-serif, Trebuchet;
+    font-size: 28pt;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    color: #657351;  
+}
 nav li {
     display: inline-block;
 }
 nav a {
     color: #0A3641;
-    font-family: 'din-condensed', sans-serif, Verdana;
+    font-family: 'din-condensed', sans-serif, Trebuchet;
     font-size: 30pt;
     text-transform: uppercase;
     font-weight: 400;
@@ -43,10 +52,19 @@ nav a:hover {
 nav ul {
     padding-left: 300px;
 }
-nav li::before, nav::after{
+nav li::before {
     content: '|';
     color: #0A3641;
     font-size: 42pt;
+}
+
+.button{
+    background-color: #F2ECE9;
+    border: none;
+    color: #657351;
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
 }
 
 footer::before, footer::after{
