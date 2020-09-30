@@ -8,13 +8,13 @@ header {
 }
 body {
     background-color: #F2ECE9;
-    font-family: 'DIN Condensed', sans-serif, Verdana;
+    font-family: 'DIN Condensed Light', sans-serif, Verdana;
     font-size: 20pt;
-    font-weight: lighter;
+    font-weight: normal;
     color: #48736F;
 }
 h1{
-    font-family: 'DIN Condensed', sans-serif, Verdana;
+    font-family: 'DIN Condensed Regular', sans-serif, Verdana;
     font-size: 42pt;
     text-transform: uppercase;
     font-weight: normal;
@@ -25,10 +25,10 @@ nav li {
 }
 nav a {
     color: #0A3641;
-    font-family: 'DIN Condensed', sans-serif, Verdana;
+    font-family: 'DIN Condensed Regular', sans-serif, Verdana;
     font-size: 30pt;
     text-transform: uppercase;
-    font-weight: condensed;
+    font-weight: normal;
     text-decoration: none;
     padding: 0px;
 }
