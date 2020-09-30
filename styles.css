@@ -64,6 +64,7 @@ nav li::before {
     color: #657351;
     padding: 25px;
     text-align: center;
+    text-decoration: none;
     display: inline-block;
 }
 
