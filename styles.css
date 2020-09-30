@@ -1,17 +1,23 @@
+@font-face {
+    font-family: 'Din Condensed';
+    src: url('https://use.typekit.net/hft0bgo.css')
+}
+
 header {
    padding-left: 50px; ;
 }
 body {
     background-color: #F2ECE9;
-    font-family: 'DIN', sans-serif, Verdana;
+    font-family: 'DIN Condensed', sans-serif, Verdana;
     font-size: 20pt;
-    font-weight: condensed lighter;
+    font-weight: lighter;
     color: #48736F;
 }
 h1{
-    font-family: 'DIN', sans-serif, Verdana;
+    font-family: 'DIN Condensed', sans-serif, Verdana;
     font-size: 42pt;
-    font-weight: condensed;
+    text-transform: uppercase;
+    font-weight: normal;
     color: #0A3641;
 }
 nav li {
@@ -19,11 +25,12 @@ nav li {
 }
 nav a {
     color: #0A3641;
-    font-family: 'DIN', sans-serif, Verdana;
-    font-size: 42pt;
+    font-family: 'DIN Condensed', sans-serif, Verdana;
+    font-size: 30pt;
+    text-transform: uppercase;
     font-weight: condensed;
     text-decoration: none;
-    padding: 80px;
+    padding: 0px;
 }
 nav a:hover {
     background-color: #48736F;
