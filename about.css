@@ -3,11 +3,6 @@
     src: url('https://use.typekit.net/hft0bgo.css')
 }
 
-header {
-   padding-left: 25px; 
-   padding-top: 50px;
-   float: left;
-}
 body {
     background-color: #F2ECE9;
     font-family: 'din-condensed', sans-serif, Trebuchet;
@@ -58,6 +53,10 @@ nav a:hover {
 }
 .logo:hover {
     background-color: #F2ECE9;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 nav ul {
