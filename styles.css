@@ -49,10 +49,13 @@ nav a:hover {
     background-color: #48736F;
     color: #F2ECE9;
 }
-nav ul {
-    padding-left: 300px;
+.logo {
+    padding-left: 0px;
 }
-nav li::before {
+nav ul {
+    padding-left: 0px;
+}
+nav li::after {
     content: '|';
     color: #0A3641;
     font-size: 42pt;
@@ -60,15 +63,12 @@ nav li::before {
 
 .button{
     background-color: #F2ECE9;
-    border: 3px black;
+    border: none;
     color: #657351;
-    padding: 10px 20px;
+    padding: 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
 }
 
 footer::before, footer::after{
