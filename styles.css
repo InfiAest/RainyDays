@@ -60,12 +60,15 @@ nav li::before {
 
 .button{
     background-color: #F2ECE9;
-    border: none;
+    border: 3px black;
     color: #657351;
-    padding: 25px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
 }
 
 footer::before, footer::after{
