@@ -52,6 +52,10 @@ nav a:hover {
 .logo {
     padding-left: 0px;
 }
+.logo:hover {
+    background-color: #F2ECE9;
+}
+
 nav ul {
     padding-left: 0px;
 }
@@ -59,16 +63,6 @@ nav li::after {
     content: '|';
     color: #0A3641;
     font-size: 42pt;
-}
-
-.button{
-    background-color: #F2ECE9;
-    border: none;
-    color: #657351;
-    padding: 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
 }
 
 footer::before, footer::after{
