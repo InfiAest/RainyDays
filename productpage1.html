@@ -19,8 +19,35 @@
             </nav>
         </header>
         <main>
-            <img src="images/1 -mael-balland-9ZIHtRSmyCk-unsplash.jpg" alt="Winter Shell mens jacket photo">
             <h1>Winter Shell</h1>
+            <h2>Pris. NOK,-</h2>
+            <img src="images/1 -mael-balland-9ZIHtRSmyCk-unsplash.jpg" alt="Winter Shell mens jacket photo">
+            <form action="form-success.php" method="POST">
+                <fieldset>
+                    <legend>Choose your details</legend>
+                    <label for="amount">Stk.</label>
+                    <input type="text" name="size" class="form__input" required>
+                    <p>Size:</p>
+                    <input type="radio" id="size" name="size" value="size">
+                    <label for="size">X-small</label>
+                    <input type="radio" id="size" name="size" value="size">
+                    <label for="size">Small</label>
+                    <input type="radio" id="size" name="size" value="size">
+                    <label for="size">Medium</label>
+                    <input type="radio" id="size" name="size" value="size">
+                    <label for="size">Large</label>
+                    <input type="radio" id="size" name="size" value="size">
+                    <label for="size">X-large</label>
+                    <p>Colour:</p>
+                    <input type="radio" id="colour" name="colour" value="size">
+                    <label for="colour">Mahogany Red</label>
+                    <input type="radio" id="colour" name="colour" value="size">
+                    <label for="colour">Moon Grey</label>
+                    <input type="radio" id="colour" name="colour" value="size">
+                    <label for="colour">Moss Green</label>
+                </fieldset>
+                <input type="submit"  value="Add to Cart">
+            </form>
             <h2>About</h2>
             <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
             <h2>Specifications</h2>
