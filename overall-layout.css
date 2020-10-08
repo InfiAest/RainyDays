@@ -19,11 +19,6 @@ header {
     background: none;
 }
 
-nav, #hamburger-menu {
-    display: none;
-    float: right;
-}
-
 nav ul {
     padding-top: 60px;
     margin-right: 30px;
@@ -65,17 +60,6 @@ nav li::before {
     text-decoration: underline;
 }
 
-.hamburger-label {
-    float: right;
-    color: #0A3641;
-    padding: 30px;
-    font-size: 1.5em;
-    display: block;
-}
-
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
 
 body {
     background-color: #F2ECE9;
@@ -107,28 +91,3 @@ footer::before, footer::after{
     content: '/';
 }
 
-@media(min-width: 600px) {
-    .logo {
-        float: left;
-    }
-
-    nav {
-        display: inline-block;
-    }
-
-    .hamburger-label {
-        display: none;
-    }
-
-    ul {
-        display: flex;
-    }
-
-    li {
-        display: inline-block;
-    }
-    
-    nav a {
-        padding: 19% 40px;
-    }
-}
