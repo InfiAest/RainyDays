@@ -15,6 +15,10 @@ body {
     font-family: 'Din Condensed';
     src: url('https://use.typekit.net/hft0bgo.css')
 }
+.content-wrap {
+max-width: 1920px;
+margin: 0 auto;
+}
 
 /*  Header and Nav Bar
 ----------------*/
@@ -29,7 +33,6 @@ nav {
 }
 nav li {
     display: inline-block;
-    width: 15%;
     margin-top: 50px;
 }
 nav a {
@@ -37,7 +40,7 @@ nav a {
     text-decoration: none;
     color: #0A3641;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 20px 30px 20px 30px;
 }
