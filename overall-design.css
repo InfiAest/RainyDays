@@ -1,12 +1,5 @@
 /* General Styles
 ---------------*/
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 body {
     font-family: 'Din Condensed', sans-serif, Arial;
     margin: 0;
@@ -14,10 +7,6 @@ body {
 @font-face {
     font-family: 'Din Condensed';
     src: url('https://use.typekit.net/hft0bgo.css')
-}
-.content-wrap {
-max-width: 1920px;
-margin: 0 auto;
 }
 
 /*  Header and Nav Bar
@@ -40,18 +29,11 @@ nav a {
     text-decoration: none;
     color: #0A3641;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    padding: 20px 30px 20px 30px;
+    padding: 20px;
 }
 
-nav li:before {
-    display: none;
-    content: '|';
-    font-size: 2.5em;
-    font-weight: 400;
-    color: #0A3641;
-}
 nav a:hover {
     color: #F2ECE9;
     background-color: #48736F;
@@ -60,15 +42,45 @@ nav a:hover {
     background-color: #F2ECE9;
 }
 .logo {
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: 15px;
     float: left;
 }
 nav ul {
     padding: 0px;
-    margin-right: 30px;
+    margin-right: 15px;
 }
 
 .current {
     text-decoration: underline;
 }
+
+
+/* Search Box
+-------------*/
+form.searchbox input[type=text] {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #48736F;
+    width: 80px;
+    background: #f2ece9;
+  }
+  form.searchbox button {
+    display: inline-block;
+    width: 40px;
+    padding: 10px;
+    background: #f2ece9;
+    color: #48736F;
+    font-size: 16px;
+    border: 1px solid #48736F;
+    cursor: pointer;
+  }
+  form.searchbox button:hover {
+    color: #f2ece9;
+    background: #48736F;
+  }
+
+  /* Slogan Image on the homepage
+-------------*/
+
