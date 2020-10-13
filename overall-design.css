@@ -2,6 +2,7 @@
 ---------------*/
 body {
     font-family: 'Din Condensed', sans-serif, Arial;
+    background-color: #F2ECE9;
 }
 @font-face {
     font-family: 'Din Condensed';
@@ -17,15 +18,14 @@ header {
 
 nav {
     text-align: right;
-    width: 100%;
 }
 nav li {
-    display: inline-flex;
+    display: inline-block;
     margin-top: 35px;
 }
 
 nav a {
-    display: flex;
+    display: inline-block;
     text-decoration: none;
     color: #0A3641;
     text-transform: uppercase;
@@ -57,6 +57,13 @@ nav ul {
 
 /* Search Box
 -------------*/
+.search-bar {
+  display: none;
+  flex: 1;
+  margin: 10px;
+/*  background-color: lawngreen; */
+}
+
 form.searchbox button {
     float: right;
     margin-right: 15px;
@@ -83,13 +90,139 @@ form.searchbox input[type=text] {
 
   /* Slogan Image on the homepage
 -------------*/
+.slogan-banner {
+  display: flex;
+  background-image: url(images/Slogan-header-image-small.jpg);
+  background-position: center;
+  background-color: #48736F;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: 10px;
+}
+  /* Jackets Button on the homepage
+-------------*/
+.jackets-button {
+  border: 2px solid #48736F;
+  display: flex;
+  background-image: url(images/all-jackets-banner-mobile.jpg);
+  background-position: center;
+  background-color: #48736F;
+  height: 140px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: 10px;
+}
 
-  /* Mobile settings
+  /* Men and womens Link buttons on the homepage
 -------------*/
 
-  /* Tablet and laptop settings
--------------*/
+.link-container {
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Computer settings
--------------*/
+.button {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+}
 
+.womens {
+  border: 2px solid #48736F;
+  background-image: url(images/womens-jackets-background.jpg);
+  background-position: center;
+  background-color: #48736F;
+  height: 140px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mens {
+  border: 2px solid #48736F;
+  background-image: url(images/mens-jackets-background.jpg);
+  background-position: center;
+  background-color: #48736F;
+  height: 140px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+  /* Men and womens Link buttons on the homepage
+-------------*/
+.first3products {
+  display: flex;
+  flex-direction: column;
+}
+.bs {
+  border: 2px solid #48736F;
+  flex: 3;
+  padding: 10px;
+  margin: 10px;
+}
+
+.last3products {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+@media only screen and (min-width: 641px) {
+  .search-bar {
+    display: flex;
+  }
+  .link-container {
+    flex-direction: row;
+  }
+  .slogan-banner {
+    background-image: url(images/Slogan-header-image.jpg);
+    height: 350px;
+  }
+  .jackets-button {
+    background-image: url(images/all-jackets-banner.jpg);
+    height: 240px;
+  }
+  .womens {
+    height: 240px;
+  }
+  .mens {
+    height: 240px;
+  }
+  .first3products {
+    flex-direction: row;
+  }
+  .last3products {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  header {
+    margin: 0 10%;
+  }
+  .search-bar {
+    margin: 0 10%;
+  }
+  .slogan-banner {
+    margin: 10px 10%;
+  }
+  .jackets-button {
+    margin: 10px 10%;
+  }
+  .link-container {
+    margin: 0 10%;
+  }
+  .best-sellers {
+    margin: 0 10%;
+  }
+  .first3products {
+    margin: 0 10%;
+  }
+  .last3products {
+    margin: 0 10%;
+  }
+}
