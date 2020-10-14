@@ -42,8 +42,6 @@ nav a:hover {
     background-color: #F2ECE9;
 }
 .logo {
-    margin-left: 15px;
-    margin-top: 15px;
     float: left;
 }
 nav ul {
@@ -130,6 +128,7 @@ form.searchbox input[type=text] {
   padding: 10px;
   margin: 10px;
 }
+
 
 
 .womens {

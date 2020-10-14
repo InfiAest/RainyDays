@@ -1,0 +1,33 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'picture aside'
+    'about reviews'
+    'footer footer'
+    ;
+}
+
+header{grid-area: header;}
+main{grid-area: main;}
+.picture{grid-area: picture;}
+aside{grid-area: aside;}
+.about{grid-area: about;}
+.reviews{grid-area: reviews;}
+footer{grid-area: footer;}
+
+main h1, h2 {
+    display: inline-block;
+}
+
+main h2 {
+    float: right;
+}
+
+main, picture, aside, about, reviews, footer {
+    margin: 0 15px;
+}
