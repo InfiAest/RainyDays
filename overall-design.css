@@ -12,44 +12,44 @@ body {
 /*  Header and Nav Bar
 ----------------*/
 header {
-    background: #F2ECE9;
-    min-height: 180px;
+  background: #F2ECE9;
+  min-height: 108px;
 }
-
-nav {
-    text-align: right;
+nav, #hamburger-menu {
+  display: none;
+}
+nav ul {
+  padding: 0px;
 }
 nav li {
-    display: inline-block;
-    margin-top: 35px;
+  display: block;
 }
-
 nav a {
-    display: inline-block;
-    text-decoration: none;
-    color: #0A3641;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 400;
-    padding: 20px;
+  font-size: 1em;
+  text-decoration: none;
+  color:#0A3641;
+  padding: 10px;
+  display: block;
 }
-
 nav a:hover {
     color: #F2ECE9;
     background-color: #48736F;
 }
-.logo:hover {
-    background-color: #F2ECE9;
-}
-.logo {
-    float: left;
-}
-nav ul {
-    padding: 0px;
+.current {
+  text-decoration: underline;
 }
 
-.current {
-    text-decoration: underline;
+/* Hamburger Menu
+-------------*/
+.hamburger-label {
+  float: right;
+  color: #0A3641;
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 
@@ -174,6 +174,25 @@ form.searchbox input[type=text] {
   /* Tablet to Regular screen size
 -------------*/
 @media only screen and (min-width: 641px) {
+  .logo {
+    float: left;
+  }
+  nav {
+    display: inline-block;
+  }
+  .hamburger-label {
+    display: none;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    display: inline-block;
+  }
+  nav a {
+    font-size: 1.2em;
+    padding: 20px 40px;
+  }
   .search-bar {
     display: flex;
   }
