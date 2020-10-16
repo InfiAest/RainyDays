@@ -144,7 +144,7 @@ form.searchbox input[type=text] {
 .mens {
   border: 2px solid #48736F;
   background-image: url(images/mens-jackets-background.jpg);
-  background-position: center;
+  background-position: left;
   background-color: #48736F;
   height: 140px;
   background-size: cover;
@@ -206,28 +206,9 @@ form.searchbox input[type=text] {
   /* Extra Large screen size
 -------------*/
 @media only screen and (min-width: 1281px) {
-  header {
+
+  body {
     margin: 0 10%;
   }
-  .search-bar {
-    margin: 0 10%;
-  }
-  .slogan-banner {
-    margin: 10px 10%;
-  }
-  .jackets-button {
-    margin: 10px 10%;
-  }
-  .link-container {
-    margin: 0 10%;
-  }
-  .best-sellers {
-    margin: 0 10%;
-  }
-  .first3products {
-    margin: 0 10%;
-  }
-  .last3products {
-    margin: 0 10%;
-  }
+  
 }
