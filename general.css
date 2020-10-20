@@ -1,0 +1,143 @@
+/* General Styles
+---------------*/
+body {
+    font-family: 'Din Condensed', sans-serif, Arial;
+    background-color: #F2ECE9;
+}
+@font-face {
+    font-family: 'Din Condensed';
+    src: url('https://use.typekit.net/hft0bgo.css')
+}
+/* Nav styling
+-------------*/
+header {
+    background: #F2ECE9;
+    min-height: 100px;
+}
+.logo {
+    max-width: 200px;
+    margin-left: 20%;
+}
+nav, #hamburger-menu, #search-menu {
+    display: none;
+}
+nav ul {
+    padding: 0;
+}
+nav li {
+    display: block;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #0a3641;
+    padding: 10px;
+    display: block;
+}
+nav a:hover {
+    color: #F2ECE9;
+    background-color: #48736F;
+}
+.current {
+    text-decoration: underline;
+}
+.hamburger-label {
+    float: left;
+    color: #0a3641;
+    padding: 10px;
+    font-size: 1.5em;
+    display: block;
+}
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+.search-label {
+    float: right;
+    color: #0a3641;
+    padding: 10px;
+    font-size: 1.5em;
+    display: block;    
+}
+
+/* Search Box
+-------------*/
+.searchbox {
+    display: none;
+    flex: 1;
+  }
+  
+form.searchbox button {
+    float: right;
+    width: 40px;
+    padding: 10px;
+    background: #f2ece9;
+    color: #48736F;
+    font-size: 16px;
+    border: 1px solid #48736F;
+    cursor: pointer;
+}
+form.searchbox input[type=text] {
+    float: right;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #48736F;
+    width: 80px;
+    background: #f2ece9;
+}
+form.searchbox button:hover {
+    color: #f2ece9;
+    background: #48736F;
+}
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media(min-width: 641px){
+    .logo {
+        margin-left: 30%;
+    }
+}
+/*  Desktop screen sizes-------------*/
+@media(min-width: 801px){
+    .logo {
+        float: left;
+        margin-left: 0;
+    }
+    nav {
+        display: inline-block;
+    }
+    .hamburger-label {
+        display: none;
+    }
+    .search-label {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        font-size: 1.4em;
+        padding: 20% 40px;
+    }
+    .searchbox {
+        float: right;
+        display: block;
+    }
+}
+/* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+    body {
+      margin: 0 17%;
+    }
+}
+/* 
+-------------*/
+/* 
+-------------*/

@@ -1,0 +1,207 @@
+/* CSS GRID Jacketspage
+-------------*/
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    'header'
+    'main'
+    'aside'
+    'footer'
+    ;
+}
+main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'home-section-one'
+    'home-section-two'
+    'home-section-three'
+    'home-section-four'
+    ;
+}
+aside {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'aside-section-one'
+    'aside-section-two'
+    'aside-section-three'
+    'aside-section-four'
+    'aside-section-five'
+    'aside-section-six'
+    'aside-section-seven'
+    'aside-section-eight'
+    'aside-section-nine'
+    'aside-section-ten'
+    'aside-section-eleven'
+    'aside-section-twelve'
+    'aside-section-thirteen'
+    'aside-section-fourteen'
+    'aside-section-fifteen'
+    'aside-section-sixteen'
+    'aside-section-seventeen'
+    'aside-section-eighteen'
+    ;
+}
+
+header{grid-area: header;}
+main{grid-area: main;}
+.home-section:nth-child(1){grid-area: home-section-one;}
+.home-section:nth-child(2){grid-area: home-section-two;}
+.home-section:nth-child(3){grid-area: home-section-three;}
+.home-section:nth-child(4){grid-area: home-section-four;}
+aside{grid-area: aside;}
+.aside-section:nth-child(1){grid-area: aside-section-one;}
+.aside-section:nth-child(2){grid-area: aside-section-two;}
+.aside-section:nth-child(3){grid-area: aside-section-three;}
+.aside-section:nth-child(4){grid-area: aside-section-four;}
+.aside-section:nth-child(5){grid-area: aside-section-five;}
+.aside-section:nth-child(6){grid-area: aside-section-six;}
+.aside-section:nth-child(7){grid-area: aside-section-seven;}
+.aside-section:nth-child(8){grid-area: aside-section-eight;}
+.aside-section:nth-child(9){grid-area: aside-section-nine;}
+.aside-section:nth-child(10){grid-area: aside-section-ten;}
+.aside-section:nth-child(11){grid-area: aside-section-eleven;}
+.aside-section:nth-child(12){grid-area: aside-section-twelve;}
+.aside-section:nth-child(13){grid-area: aside-section-thirteen;}
+.aside-section:nth-child(14){grid-area: aside-section-fourteen;}
+.aside-section:nth-child(15){grid-area: aside-section-fifteen;}
+.aside-section:nth-child(16){grid-area: aside-section-sixteen;}
+.aside-section:nth-child(17){grid-area: aside-section-seventeen;}
+.aside-section:nth-child(18){grid-area: aside-section-eighteen;}
+footer{grid-area: footer;}
+
+
+.womens-button {
+  border: 2px solid #48736F;
+  background-image: url(images/womens-jackets-background.jpg);
+  background-position: center;
+  background-color: #48736F;
+  height: 140px;
+  min-width: 300px;
+  max-width: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+.mens-button {
+  border: 2px solid #48736F;
+  background-image: url(images/mens-jackets-background.jpg);
+  background-position: center;
+  background-color: #48736F;
+  height: 140px;
+  min-width: 300px;
+  max-width: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+.jackets-button {
+  background-image: url(images/all-jackets-banner.jpg);
+  background-position: center;
+  background-color: #48736F;
+  height: 140px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  text-decoration: underline;  
+}
+
+/* Best Seller link styling
+-------------*/
+.aside-section {
+    width: 100%;
+    height: 100%;
+}
+.bs-img {
+    border: 2px solid #48736F;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.jacket-name {
+    margin: 0;
+    display: inline-block;
+}
+.price-tag {
+    margin: 0;
+    display: inline-block;
+}
+
+@media(min-width: 641px){
+    .logo {
+        margin-left: 30%;
+    }
+    main {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        'home-section-one home-section-one'
+        'home-section-two home-section-three'
+        'home-section-four home-section-four'
+        ;
+    }
+    aside {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        'aside-section-one aside-section-two'
+        'aside-section-three aside-section-four'
+        'aside-section-five aside-section-six'
+        'aside-section-seven aside-section-eight'
+        'aside-section-nine aside-section-ten'
+        'aside-section-eleven aside-section-twelve'
+        'aside-section-thirteen aside-section-fourteen'
+        'aside-section-fifteen aside-section-sixteen'
+        'aside-section-seventeen aside-section-eighteen'
+        ;
+    }
+    .jackets-button {
+        height: 200px;
+    }
+    .womens-button {
+        height: 140px;
+    }
+    .mens-button {
+        height: 140px;
+    }
+}
+/*  Desktop screen sizes-------------*/
+@media(min-width: 801px){
+    .logo {
+        float: left;
+        margin-left: 0;
+    } 
+    .searchbox {
+        float: right;
+        display: block;
+    }
+    aside {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        'aside-section-one aside-section-two aside-section-three'
+        'aside-section-four aside-section-five aside-section-six'
+        'aside-section-seven aside-section-eight aside-section-nine'
+        'aside-section-ten aside-section-eleven aside-section-twelve'
+        'aside-section-thirteen aside-section-fourteen aside-section-fifteen'
+        'aside-section-sixteen aside-section-seventeen aside-section-eighteen'
+        ;
+    }
+}
+/* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+    body {
+      margin: 0 17%;
+    }
+}
+/* 
+-------------*/
+/* 
+-------------*/
