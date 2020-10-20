@@ -18,8 +18,6 @@ main {
     grid-template-areas: 
     'home-section-one'
     'home-section-two'
-    'home-section-three'
-    'home-section-four'
     ;
 }
 aside {
@@ -35,15 +33,6 @@ aside {
     'aside-section-seven'
     'aside-section-eight'
     'aside-section-nine'
-    'aside-section-ten'
-    'aside-section-eleven'
-    'aside-section-twelve'
-    'aside-section-thirteen'
-    'aside-section-fourteen'
-    'aside-section-fifteen'
-    'aside-section-sixteen'
-    'aside-section-seventeen'
-    'aside-section-eighteen'
     ;
 }
 
@@ -51,8 +40,6 @@ header{grid-area: header;}
 main{grid-area: main;}
 .home-section:nth-child(1){grid-area: home-section-one;}
 .home-section:nth-child(2){grid-area: home-section-two;}
-.home-section:nth-child(3){grid-area: home-section-three;}
-.home-section:nth-child(4){grid-area: home-section-four;}
 aside{grid-area: aside;}
 .aside-section:nth-child(1){grid-area: aside-section-one;}
 .aside-section:nth-child(2){grid-area: aside-section-two;}
@@ -63,51 +50,20 @@ aside{grid-area: aside;}
 .aside-section:nth-child(7){grid-area: aside-section-seven;}
 .aside-section:nth-child(8){grid-area: aside-section-eight;}
 .aside-section:nth-child(9){grid-area: aside-section-nine;}
-.aside-section:nth-child(10){grid-area: aside-section-ten;}
-.aside-section:nth-child(11){grid-area: aside-section-eleven;}
-.aside-section:nth-child(12){grid-area: aside-section-twelve;}
-.aside-section:nth-child(13){grid-area: aside-section-thirteen;}
-.aside-section:nth-child(14){grid-area: aside-section-fourteen;}
-.aside-section:nth-child(15){grid-area: aside-section-fifteen;}
-.aside-section:nth-child(16){grid-area: aside-section-sixteen;}
-.aside-section:nth-child(17){grid-area: aside-section-seventeen;}
-.aside-section:nth-child(18){grid-area: aside-section-eighteen;}
 footer{grid-area: footer;}
 
-
+/* Title Banner styling
+-------------*/
 .womens-button {
-  border: 2px solid #48736F;
-  background-image: url(images/womens-jackets-background.jpg);
+  background-image: url(images/womens-jackets-banner.jpg);
   background-position: center;
   background-color: #48736F;
   height: 140px;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 1000px;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: right;
-}
-.mens-button {
-  border: 2px solid #48736F;
-  background-image: url(images/mens-jackets-background.jpg);
-  background-position: center;
-  background-color: #48736F;
-  height: 140px;
-  min-width: 300px;
-  max-width: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: right;
-}
-.jackets-button {
-  background-image: url(images/all-jackets-banner.jpg);
-  background-position: center;
-  background-color: #48736F;
-  height: 140px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: right;
-  text-decoration: underline;  
 }
 
 /* Best Seller link styling
@@ -139,9 +95,8 @@ footer{grid-area: footer;}
         display: grid;
         grid-gap: 20px;
         grid-template-areas: 
-        'home-section-one home-section-one'
-        'home-section-two home-section-three'
-        'home-section-four home-section-four'
+        'home-section-one'
+        'home-section-two'
         ;
     }
     aside {
@@ -152,20 +107,10 @@ footer{grid-area: footer;}
         'aside-section-three aside-section-four'
         'aside-section-five aside-section-six'
         'aside-section-seven aside-section-eight'
-        'aside-section-nine aside-section-ten'
-        'aside-section-eleven aside-section-twelve'
-        'aside-section-thirteen aside-section-fourteen'
-        'aside-section-fifteen aside-section-sixteen'
-        'aside-section-seventeen aside-section-eighteen'
+        'aside-section-nine zero'
         ;
     }
-    .jackets-button {
-        height: 200px;
-    }
     .womens-button {
-        height: 140px;
-    }
-    .mens-button {
         height: 140px;
     }
 }
@@ -182,9 +127,6 @@ footer{grid-area: footer;}
         'aside-section-one aside-section-two aside-section-three'
         'aside-section-four aside-section-five aside-section-six'
         'aside-section-seven aside-section-eight aside-section-nine'
-        'aside-section-ten aside-section-eleven aside-section-twelve'
-        'aside-section-thirteen aside-section-fourteen aside-section-fifteen'
-        'aside-section-sixteen aside-section-seventeen aside-section-eighteen'
         ;
     }
 }

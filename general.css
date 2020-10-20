@@ -16,7 +16,6 @@ header {
 }
 .logo {
     max-width: 200px;
-    margin-left: 20%;
 }
 nav, #hamburger-menu, #search-menu {
     display: none;
@@ -93,9 +92,6 @@ form.searchbox button:hover {
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
-    .logo {
-        margin-left: 30%;
-    }
 }
 /*  Desktop screen sizes-------------*/
 @media(min-width: 801px){

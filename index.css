@@ -133,9 +133,6 @@ footer{grid-area: footer;}
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
-    .logo {
-        margin-left: 30%;
-    }
     main {
         display: grid;
         grid-gap: 20px;
