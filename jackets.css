@@ -80,7 +80,6 @@ footer{grid-area: footer;}
   border: 2px solid #48736F;
   background-image: url(images/womens-jackets-background.jpg);
   background-position: center;
-  background-color: #48736F;
   height: 100px;
   min-width: 300px;
   max-width: 600px;
@@ -92,7 +91,6 @@ footer{grid-area: footer;}
   border: 2px solid #48736F;
   background-image: url(images/mens-jackets-background.jpg);
   background-position: center;
-  background-color: #48736F;
   height: 100px;
   min-width: 300px;
   max-width: 600px;
@@ -103,7 +101,6 @@ footer{grid-area: footer;}
 .jackets-button {
   background-image: url(images/all-jackets-banner.jpg);
   background-position: center;
-  background-color: #48736F;
   color: #f2ece9;
   font-size: 1.5em;
   height: 140px;
