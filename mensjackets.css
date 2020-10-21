@@ -55,15 +55,21 @@ footer{grid-area: footer;}
 /* Title Banner styling
 -------------*/
 .mens-button {
-  background-image: url(images/mens-jackets-banner.jpg);
+  background-image: url(images/mens-jackets-banner-mobile.jpg);
   background-position: center;
   background-color: #48736F;
   height: 140px;
+  color: #f2ece9;
+  font-size: 1.5em;
   min-width: 300px;
-  max-width: 1000px;
+  max-width: 1600px;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: right;
+  text-align: left;
+}
+.banner-name {
+    margin: 0;
+    padding-top: 40px;
 }
 /* Jacket page links styling
 -------------*/
@@ -127,7 +133,11 @@ footer{grid-area: footer;}
         ;
     }
     .mens-button {
-        height: 140px;
+        background-image: url(images/mens-jackets-banner.jpg);
+        height: 240px;
+    }
+    .banner-name {
+        padding-top: 90px;
     }
 }
 /*  Desktop screen sizes-------------*/
