@@ -59,7 +59,7 @@ aside{grid-area: aside;}
 footer{grid-area: footer;}
 
 
-/* Banner and Button styling
+/* Banner styling
 -------------*/
 .slogan-banner {
     display: flex;
@@ -69,8 +69,10 @@ footer{grid-area: footer;}
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .jackets-button {
+}
+/* Jacket page links styling
+-------------*/
+.jackets-button {
     border: 2px solid #48736F;
     background-image: url(images/all-jackets-banner.jpg);
     background-position: center;
@@ -79,8 +81,8 @@ footer{grid-area: footer;}
     background-size: cover;
     background-repeat: no-repeat;
     text-align: right;  
-  }
-  .womens-button {
+}
+.womens-button {
     border: 2px solid #48736F;
     background-image: url(images/womens-jackets-background.jpg);
     background-position: center;
@@ -91,7 +93,7 @@ footer{grid-area: footer;}
     background-size: cover;
     background-repeat: no-repeat;
     text-align: right;
-  }
+}
   .mens-button {
     border: 2px solid #48736F;
     background-image: url(images/mens-jackets-background.jpg);
@@ -103,8 +105,23 @@ footer{grid-area: footer;}
     background-size: cover;
     background-repeat: no-repeat;
     text-align: right;
-  }
-
+}
+.product-page-links {
+    text-decoration: none;
+    color: #48736F;
+    padding: 0;
+}
+.product-page-links:hover {
+    font-size: 1.5em;
+}
+.jacket-name {
+    margin: 0;
+    display: inline-block;
+}
+.price-tag {
+    margin: 0;
+    display: inline-block;
+}
 /* Best Seller link styling
 -------------*/
 .aside-section {
@@ -121,14 +138,6 @@ footer{grid-area: footer;}
     background-repeat: no-repeat;
 }
 
-.jacket-name {
-    margin: 0;
-    display: inline-block;
-}
-.price-tag {
-    margin: 0;
-    display: inline-block;
-}
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/

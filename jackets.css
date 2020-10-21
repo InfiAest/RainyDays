@@ -74,7 +74,8 @@ aside{grid-area: aside;}
 .aside-section:nth-child(18){grid-area: aside-section-eighteen;}
 footer{grid-area: footer;}
 
-
+/* Jacket page links styling
+-------------*/
 .womens-button {
   border: 2px solid #48736F;
   background-image: url(images/womens-jackets-background.jpg);
@@ -109,6 +110,14 @@ footer{grid-area: footer;}
   text-align: right;
   text-decoration: underline;  
 }
+.product-page-links {
+    text-decoration: none;
+    color: #48736F;
+    padding: 0;
+}
+.product-page-links:hover {
+    font-size: 1.5em;
+}
 
 /* Best Seller link styling
 -------------*/
@@ -133,7 +142,7 @@ footer{grid-area: footer;}
     margin: 0;
     display: inline-block;
 }
-
+/* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
     main {
         display: grid;

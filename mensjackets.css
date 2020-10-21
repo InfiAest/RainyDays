@@ -65,6 +65,22 @@ footer{grid-area: footer;}
   background-repeat: no-repeat;
   text-align: right;
 }
+/* Jacket page links styling
+-------------*/
+.product-page-links {
+    text-decoration: none;
+    color: #48736F;
+    padding: 0;
+    width: 200px;
+}
+.product-page-links:hover {
+    text-transform: uppercase;
+}
+.back-arrow {
+    float: left;
+    font-size: 1.5em;
+    padding: 0 10px 0 0;
+}
 
 /* Best Seller link styling
 -------------*/
@@ -89,7 +105,7 @@ footer{grid-area: footer;}
     margin: 0;
     display: inline-block;
 }
-
+/* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
     main {
         display: grid;

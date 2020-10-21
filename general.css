@@ -64,8 +64,7 @@ nav a:hover {
 .searchbox {
     display: none;
     flex: 1;
-  }
-  
+}
 form.searchbox button {
     float: right;
     width: 40px;
