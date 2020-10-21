@@ -24,11 +24,20 @@
                 </ul>
             </nav>
         </header>
+    <aside>
+        <section class="home-section">
+            <form class="searchbox" action="action_page.php">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Search.." name="Search">
+            </form>
+        </section>
+        <section class="home-section">
+            <div class="jackets-button">
+                <h1 class="banner-name">Checkout</h1>
+            </div>
+        </section>
+    </aside>
     <main>
-        <body>
-            <h1>
-                Checkout
-            </h1>
             <form action="form-success.php" method="POST">
                 <fieldset>
                     <legend>Your Details</legend>
@@ -117,7 +126,5 @@
                  <input type="submit"  value="Send Order">
             </form>
         </body>
-        <link href="overall-layout.css" rel="stylesheet">
-        <link href="checkout.css" rel="stylesheet">
     </main>
 </html>

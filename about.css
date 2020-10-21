@@ -1,0 +1,110 @@
+/* CSS GRID 
+-------------*/
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    'header'
+    'aside'
+    'main'
+    'footer'
+    ;
+}
+aside {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'aside-section-one'
+    'aside-section-two'
+    ;
+}
+main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'home-section-one'
+    'home-section-two'
+    'home-section-three'
+    'home-section-four' 
+    'home-section-five'
+    'home-section-six' 
+    'home-section-seven'
+    ;
+}
+
+
+header{grid-area: header;}
+aside{grid-area: aside;}
+.aside-section:nth-child(1){grid-area: aside-section-one;}
+.aside-section:nth-child(2){grid-area: aside-section-two;}
+main{grid-area: main;}
+.home-section:nth-child(1){grid-area: home-section-one;}
+.home-section:nth-child(2){grid-area: home-section-two;}
+.home-section:nth-child(3){grid-area: home-section-three;}
+.home-section:nth-child(4){grid-area: home-section-four;}
+.home-section:nth-child(5){grid-area: home-section-five;}
+.home-section:nth-child(6){grid-area: home-section-six;}
+.home-section:nth-child(7){grid-area: home-section-seven;}
+footer{grid-area: footer;}
+
+/* Banner styling
+-------------*/
+.page-banner {
+    display: flex;
+    background-image: url(images/about-us-banner-mobile.jpg);
+    background-position: center;
+    background-color: #48736F;
+    color: #f2ece9;
+    font-size: 1.5em;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-name {
+    margin: 0;
+    padding-top: 70px;
+}
+/* Picture styling
+-------------*/
+.about-imgs {
+    width: 300px;
+}
+.logo-footer {
+    width: 400px;
+}
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media(min-width: 641px){
+    main {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+        'home-section-one home-section-two'
+        'home-section-four home-section-three'
+        'home-section-five home-section-six'
+        'home-section-seven home-section-seven'
+        ;
+    }
+    .page-banner {
+        background-image: url(images/about-us-banner.jpg);
+    }
+}
+/*  Desktop screen sizes-------------*/
+@media(min-width: 801px){
+    .searchbox {
+        float: right;
+        display: block;
+    }
+
+}
+/* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+    body {
+      margin: 0 17%;
+    }
+}
