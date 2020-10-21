@@ -55,7 +55,6 @@ footer{grid-area: footer;}
     display: flex;
     background-image: url(images/about-us-banner-mobile.jpg);
     background-position: center;
-    background-color: #48736F;
     color: #f2ece9;
     font-size: 1.5em;
     height: 200px;
