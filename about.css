@@ -51,15 +51,8 @@ footer{grid-area: footer;}
 
 /* Banner styling
 -------------*/
-.page-banner {
-    display: flex;
+.about-banner {
     background-image: url(images/about-us-banner-mobile.jpg);
-    background-position: center;
-    color: #f2ece9;
-    font-size: 1.5em;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .banner-name {
     margin: 0;
@@ -89,7 +82,7 @@ footer{grid-area: footer;}
         'home-section-seven home-section-seven'
         ;
     }
-    .page-banner {
+    .about-banner {
         background-image: url(images/about-us-banner.jpg);
     }
 }

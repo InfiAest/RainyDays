@@ -62,13 +62,9 @@ footer{grid-area: footer;}
 /* Banner styling
 -------------*/
 .slogan-banner {
-    display: flex;
     background-image: url(images/Slogan-header-image-small.jpg);
-    background-position: center;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
+
 /* Jacket page links styling
 -------------*/
 .jackets-button {
@@ -131,7 +127,7 @@ footer{grid-area: footer;}
     width: 100%;
     height: 100%;
 }
-.bs-img {
+.best-seller-img {
     border: 2px solid #48736F;
     width: 100%;
     height: 80%;
@@ -167,7 +163,6 @@ footer{grid-area: footer;}
     }
     .slogan-banner {
         background-image: url(images/Slogan-header-image.jpg);
-        height: 300px;
     }
     .jackets-button {
         height: 160px;
@@ -184,33 +179,6 @@ footer{grid-area: footer;}
 }
 /*  Desktop screen sizes-------------*/
 @media(min-width: 801px){
-    .logo {
-        float: left;
-        margin-left: 0;
-    }
-    nav {
-        display: inline-block;
-    }
-    .hamburger-label {
-        display: none;
-    }
-    .search-label {
-        display: none;
-    }
-    nav {
-        display: flex;
-        justify-content: flex-end;
-    }
-    nav ul {
-        display: flex;
-    }
-    nav li {
-        display: inline-block;
-    }
-    nav a {
-        font-size: 1.4em;
-        padding: 20% 40px;
-    }
     .searchbox {
         float: right;
         display: block;

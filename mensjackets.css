@@ -56,15 +56,8 @@ footer{grid-area: footer;}
 -------------*/
 .mens-button {
   background-image: url(images/mens-jackets-banner-mobile.jpg);
-  background-position: center;
-  height: 140px;
   color: #f2ece9;
   font-size: 1.5em;
-  min-width: 300px;
-  max-width: 1600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: left;
 }
 .banner-name {
     margin: 0;
