@@ -14,6 +14,7 @@ body {
     font-family: 'din-condensed', sans-serif;
     font-weight: 300;
     font-style: normal;
+    color: #0a3641;
     background-color: #F2ECE9;
 }
 /* Nav styling
@@ -106,11 +107,105 @@ form.searchbox button:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* Button styling
+-------------*/
+.button {
+    background-color: #48736F;
+    border: 2px solid #F2ECE9;
+    border-radius: 18px;
+    color: #F2ECE9;
+    font-size: 1.5em;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+    cursor: pointer;
+  }
+.button:hover {
+    background-color: #F2ECE9;
+    border: 2px solid #0a3641;
+    color: #0a3641;    
+}
+
+.jacket-pages-button {
+    border: 2px solid #48736F;
+    background-position: center;
+    height: 140px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+.womens-button {
+    background-image: url(images/womens-jackets-background.jpg);
+  }
+  .mens-button {
+    background-image: url(images/mens-jackets-background.jpg);
+  }
+
+/* Product name and info styling
+-------------*/
+.name-reviews-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.colours-button-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.jacket-name {
+    margin: 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    flex-grow: 2;
+}
+.reviews-tag {
+    margin: 0;
+}
+.reviews-tag::before{
+    content: '(';
+}
+.reviews-tag::after{
+    content: ')';
+}
+.colours-tag {
+    font-size: 1.2em;
+}
+.star-container {
+    display: inline-block;
+}
+.colour-container {
+    flex-grow: 2;
+    padding-left: 5px;
+}
+.fa-star {
+    color: #657351;
+}
+
+/* Product colour swatches
+-------------*/
+.winter-shell-swatch-1 {
+    color: #8F1119;
+}
+.winter-shell-swatch-2 {
+    color: #0A3641;
+}
+.winter-shell-swatch-3 {
+    color: #BBB5B3;
+}
+
+
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
-@media(min-width: 641px){
-}
+
 /*  Desktop screen sizes-------------*/
 @media(min-width: 801px){
     .logo {
@@ -148,6 +243,7 @@ form.searchbox button:hover {
     .page-banner {
         height: 300px;
     }
+    
 }
 /* Extra Large Screens-------------*/
 @media only screen and (min-width: 1281px) {

@@ -76,27 +76,8 @@ footer{grid-area: footer;}
 
 /* Jacket page links styling
 -------------*/
-.womens-button {
-  border: 2px solid #48736F;
-  background-image: url(images/womens-jackets-background.jpg);
-  background-position: center;
+.womens-button, .mens-button {
   height: 100px;
-  min-width: 300px;
-  max-width: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: right;
-}
-.mens-button {
-  border: 2px solid #48736F;
-  background-image: url(images/mens-jackets-background.jpg);
-  background-position: center;
-  height: 100px;
-  min-width: 300px;
-  max-width: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: right;
 }
 .jackets-button {
   background-image: url(images/all-jackets-banner.jpg);

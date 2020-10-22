@@ -15,6 +15,7 @@ body {
 main {
     display: grid;
     grid-gap: 10px;
+    padding: 10px;
     grid-template-areas: 
     'home-section-one'
     'home-section-two'
@@ -25,7 +26,8 @@ main {
 }
 aside {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 30px;
+    padding: 10px;
     grid-template-areas: 
     'aside-section-one'
     'aside-section-two'
@@ -67,39 +69,21 @@ footer{grid-area: footer;}
 
 /* Jacket page links styling
 -------------*/
-.jackets-button {
-    border: 2px solid #48736F;
-    background-image: url(images/all-jackets-background.jpg);
-    background-position: center;
-    height: 140px;
+.jacket-pages-button {
     font-size: 1.5em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: right;  
+}
+.jackets-button {
+    background-image: url(images/all-jackets-background.jpg);
+    min-width: 300px;
+    max-width: 1300px;  
 }
 .womens-button {
-    border: 2px solid #48736F;
-    background-image: url(images/womens-jackets-background.jpg);
-    background-position: center;
-    height: 140px;
-    font-size: 1.5em;
     min-width: 300px;
     max-width: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: right;
 }
-  .mens-button {
-    border: 2px solid #48736F;
-    background-image: url(images/mens-jackets-background.jpg);
-    background-position: center;
-    height: 140px;
-    font-size: 1.5em;
+.mens-button {
     min-width: 300px;
     max-width: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: right;
 }
 .product-page-links {
     text-decoration: none;
@@ -109,19 +93,11 @@ footer{grid-area: footer;}
 .product-page-links:hover {
     text-transform: uppercase;
 }
-.jacket-name {
-    margin: 0;
-    display: inline-block;
-}
-.price-tag {
-    margin: 0;
-    display: inline-block;
-}
 .link-name {
     margin: 0;
     padding-top: 45px;
 }
-/* Best Seller link styling
+/* Best Seller area styling
 -------------*/
 .aside-section {
     width: 100%;
@@ -132,10 +108,11 @@ footer{grid-area: footer;}
     width: 100%;
     height: 80%;
     margin: 0;
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 /* Media Queries
 -------------*/
@@ -153,7 +130,8 @@ footer{grid-area: footer;}
     }
     aside {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         'aside-section-one aside-section-one'
         'aside-section-two aside-section-three'
@@ -164,13 +142,7 @@ footer{grid-area: footer;}
     .slogan-banner {
         background-image: url(images/Slogan-header-image.jpg);
     }
-    .jackets-button {
-        height: 160px;
-    }
-    .womens-button {
-        height: 160px;
-    }
-    .mens-button {
+    .jacket-pages-button {
         height: 160px;
     }
     .link-name {
@@ -185,7 +157,8 @@ footer{grid-area: footer;}
     }
     aside {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         'aside-section-one aside-section-one aside-section-one'
         'aside-section-two aside-section-three aside-section-four'
