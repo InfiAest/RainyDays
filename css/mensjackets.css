@@ -54,23 +54,15 @@ footer{grid-area: footer;}
 
 /* Title Banner styling
 -------------*/
-.womens-button {
-  background-image: url(images/womens-jackets-banner-mobile.jpg);
-  font-size: 1.5em;
+.mens-button {
+  background-image: url(../images/mens-jackets-banner-mobile.jpg);
   color: #f2ece9;
+  font-size: 1.5em;
 }
 .banner-name {
     margin: 0;
     padding-top: 40px;
 }
-
-/* Best Seller link styling
--------------*/
-.aside-section {
-    width: 100%;
-    height: 100%;
-}
-
 /* Jacket page links styling
 -------------*/
 .product-page-links {
@@ -87,6 +79,14 @@ footer{grid-area: footer;}
     font-size: 1.5em;
     padding: 0 10px 0 0;
 }
+
+/* Best Seller link styling
+-------------*/
+.aside-section {
+    width: 100%;
+    height: 100%;
+}
+
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
     main {
@@ -108,8 +108,8 @@ footer{grid-area: footer;}
         'aside-section-nine zero'
         ;
     }
-    .womens-button {
-        background-image: url(images/womens-jackets-banner.jpg);
+    .mens-button {
+        background-image: url(../images/mens-jackets-banner.jpg);
         height: 240px;
     }
     .banner-name {

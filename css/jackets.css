@@ -80,7 +80,7 @@ footer{grid-area: footer;}
   height: 100px;
 }
 .jackets-button {
-  background-image: url(images/all-jackets-banner.jpg);
+  background-image: url(../images/all-jackets-banner.jpg);
   color: #f2ece9;
   font-size: 1.5em;
 }

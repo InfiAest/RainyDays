@@ -52,7 +52,7 @@ footer{grid-area: footer;}
 /* Banner styling
 -------------*/
 .about-banner {
-    background-image: url(images/about-us-banner-mobile.jpg);
+    background-image: url(../images/about-us-banner-mobile.jpg);
 }
 .banner-name {
     margin: 0;
@@ -83,7 +83,7 @@ footer{grid-area: footer;}
         ;
     }
     .about-banner {
-        background-image: url(images/about-us-banner.jpg);
+        background-image: url(../images/about-us-banner.jpg);
     }
 }
 /*  Desktop screen sizes-------------*/
