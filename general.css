@@ -121,7 +121,7 @@ form.searchbox button:hover {
     text-decoration: none;
     margin: 2px;
     cursor: pointer;
-  }
+}
 .button:hover {
     background-color: #F2ECE9;
     border: 2px solid #0a3641;
@@ -138,15 +138,35 @@ form.searchbox button:hover {
 }
 .womens-button {
     background-image: url(images/womens-jackets-background.jpg);
-  }
-  .mens-button {
+}
+.mens-button {
     background-image: url(images/mens-jackets-background.jpg);
-  }
+}
 
+/* Product image tile styling
+-------------*/
+.best-seller-img {
+    border: 2px solid #48736F;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.jacket-name {
+    margin: 0;
+    display: inline-block;
+}
+.price-tag {
+    margin: 0;
+    display: inline-block;
+}
 /* Product name and info styling
 -------------*/
 .name-reviews-container {
     width: 100%;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -154,10 +174,34 @@ form.searchbox button:hover {
 }
 .colours-button-container {
     width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+.name-price-container {
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+}
+.colours-reviews-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.button-container {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .jacket-name {
     margin: 0;
@@ -167,6 +211,8 @@ form.searchbox button:hover {
 }
 .reviews-tag {
     margin: 0;
+    padding-top: 2px;
+    display: inline-block;
 }
 .reviews-tag::before{
     content: '(';
@@ -175,6 +221,8 @@ form.searchbox button:hover {
     content: ')';
 }
 .colours-tag {
+    margin: 0;
+    padding-top: 2px;
     font-size: 1.2em;
 }
 .star-container {
@@ -182,15 +230,17 @@ form.searchbox button:hover {
 }
 .colour-container {
     flex-grow: 2;
-    padding-left: 5px;
+    padding: 0 15px 0 5px;
 }
 .fa-star {
+    margin: 0;
+    padding: 0;
     color: #657351;
 }
 
 /* Product colour swatches
 -------------*/
-.winter-shell-swatch-1 {
+.winter-shell-swatch-1, .ocean-explorer-swatch-1, .sheer-drop-swatch-1, .autumn-walks-swatch-2 {
     color: #8F1119;
 }
 .winter-shell-swatch-2 {
@@ -198,6 +248,81 @@ form.searchbox button:hover {
 }
 .winter-shell-swatch-3 {
     color: #BBB5B3;
+}
+.wind-rider-swatch-1, .autumns-end-swatch-1, .forest-walker-swatch-3, .cliff-climber-swatch-1, .autumn-walks-swatch-3, .mountaineer-swatch-2 {
+    color: #0F1218;
+}
+.wind-rider-swatch-2 {
+    color: #35455C;
+}
+.wind-rider-swatch-3, .autumns-end-swatch-3, .cliff-climber-swatch-3, .mountain-wanderer-swatch-3 {
+    color: #99A1B0;
+}
+.autumn-comfort-swatch-1 {
+    color: #414338;
+}
+.autumn-comfort-swatch-2 {
+    color: #5C89CB;
+}
+.autumn-comfort-swatch-3, .cold-wilderness-swatch-1, .ocean-explorer-swatch-3, .winter-ocean-swatch-3 {
+    color: #AC7D39;
+}
+.dune-discoverer-swatch-1, .winter-ocean-swatch-1 {
+    color: #072235;
+}
+.dune-discoverer-swatch-2, .autumns-end-swatch-2 {
+    color: #832809;
+}
+.dune-discoverer-swatch-3, .forest-walker-swatch-1 {
+    color: #85716A;
+}
+.cold-wilderness-swatch-2, .woodland-walker-swatch-2 {
+    color: #646462;
+}
+.cold-wilderness-swatch-3 {
+    color: #48736F;
+}
+.ocean-explorer-swatch-2, .forest-walker-swatch-2 {
+    color: #465248;
+}
+.sheer-drop-swatch-2 {
+    color: #000F4B;
+}
+.sheer-drop-swatch-3 {
+    color: #055082;
+}
+.winter-ocean-swatch-2 {
+    color: #D00012;
+}
+.woodland-walker-swatch-1, .snowy-peaks-swatch-1, .lake-life-swatch-3, .mountain-wanderer-swatch-2 {
+    color: #1A6832;
+}
+.woodland-walker-swatch-3, .snowy-peaks-swatch-2, .lake-life-swatch-1 {
+    color: #28221C;
+}
+.winter-wonderland-swatch-1 {
+    color: #CA75A0;
+}
+.winter-wonderland-swatch-2 {
+    color: #760732;
+}
+.winter-wonderland-swatch-3 {
+    color: #CC9469;
+}
+.snowy-peaks-swatch-3, .cliff-climber-swatch-2 {
+    color: #292595;
+}
+.autumn-walks-swatch-1 {
+    color: #32080F;
+}
+.mountaineer-swatch-1 {
+    color: #19C6CC;
+}
+.mountaineer-swatch-3, .lake-life-swatch-2 {
+    color: #DCC429;
+}
+.mountain-wanderer-swatch-1 {
+    color: #B23E15;
 }
 
 
