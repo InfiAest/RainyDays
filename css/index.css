@@ -59,6 +59,9 @@ aside{grid-area: aside;}
 .aside-section:nth-child(6){grid-area: aside-section-six;}
 .aside-section:nth-child(7){grid-area: aside-section-seven;}
 footer{grid-area: footer;}
+.footer-section:nth-child(1){grid-area: footer-section-one;}
+.footer-section:nth-child(2){grid-area: footer-section-two;}
+.footer-section:nth-child(3){grid-area: footer-section-three;}
 
 
 /* Banner img styling
