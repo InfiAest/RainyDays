@@ -46,10 +46,6 @@ main{grid-area: main;}
 .home-section:nth-child(3){grid-area: home-section-three;}
 .home-section:nth-child(4){grid-area: home-section-four;}
 .home-section:nth-child(5){grid-area: home-section-five;}
-.button-section-all:nth-child(1){grid-area: button-section-all-one;}
-.button-section-all:nth-child(2){grid-area: button-section-all-two;}
-.button-section-all:nth-child(3){grid-area: button-section-all-three;}
-.button-section-all:nth-child(4){grid-area: button-section-all-four;}
 aside{grid-area: aside;}
 .aside-section:nth-child(1){grid-area: aside-section-one;}
 .aside-section:nth-child(2){grid-area: aside-section-two;}

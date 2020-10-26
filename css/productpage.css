@@ -1,0 +1,97 @@
+/* CSS GRID Product page
+-------------*/
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    'header'
+    'aside'
+    'main'
+    'footer'
+    ;
+}
+main {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    'home-section-one'
+    'home-section-two'
+    'home-section-three'
+    'home-section-four' 
+    'home-section-five'
+    'home-section-six'
+    ;
+}
+
+header{grid-area: header;}
+aside{grid-area: aside;}
+main{grid-area: main;}
+.home-section:nth-child(1){grid-area: home-section-one;}
+.home-section:nth-child(2){grid-area: home-section-two;}
+.home-section:nth-child(3){grid-area: home-section-three;}
+.home-section:nth-child(4){grid-area: home-section-four;}
+.home-section:nth-child(5){grid-area: home-section-five;}
+.home-section:nth-child(6){grid-area: home-section-six;}
+footer{grid-area: footer;}
+.footer-section:nth-child(1){grid-area: footer-section-one;}
+.footer-section:nth-child(2){grid-area: footer-section-two;}
+.footer-section:nth-child(3){grid-area: footer-section-three;}
+/* Product img, name & info styling (grid view on jacket pages)
+-------------*/
+.best-seller-img {
+    max-width: 685px;
+    min-width: 300px;
+}
+
+/* Form Styling
+-------------*/
+
+.form-input {
+    display: inline-block;
+}
+.button {
+    float: right;
+}
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+@media(min-width: 641px){
+    main {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+        'home-section-one home-section-one'
+        'home-section-two home-section-three'
+        'home-section-four home-section-five'
+        'home-section-six home-section-six'
+        ;
+    }
+}
+/*  Desktop screen sizes-------------*/
+@media(min-width: 801px){
+    main {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-areas: 
+        'home-section-one home-section-one home-section-one'
+        'home-section-two home-section-two home-section-three'
+        'home-section-two home-section-two home-section-six'
+        'home-section-four home-section-five home-section-six'
+        'home-section-four home-section-five home-section-six'
+        ;
+    }
+}
+/* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+    body {
+      margin: 0 17%;
+    }
+}
+/* 
+-------------*/
+/* 
+-------------*/

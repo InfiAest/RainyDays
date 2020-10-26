@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/hft0bgo.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link href="css/general.css" rel="stylesheet">
+        <link href="css/productpage.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -23,53 +24,76 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <h1>Winter Shell</h1>
-            <h2>Pris. NOK,-</h2>
-        </main>
-        <picture>
-            <img src="images/1 -winter-shell-jacket.jpg" alt="Winter Shell mens jacket photo">
-        </picture>
-        <aside>   
-            <form action="form-success.php" method="POST">
-                <fieldset>
-                    <legend>Choose your details</legend>
-                    <label for="amount">Stk.</label>
-                    <input type="text" name="size" class="form__input" required>
-                    <p>Size:</p>
-                    <input type="radio" id="size" name="size" value="size">
-                    <label for="size">X-small</label>
-                    <input type="radio" id="size" name="size" value="size">
-                    <label for="size">Small</label>
-                    <input type="radio" id="size" name="size" value="size">
-                    <label for="size">Medium</label>
-                    <input type="radio" id="size" name="size" value="size">
-                    <label for="size">Large</label>
-                    <input type="radio" id="size" name="size" value="size">
-                    <label for="size">X-large</label>
-                    <p>Colour:</p>
-                    <input type="radio" id="colour" name="colour" value="size">
-                    <label for="colour">Mahogany Red</label>
-                    <input type="radio" id="colour" name="colour" value="size">
-                    <label for="colour">Moon Grey</label>
-                    <input type="radio" id="colour" name="colour" value="size">
-                    <label for="colour">Moss Green</label>
-                </fieldset>
-                <input type="submit"  value="Add to Cart">
+        <aside>
+            <form class="searchbox" action="action_page.php">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Search.." name="Search">
             </form>
         </aside>
-        <about> 
+        <main>
+            <section class="home-section">
+                <h1>Winter Shell</h1>
+                <h2>Pris. NOK,-</h2>
+            </section>
+            <section class="home-section">
+                <img class="best-seller-img" src="images/1 -winter-shell-jacket.jpg" alt="Winter Shell Jacket, mahogany red colour">
+            </section>
+            <section class="home-section">  
+                <form action="form-success.php" method="POST">
+                    <fieldset>
+                        <legend>Choose your details</legend>
+                        <label for="quantity">Stk.</label>
+                        <input type="number" id="quantity" name="quantity" min="0" class="form-input" required>
+                        <p>Size:</p>
+                        <input type="radio" id="size" name="size" value="X-small" class="form-input">
+                        <label for="size">X-small</label>
+                        <input type="radio" id="size" name="size" value="Small" class="form-input">
+                        <label for="size">Small</label>
+                        <input type="radio" id="size" name="size" value="Medium" class="form-input">
+                        <label for="size">Medium</label>
+                        <input type="radio" id="size" name="size" value="Large" class="form-input">
+                        <label for="size">Large</label>
+                        <input type="radio" id="size" name="size" value="X-large" class="form-input">
+                        <label for="size">X-large</label>
+                        <p>Colour:</p>
+                        <input type="radio" id="colour" name="colour" value="Mahogany" class="form-input">
+                        <i class="fas fa-circle winter-shell-swatch-1"></i>
+                        <label for="colour">Mahogany Red</label>
+                        <input type="radio" id="colour" name="colour" value="Moss" class="form-input">
+                        <i class="fas fa-circle winter-shell-swatch-2"></i>
+                        <label for="colour">Moss Green</label>
+                        <input type="radio" id="colour" name="colour" value="Moon" class="form-input">
+                        <i class="fas fa-circle winter-shell-swatch-3"></i>
+                        <label for="colour">Moon Grey</label>
+                    </fieldset>
+                    <input type="submit" value="Add to Cart" class="button">
+                </form>
+            </section> 
+            <section class="home-section"> 
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p> 
-            <h2>Specifications</h2>
-            <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
-        </about>
-        <reviews>      
-            <H2>Reviews</H2>
-            <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
-            <link href="overall-design.css" rel="stylesheet">
-            <link href="grid.css" rel="stylesheet">
-        </reviews>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p> 
+            </section>
+            <section class="home-section">
+                <h2>Specifications</h2>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+            </section>
+            <section class="home-section">
+                <H2>Reviews</H2>
+                <div class="star-container">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p class="reviews-tag">18</p>
+                </div>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
+            </section>
+        </main>
         <footer>
             <div class="footer-section">
                 <p class="footer-title">Contact us:</p>
