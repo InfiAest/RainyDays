@@ -61,6 +61,12 @@ nav a:hover {
 #hamburger-menu:checked ~ nav {
     display: block;
 }
+.search-box, #search-menu {
+    display: none;
+}
+#search-menu:checked ~ .search-box {
+    display: block;
+}
 .search-label {
     float: right;
     color: #0a3641;
@@ -68,13 +74,8 @@ nav a:hover {
     font-size: 1.5em;
     display: block;    
 }
-
 /* Search Box
 -------------*/
-.searchbox {
-    display: none;
-    flex: 1;
-}
 form.searchbox button {
     float: right;
     width: 40px;
@@ -448,8 +449,7 @@ footer {
         font-size: 1.6em;
         padding: 20% 40px;
     }
-    .searchbox {
-        float: right;
+    .search-box {
         display: block;
     }
     .page-banner {

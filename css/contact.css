@@ -12,19 +12,9 @@ body {
     'footer'
     ;
 }
-aside {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: 
-    'aside-section-one'
-    'aside-section-two'
-    ;
-}
 
 header{grid-area: header;}
 aside{grid-area: aside;}
-.aside-section:nth-child(1){grid-area: aside-section-one;}
-.aside-section:nth-child(2){grid-area: aside-section-two;}
 main{grid-area: main;}
 footer{grid-area: footer;}
 /* Banner styling
@@ -65,7 +55,7 @@ main a:hover {
         background-image: url(../images/contact-us-banner.jpg);
     }
     .icon-info-container {
-        margin: 10px 0;
+        margin: 0;
     }
     .banner-name {
         padding-top: 120px;
