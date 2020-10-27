@@ -122,10 +122,27 @@ form.searchbox button:hover {
     margin: 5px 0;
     cursor: pointer;
 }
+.continue-shopping-button {
+    background-color: #F2ECE9;
+    border: 2px solid #48736f;
+    border-radius: 18px;
+    color: #48736f;
+    font-size: 1.2em;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 7px 0;
+    cursor: pointer;
+}
 .button:hover {
     background-color: #F2ECE9;
     border: 2px solid #0a3641;
     color: #0a3641;    
+}
+.continue-shopping-button:hover {
+    background-color: #48736f;
+    border: 2px solid #F2ECE9;
+    color: #F2ECE9; 
 }
 
 .jacket-pages-button {

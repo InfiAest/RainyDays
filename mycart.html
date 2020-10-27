@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/hft0bgo.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link href="css/general.css" rel="stylesheet">
+        <link href="css/cart.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -14,6 +15,7 @@
             <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu">
             <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
+            <input type="checkbox" id="search-menu">
             <nav>
                 <ul>
                     <li><a href="jackets.html">Jackets</a></li>
@@ -24,21 +26,131 @@
             </nav>
         </header>
         <aside>
-            <section class="home-section">
+            <section class="aside-section">
                 <form class="searchbox" action="action_page.php">
                     <button type="submit"><i class="fa fa-search"></i></button>
                     <input type="text" placeholder="Search.." name="Search">
                 </form>
             </section>
-            <section class="home-section">
-                <div class="page-banner jackets-button">
+            <section class="aside-section">
+                <div class="page-banner cart-banner">
                     <h1 class="banner-name">My Cart</h1>
                 </div>
             </section>
         </aside>
         <main>
-            <p>Lorem ipsum dolor sit</p>
+            <section class="home-section cart-container">
+                <div class="product-cart-container">
+                    <h2>Winter Shell Jacket</h2>
+                </div>
+                <div class="colour-size-container">
+                    <i class="fas fa-circle winter-shell-swatch-1"></i>
+                    <p>Mahogany Red, Size X-Large</p>
+                </div>
+                <div class="quantity-container">
+                    <p>1 Stk</p>
+                </div>
+                <div class="item-price-container">
+                    <p>Pris NOK,-</p>
+                </div>
+            </section>
+            <section class="home-section total-price-container">
+                <p>Total price of the products in your cart</p>
+                <p>Pris NOK,-</p>
+            </section>
+            <section class="home-section cart-button-container">
+                <div>
+                    <a href="jackets.html" class="continue-shopping-button">Continue Shopping</a>
+                </div>
+                <div>
+                    <a href="checkout.html" class="button">Checkout</a>
+                </div>
+            </section>
         </main>
+        <article>
+            <section class="article-section">
+                <h3>Did you forget to add the other jacket you liked to the basket?</h3>
+                <p>Your recently viewed items..</p>
+            </section>
+            <section class="article-section">
+                <a href="productpage1.html"><img class="best-seller-img" src="images/6 -ocean-explorer-jacket.jpg" alt="Ocean Explorer Jacket, link to product page"></a>
+                <div class="name-price-container">
+                    <a href="#"><h3 class="jacket-name">Ocean Explorer</h3></a>
+                    <p class="price-tag">Pris Nok,-</p>
+                </div>
+                <div class="colours-reviews-container">
+                    <p class="colours-tag">3 colours available</p>
+                        <div class="colour-container">
+                            <i class="fas fa-circle ocean-explorer-swatch-1"></i>
+                            <i class="fas fa-circle ocean-explorer-swatch-2"></i>
+                            <i class="fas fa-circle ocean-explorer-swatch-3"></i>
+                        </div>
+                        <div class="star-container">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="reviews-tag">22</p>
+                        </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="button">View Jacket</a>
+                </div>
+            </section>
+            <section class="article-section">
+                <a href="productpage1.html"><img class="best-seller-img" src="images/18 -mountaintop-wanderer-jacket.jpg" alt="Mountain Top Wanderer Jacket, link to product page"></a>
+                <div class="name-price-container">
+                    <a href="#"><h3 class="jacket-name">Mountain Wanderer</h3></a>
+                    <p class="price-tag">Pris Nok,-</p>
+                </div>
+                <div class="colours-reviews-container">
+                    <p class="colours-tag">3 colours available</p>
+                        <div class="colour-container">
+                            <i class="fas fa-circle mountain-wanderer-swatch-1"></i>
+                            <i class="fas fa-circle mountain-wanderer-swatch-2"></i>
+                            <i class="fas fa-circle mountain-wanderer-swatch-3"></i>
+                        </div>
+                        <div class="star-container">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="reviews-tag">6</p>
+                        </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="button">View Jacket</a>
+                </div>
+            </section>
+            <section class="article-section">
+                <a href="productpage1.html"><img class="best-seller-img" src="images/13 -snowy-peaks-jacket.jpg" alt="Snowy Peaks Jacket, link to product page"></a>
+                <div class="name-price-container">
+                    <a href="#"><h3 class="jacket-name">Snowy Peaks</h3></a>
+                    <p class="price-tag">Pris Nok,-</p>
+                </div>
+                <div class="colours-reviews-container">
+                    <p class="colours-tag">3 colours available</p>
+                        <div class="colour-container">
+                            <i class="fas fa-circle snowy-peaks-swatch-1"></i>
+                            <i class="fas fa-circle snowy-peaks-swatch-2"></i>
+                            <i class="fas fa-circle snowy-peaks-swatch-3"></i>
+                        </div>
+                        <div class="star-container">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <p class="reviews-tag">13</p>
+                        </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="button">View Jacket</a>
+                </div>
+            </section>
+        </article>
         <footer>
             <div class="footer-section">
                 <p class="footer-title">Contact us:</p>
