@@ -1,0 +1,50 @@
+/* Banner styling
+-------------*/
+.search-section {
+    display: flex;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+.page-banner {
+    display: flex;
+}
+.checkout-banner {
+    background-image: url(../images/all-jackets-banner.jpg);
+}
+.banner-name {
+    margin: 0 0 0 10px;
+    padding-top: 80px;
+    color: #f2ece9;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+
+/* Form styling
+-------------*/
+.total-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkout-form {
+    display: block;
+}
+.new-address-form {
+    display: none;
+}
+#newaddress:checked ~ .new-address-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}

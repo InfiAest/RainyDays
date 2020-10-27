@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/hft0bgo.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link href="css/general.css" rel="stylesheet">
+        <link href="css/checkout.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -14,6 +15,7 @@
             <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu">
             <label class="search-label" for="search-menu"><i class="fas fa-search"></i></label>
+            <input type="checkbox" id="search-menu">
             <nav>
                 <ul>
                     <li><a href="jackets.html">Jackets</a></li>
@@ -23,109 +25,121 @@
                 </ul>
             </nav>
         </header>
-    <aside>
-        <section class="home-section">
-            <form class="searchbox" action="action_page.php">
-                <button type="submit"><i class="fa fa-search"></i></button>
-                <input type="text" placeholder="Search.." name="Search">
-            </form>
-        </section>
-        <section class="home-section">
-            <div class="page-banner jackets-button">
-                <h1 class="banner-name">Checkout</h1>
-            </div>
-        </section>
-    </aside>
-    <main>
-            <form action="form-success.php" method="POST">
-                <fieldset>
-                    <legend>Your Details</legend>
-                    <label for="Firstname">Forename</label>
-                    <input type="text" name="Name" class="form__input" required>
-                    <label for="Surname">Surame</label>
-                    <input type="text" name="Name" class="form__input" required>
-                    <label for="Phone">Your Phone Number</label>
-                    <input type="tel" name="Phone" class="form__input" required>
-                    <label for="Email">Your Email Address</label>
-                    <input type="email" name="Email" class="form__input" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Delivery Address</legend>
-                    <label for="Streetname">Street Name</label>
-                    <input type="text" name="Streetname" class="form__input" required>
-                    <label for="Housenumber">House Number</label>
-                    <input type="text" name="Housenumber" class="form__input" required>
-                    <label for="Apartmentnumber">Apartment Number</label>
-                    <input type="text" name="Apartmentnumber" class="form__input">
-                    <label for="Cityname">City</label>
-                    <input type="text" name="Cityname" class="form__input" required>
-                    <label for="Coutry">Country</label>
-                    <select name="Country" class="form__input">
-                        <option value="Norway">Norway</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States of America">United Stated of America</option>
-                    </select>
-                    <label for="Zipcode">Zipcode</label>
-                    <input type="text" name="Zipcode" class="form__input" required>
-                 </fieldset>
-                 <fieldset>
-                    <legend>Card Details</legend>
-                    <label for="Name">Name on card</label>
-                    <input type="text" name="Name" class="form__input" required>
-                    <label for="Cardnumber">Card Number</label>
-                    <input type="text" name="Cardnumber" class="form__input" required>
-                    <label for="Expdatemonth">Month of expiration</label>
-                    <select name="Expdatemonth" class="form__input">
-                        <option value="January">January</option>
-                        <option value="February">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                        <option value="October">October</option>
-                        <option value="November">November</option>
-                        <option value="December">December</option>
-                    </select>
-                    <label for="Expdateyear">Year of expiration</label>
-                    <select name="Expdateyear" class="form__input">
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                    </select>
-                    <label for="CVCnumber">CVC Number</label>
-                    <input type="text" name="CVCnumber" class="form__input" required>
-                 </fieldset>
-                 <fieldset>
-                    <legend>Billing Address</legend>
-                    <input type="radio" id="newaddress" name="address" value="newaddress">
-                    <label for="newaddress">Fill out new address</label>
-                    <input type="radio" id="sameaddress" name="address" value="sameaddress">
-                    <label for="sameaddress">Use same as delivery address</label>
-                 </fieldset>
-                    <label for="Streetname">Street Name</label>
-                    <input type="text" name="Streetname" class="form__input" required>
-                    <label for="Housenumber">House Number</label>
-                    <input type="text" name="Housenumber" class="form__input" required>
-                    <label for="Apartmentnumber">Apartment Number</label>
-                    <input type="text" name="Apartmentnumber" class="form__input">
-                    <label for="Cityname">City</label>
-                    <input type="text" name="Cityname" class="form__input" required>
-                    <label for="Coutry">Country</label>
-                    <select name="Country" class="form__input">
-                        <option value="Norway">Norway</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States of America">United Stated of America</option>
-                    </select>
-                    <label for="Zipcode">Zipcode</label>
-                    <input type="text" name="Zipcode" class="form__input" required>
-                 <input type="submit"  value="Send Order">
-            </form>
-        </body>
-    </main>
+        <main>
+            <section class="search-section">
+                <form class="searchbox" action="action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="Search">
+                </form>
+            </section>
+            <section class="banner-section">
+                <div class="page-banner checkout-banner">
+                    <h1 class="banner-name">Checkout</h1>
+                </div>
+            </section>
+                <form class="checkout-form" action="form-success.php" method="POST">
+                    <fieldset class="total-form">
+                        <legend>Your Details</legend>
+                        <div class="form-flex">
+                            <label for="Firstname">Forename</label>
+                            <input type="text" name="Name" class="form__input" required>
+                            <label for="Surname">Surame</label>
+                            <input type="text" name="Name" class="form__input" required>
+                        </div>
+                        <div class="form-flex">
+                            <label for="Phone">Your Phone Number</label>
+                            <input type="tel" name="Phone" class="form__input" required>
+                            <label for="Email">Your Email Address</label>
+                            <input type="email" name="Email" class="form__input" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="total-form">
+                        <legend>Delivery Address</legend>
+                        <div class="form-flex">
+                            <label for="Streetname">Street Name</label>
+                            <input type="text" name="Streetname" class="form__input" required>
+                            <label for="Housenumber">House Number</label>
+                            <input type="text" name="Housenumber" class="form__input" required>
+                            <label for="Cityname">City</label>
+                            <input type="text" name="Cityname" class="form__input" required>
+                        </div>
+                        <div class="form-flex">
+                            <label for="Apartmentnumber">Apartment Number</label>
+                            <input type="text" name="Apartmentnumber" class="form__input">
+                            <label for="Coutry">Country</label>
+                            <select name="Country" class="form__input">
+                                <option value="Norway">Norway</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States of America">United Stated of America</option>
+                            </select>
+                            <label for="Zipcode">Zipcode</label>
+                            <input type="text" name="Zipcode" class="form__input" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="total-form">
+                        <legend>Card Details</legend>
+                        <div class="form-flex">
+                            <label for="Name">Name on card</label>
+                            <input type="text" name="Name" class="form__input" required>
+                            <label for="Cardnumber">Card Number</label>
+                            <input type="text" name="Cardnumber" class="form__input" required>
+                            <label for="Expdatemonth">Month of expiration</label>
+                            <select name="Expdatemonth" class="form__input">
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                            <label for="Expdateyear">Year of expiration</label>
+                            <select name="Expdateyear" class="form__input">
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                            <label for="CVCnumber">CVC Number</label>
+                            <input type="text" name="CVCnumber" class="form__input" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Billing Address</legend>
+                                <input type="radio" id="newaddress" name="address" value="newaddress">
+                                <label for="newaddress">Fill out new address</label>
+                                <input type="radio" id="sameaddress" name="address" value="sameaddress">
+                                <label for="sameaddress">Use same as delivery address</label>
+                                <div class="new-address-form">
+                                    <label for="Streetname">Street Name</label>
+                                    <input type="text" name="Streetname" class="form__input" required>
+                                    <label for="Housenumber">House Number</label>
+                                    <input type="text" name="Housenumber" class="form__input" required>
+                                    <label for="Apartmentnumber">Apartment Number</label>
+                                    <input type="text" name="Apartmentnumber" class="form__input">
+                                    <label for="Cityname">City</label>
+                                    <input type="text" name="Cityname" class="form__input" required>
+                                    <label for="Coutry">Country</label>
+                                    <select name="Country" class="form__input">
+                                        <option value="Norway">Norway</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States of America">United States of America</option>
+                                    </select>
+                                    <label for="Zipcode">Zipcode</label>
+                                    <input type="text" name="Zipcode" class="form__input" required>
+                                </div>
+                        </fieldset>
+                        <div class="button-container">
+                            <a href="mycart.html" class="button">Go back</a>
+                            <a href="checkout-sucess.html" class="button">Complete Order</a>
+                        </div>
+                </form>
+        </main>
+    </body>
     <footer>
         <div class="footer-section">
             <p class="footer-title">Contact us:</p>
