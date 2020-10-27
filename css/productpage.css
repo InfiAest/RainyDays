@@ -45,10 +45,14 @@ footer{grid-area: footer;}
     max-width: 685px;
     min-width: 300px;
 }
+.title-price-container, .reviews-heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Form Styling
 -------------*/
-
 .form-input {
     display: inline-block;
 }
@@ -79,7 +83,6 @@ footer{grid-area: footer;}
         grid-template-areas: 
         'home-section-one home-section-one home-section-one'
         'home-section-two home-section-two home-section-three'
-        'home-section-two home-section-two home-section-six'
         'home-section-four home-section-five home-section-six'
         'home-section-four home-section-five home-section-six'
         ;

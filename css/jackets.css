@@ -81,8 +81,6 @@ footer{grid-area: footer;}
 }
 .jackets-button {
   background-image: url(../images/all-jackets-banner.jpg);
-  color: #f2ece9;
-  font-size: 1.5em;
 }
 .product-page-links {
     text-decoration: none;
@@ -97,8 +95,11 @@ footer{grid-area: footer;}
     padding-top: 32px;
 }
 .banner-name {
-    margin: 0;
+    margin: 0 0 0 10px;
     padding-top: 70px;
+    color: #f2ece9;
+    font-weight: 400;
+    font-size: 2em;
 }
 
 /* Best Seller link styling

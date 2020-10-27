@@ -1,4 +1,4 @@
-/* CSS GRID 
+/* CSS GRID Jacketspage
 -------------*/
 body {
     min-height: 100vh;
@@ -20,31 +20,17 @@ aside {
     'aside-section-two'
     ;
 }
-main {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: 
-    'home-section-one'
-    'home-section-two'
-    'home-section-three' 
-    ;
-}
-
 
 header{grid-area: header;}
 aside{grid-area: aside;}
 .aside-section:nth-child(1){grid-area: aside-section-one;}
 .aside-section:nth-child(2){grid-area: aside-section-two;}
 main{grid-area: main;}
-.home-section:nth-child(1){grid-area: home-section-one;}
-.home-section:nth-child(2){grid-area: home-section-two;}
-.home-section:nth-child(3){grid-area: home-section-three;}
 footer{grid-area: footer;}
-
 /* Banner styling
 -------------*/
-.about-banner {
-    background-image: url(../images/about-us-banner-mobile.jpg);
+.contact-banner {
+    background-image: url(../images/contact-us-banner-mobile.jpg);
 }
 .banner-name {
     margin: 0 0 0 10px;
@@ -53,30 +39,36 @@ footer{grid-area: footer;}
     font-size: 1.8em;
     font-weight: 400;
 }
-/* Picture styling
+/* content styling
 -------------*/
-.about-imgs {
-    width: 300px;
-    margin: 5px;
+.contact-info-text {
+    font-size: 1.1em;
+    display: inline-flex;
 }
-
-.img-text-container {
+.icon-info-container {
     display: flex;
-    flex-direction: column;
+    height: 100px;
+    margin: 20px 0;
 }
-
+main a {
+    color: #48736F;
+    text-decoration: none;
+}
+main a:hover {
+    color: #0a3641;
+}
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
-    .about-banner {
-        background-image: url(../images/about-us-banner.jpg);
+    .contact-banner {
+        background-image: url(../images/contact-us-banner.jpg);
+    }
+    .icon-info-container {
+        margin: 10px 0;
     }
     .banner-name {
         padding-top: 120px;
-    }
-    .img-text-container {
-        flex-direction: row;
     }
 }
 /*  Desktop screen sizes-------------*/
