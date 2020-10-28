@@ -177,7 +177,7 @@ form.searchbox button:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.jacket-name {
+.jacket-name, .price-tag {
     margin: 0;
     display: inline-block;
 }
@@ -185,11 +185,7 @@ aside a {
     color: #0a3641;
     text-decoration: none;
 }
-.price-tag {
-    margin: 0;
-    display: inline-block;
-}
-.name-reviews-container {
+.name-reviews-container, .name-price-container, .colours-reviews-container {
     width: 100%;
     margin: 0;
     display: flex;
@@ -197,36 +193,13 @@ aside a {
     justify-content: space-between;
     align-items: baseline;
 }
-.colours-button-container {
+.colours-button-container, .button-container {
     width: 100%;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: baseline;
-}
-.name-price-container {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.colours-reviews-container {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.button-container {
-    width: 100%;
-    margin-top: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 .jacket-name {
     margin: 0;
@@ -396,8 +369,6 @@ footer {
     'footer-section-three'
     ;
 }
-
-
 
 /* Media Queries
 -------------*/

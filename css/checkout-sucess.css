@@ -24,7 +24,6 @@ main {
     'home-section-six home-section-seven'
     ;
 }
-
 header{grid-area: header;}
 aside{grid-area: aside;}
 main{grid-area: main;}
@@ -36,6 +35,7 @@ main{grid-area: main;}
 .home-section:nth-child(6){grid-area: home-section-six;}
 .home-section:nth-child(7){grid-area: home-section-seven;}
 footer{grid-area: footer;}
+
 /* Banner styling
 -------------*/
 .checkout-sucess-banner {
@@ -75,8 +75,11 @@ footer{grid-area: footer;}
 .highlighted-details {
     font-size: 1.2em;
 }
+/* Media Queries
+-------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
     .checkout-sucess-banner {
         background-image: url(../images/checkout-banner.jpg);
     }
+}

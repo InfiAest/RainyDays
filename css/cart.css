@@ -12,11 +12,9 @@ body {
     'footer'
     ;
 }
-
 article {
     display: none;
 }
-
 header{grid-area: header;}
 aside{grid-area: aside;}
 main{grid-area: main;}
@@ -27,15 +25,13 @@ article {grid-area: article;}
 .article-section:nth-child(4){grid-area: article-section-four;}
 footer{grid-area: footer;}
 
-
 /* Banner styling
 -------------*/
 .cart-banner {
     background-image: url(../images/all-jackets-banner.jpg);
 }
 .banner-name {
-    margin: 0 0 0 10px;
-    padding-top: 80px;
+    margin: 80px 0 0 10px;
     color: #f2ece9;
     font-size: 1.8em;
     font-weight: 400;
@@ -72,7 +68,10 @@ footer{grid-area: footer;}
     align-items: center;
     margin-top: 50px;
 }
-
+article a {
+    color: #0a3641;
+    text-decoration: none;
+}
 
 /* Media Queries
 -------------*/
@@ -103,13 +102,13 @@ footer{grid-area: footer;}
     article {
         border: 2px solid #48736F;
         padding: 5px 15px 5px 10px;
-        max-width: 350px;
+        max-width: 400px;
     }
 }
 /*  Desktop screen sizes-------------*/
 @media(min-width: 801px){
     .banner-name {
-        padding-top: 120px;
+        margin-top: 120px;
     }
 }
 /* Extra Large Screens-------------*/

@@ -66,9 +66,6 @@ footer{grid-area: footer;}
 
 /* Jacket page links styling
 -------------*/
-.jacket-pages-button {
-    font-size: 1.5em;
-}
 .jackets-button {
     background-image: url(../images/all-jackets-background.jpg);
     min-width: 300px;
@@ -83,6 +80,7 @@ footer{grid-area: footer;}
     max-width: 600px;
 }
 .product-page-links {
+    font-size: 1.5em;
     text-decoration: none;
     color: #48736F;
     padding: 0;
@@ -94,8 +92,6 @@ footer{grid-area: footer;}
     margin: 0;
     padding-top: 45px;
 }
-
-
 
 
 /* Media Queries
@@ -145,12 +141,7 @@ footer{grid-area: footer;}
         ;
     }
 }
-/* Extra Large Screens-------------*/
-@media only screen and (min-width: 1281px) {
-    body {
-      margin: 0 17%;
-    }
-}
+
 /* 
 -------------*/
 /* 

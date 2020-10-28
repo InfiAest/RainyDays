@@ -12,11 +12,11 @@ body {
     'footer'
     ;
 }
-
 header{grid-area: header;}
 aside{grid-area: aside;}
 main{grid-area: main;}
 footer{grid-area: footer;}
+
 /* Banner styling
 -------------*/
 .page-banner {
@@ -26,13 +26,11 @@ footer{grid-area: footer;}
     background-image: url(../images/all-jackets-banner.jpg);
 }
 .banner-name {
-    margin: 0 0 0 10px;
-    padding-top: 80px;
+    margin: 80px 0 0 10px;
     color: #f2ece9;
     font-size: 1.8em;
     font-weight: 400;
 }
-
 
 /* Form styling
 -------------*/
@@ -61,3 +59,15 @@ footer{grid-area: footer;}
     display: flex;
     justify-content: space-between;
 }
+
+/* Media Queries
+-------------*/
+/* Tablet and smaller screen sizes-------------*/
+
+/*  Desktop screen sizes-------------*/
+@media(min-width: 801px){
+    .banner-name {
+        margin-top: 120px;
+    }
+}
+/* Extra Large Screens-------------*/

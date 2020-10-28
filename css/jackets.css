@@ -72,7 +72,7 @@ aside{grid-area: aside;}
 .aside-section:nth-child(18){grid-area: aside-section-eighteen;}
 footer{grid-area: footer;}
 
-/* Jacket page links styling
+/* Buttons and links styling
 -------------*/
 .womens-button, .mens-button {
   height: 100px;
@@ -89,7 +89,7 @@ footer{grid-area: footer;}
     text-transform: uppercase;
 }
 .link-name {
-    margin: 0;
+    margin: 0 10px;
     padding-top: 32px;
 }
 .banner-name {
@@ -99,13 +99,8 @@ footer{grid-area: footer;}
     font-weight: 400;
     font-size: 2em;
 }
-
-/* Best Seller link styling
+/* Media Queries
 -------------*/
-.aside-section {
-    width: 100%;
-    height: 100%;
-}
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
     main {
@@ -154,11 +149,7 @@ footer{grid-area: footer;}
     }
 }
 /* Extra Large Screens-------------*/
-@media only screen and (min-width: 1281px) {
-    body {
-      margin: 0 17%;
-    }
-}
+
 /* 
 -------------*/
 /* 

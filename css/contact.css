@@ -12,27 +12,27 @@ body {
     'footer'
     ;
 }
-
 header{grid-area: header;}
 aside{grid-area: aside;}
 main{grid-area: main;}
 footer{grid-area: footer;}
+
 /* Banner styling
 -------------*/
 .contact-banner {
     background-image: url(../images/contact-us-banner-mobile.jpg);
 }
 .banner-name {
-    margin: 0 0 0 10px;
-    padding-top: 80px;
+    margin: 80px 0 0 10px;
     color: #f2ece9;
     font-size: 1.8em;
     font-weight: 400;
 }
+
 /* content styling
 -------------*/
 .contact-info-text {
-    font-size: 1.1em;
+    font-size: 1.2em;
     display: inline-flex;
     align-items: baseline;
 }
@@ -48,6 +48,7 @@ main a {
 main a:hover {
     color: #0a3641;
 }
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
@@ -58,10 +59,12 @@ main a:hover {
     .icon-info-container {
         margin: 0;
     }
-    .banner-name {
-        padding-top: 120px;
-    }
 }
 /*  Desktop screen sizes-------------*/
+@media(min-width: 801px){
+    .banner-name {
+        margin-top: 120px;
+    }
+}
 
 /* Extra Large Screens-------------*/

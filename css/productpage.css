@@ -27,7 +27,6 @@ main {
     'home-section-six'
     ;
 }
-
 header{grid-area: header;}
 aside{grid-area: aside;}
 main{grid-area: main;}
@@ -43,6 +42,7 @@ footer{grid-area: footer;}
 .footer-section:nth-child(1){grid-area: footer-section-one;}
 .footer-section:nth-child(2){grid-area: footer-section-two;}
 .footer-section:nth-child(3){grid-area: footer-section-three;}
+
 /* Product img, name & info styling (grid view on jacket pages)
 -------------*/
 .best-seller-img {
@@ -57,27 +57,27 @@ footer{grid-area: footer;}
     justify-content: space-between;
     align-items: center;
 }
-.review-header {
+.review-header, .contact-info-text {
     display: inline-block;
 }
 .reviews-menu {
     padding-left: 40px;
 }
-.reviews-container {
+.reviews-container, #reviews-menu {
     display: none;
 }
-
 .fa-angle-down:active {
     transform: rotate(180deg);
-}
-#reviews-menu {
-    display: none;
 }
 #reviews-menu:checked ~ .reviews-container{
     display: block;
 }
-.contact-info-text {
-    display: inline-block;
+main a {
+    color: #0a3641;
+    text-decoration: none;
+}
+main a:hover {
+    color: #48736F;
 }
 
 /* Form Styling
@@ -88,6 +88,7 @@ footer{grid-area: footer;}
 .button {
     float: right;
 }
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/

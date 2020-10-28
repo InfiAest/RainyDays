@@ -35,7 +35,6 @@ aside {
     'aside-section-nine'
     ;
 }
-
 header{grid-area: header;}
 main{grid-area: main;}
 .home-section:nth-child(1){grid-area: home-section-one;}
@@ -61,14 +60,7 @@ footer{grid-area: footer;}
 }
 .banner-name {
     margin: 0;
-    padding-top: 40px;
-}
-
-/* Best Seller link styling
--------------*/
-.aside-section {
-    width: 100%;
-    height: 100%;
+    padding: 70px 0 0 10px;
 }
 
 /* Jacket page links styling
@@ -87,6 +79,9 @@ footer{grid-area: footer;}
     font-size: 1.5em;
     padding: 0 10px 0 0;
 }
+
+/* Media Queries
+-------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media(min-width: 641px){
     main {
@@ -118,10 +113,6 @@ footer{grid-area: footer;}
 }
 /*  Desktop screen sizes-------------*/
 @media(min-width: 801px){
-    .searchbox {
-        float: right;
-        display: block;
-    }
     aside {
         display: grid;
         grid-gap: 20px;
@@ -133,11 +124,7 @@ footer{grid-area: footer;}
     }
 }
 /* Extra Large Screens-------------*/
-@media only screen and (min-width: 1281px) {
-    body {
-      margin: 0 17%;
-    }
-}
+
 /* 
 -------------*/
 /* 
