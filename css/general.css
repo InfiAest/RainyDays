@@ -368,7 +368,7 @@ footer a {
 }
 .fa-angle-down, .fa-facebook-square, .fa-instagram, .fa-comment-alt, .fa-phone {
     font-size: 1.5em;
-    margin: 10px;
+    margin-right: 10px;
 }
 footer a:hover {
     color: #0a3641;

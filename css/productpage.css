@@ -20,6 +20,8 @@ main {
     'home-section-one'
     'home-section-two'
     'home-section-three'
+    'home-section-seven'
+    'home-section-eight'
     'home-section-four' 
     'home-section-five'
     'home-section-six'
@@ -35,6 +37,8 @@ main{grid-area: main;}
 .home-section:nth-child(4){grid-area: home-section-four;}
 .home-section:nth-child(5){grid-area: home-section-five;}
 .home-section:nth-child(6){grid-area: home-section-six;}
+.home-section:nth-child(7){grid-area: home-section-seven;}
+.home-section:nth-child(8){grid-area: home-section-eight;}
 footer{grid-area: footer;}
 .footer-section:nth-child(1){grid-area: footer-section-one;}
 .footer-section:nth-child(2){grid-area: footer-section-two;}
@@ -45,6 +49,9 @@ footer{grid-area: footer;}
     max-width: 685px;
     min-width: 300px;
 }
+.jacket-name {
+    font-size: 1.8em;
+}
 .title-price-container {
     display: flex;
     justify-content: space-between;
@@ -53,11 +60,14 @@ footer{grid-area: footer;}
 .review-header {
     display: inline-block;
 }
+.reviews-menu {
+    padding-left: 40px;
+}
 .reviews-container {
     display: none;
 }
 
-.arrow-label:checked {
+.fa-angle-down:active {
     transform: rotate(180deg);
 }
 #reviews-menu {
@@ -66,7 +76,9 @@ footer{grid-area: footer;}
 #reviews-menu:checked ~ .reviews-container{
     display: block;
 }
-
+.contact-info-text {
+    display: inline-block;
+}
 
 /* Form Styling
 -------------*/
@@ -88,6 +100,7 @@ footer{grid-area: footer;}
         'home-section-two home-section-three'
         'home-section-four home-section-five'
         'home-section-six home-section-six'
+        'home-section-seven home-section-eight'
         ;
     }
 }
@@ -101,7 +114,8 @@ footer{grid-area: footer;}
         'home-section-one home-section-one home-section-one'
         'home-section-two home-section-two home-section-three'
         'home-section-four home-section-five home-section-six'
-        'home-section-four home-section-five home-section-six'
+        'home-section-seven home-section-eight home-section-six'
+        'zero zero home-section-six'
         ;
     }
 }
