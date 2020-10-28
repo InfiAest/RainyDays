@@ -366,7 +366,7 @@ footer a {
 .fa-instagram {
     font-weight: bold;
 }
-.fa-facebook-square, .fa-instagram, .fa-comment-alt, .fa-phone {
+.fa-angle-down, .fa-facebook-square, .fa-instagram, .fa-comment-alt, .fa-phone {
     font-size: 1.5em;
     margin: 10px;
 }

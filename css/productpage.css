@@ -45,11 +45,28 @@ footer{grid-area: footer;}
     max-width: 685px;
     min-width: 300px;
 }
-.title-price-container, .reviews-heading-container {
+.title-price-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.review-header {
+    display: inline-block;
+}
+.reviews-container {
+    display: none;
+}
+
+.arrow-label:checked {
+    transform: rotate(180deg);
+}
+#reviews-menu {
+    display: none;
+}
+#reviews-menu:checked ~ .reviews-container{
+    display: block;
+}
+
 
 /* Form Styling
 -------------*/
@@ -89,11 +106,6 @@ footer{grid-area: footer;}
     }
 }
 /* Extra Large Screens-------------*/
-@media only screen and (min-width: 1281px) {
-    body {
-      margin: 0 17%;
-    }
-}
 /* 
 -------------*/
 /* 
