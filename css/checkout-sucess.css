@@ -12,15 +12,34 @@ body {
     'footer'
     ;
 }
+main {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+    'home-section-one home-section-one'
+    'home-section-two home-section-two'
+    'home-section-three home-section-three'
+    'home-section-four home-section-five'
+    'home-section-six home-section-seven'
+    ;
+}
 
 header{grid-area: header;}
 aside{grid-area: aside;}
 main{grid-area: main;}
+.home-section:nth-child(1){grid-area: home-section-one;}
+.home-section:nth-child(2){grid-area: home-section-two;}
+.home-section:nth-child(3){grid-area: home-section-three;}
+.home-section:nth-child(4){grid-area: home-section-four;}
+.home-section:nth-child(5){grid-area: home-section-five;}
+.home-section:nth-child(6){grid-area: home-section-six;}
+.home-section:nth-child(7){grid-area: home-section-seven;}
 footer{grid-area: footer;}
 /* Banner styling
 -------------*/
 .checkout-sucess-banner {
-    background-image: url(../images/caleb-fisher-U_zW6IRLzyU-unsplash\ \(2\).jpg);
+    background-image: url(../images/checkout-banner-mobile.jpg);
 }
 .cart-container {
     display: flex;
@@ -53,3 +72,11 @@ footer{grid-area: footer;}
     align-items: center;
     margin-top: 50px;
 }
+.highlighted-details {
+    font-size: 1.2em;
+}
+/* Tablet and smaller screen sizes-------------*/
+@media(min-width: 641px){
+    .checkout-sucess-banner {
+        background-image: url(../images/checkout-banner.jpg);
+    }
