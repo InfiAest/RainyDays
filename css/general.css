@@ -17,6 +17,7 @@ body {
     color: #0a3641;
     background-color: #F2ECE9;
 }
+
 /* Nav bar styling
 -------------*/
 header {
@@ -102,6 +103,7 @@ form.searchbox button:hover {
 /* Banner img styling
 -------------*/
 .page-banner {
+    font-size: 1.5em;
     display: flex;
     background-position: center;
     height: 200px;
@@ -112,7 +114,7 @@ form.searchbox button:hover {
 /* Button styling (cta and jacket page links)
 -------------*/
 .button {
-    background-color: #48736F;
+    background-color: #0a3641;
     border: 2px solid #F2ECE9;
     border-radius: 18px;
     color: #F2ECE9;
@@ -125,9 +127,9 @@ form.searchbox button:hover {
 }
 .continue-shopping-button {
     background-color: #F2ECE9;
-    border: 2px solid #48736f;
+    border: 2px solid #0a3641;
     border-radius: 18px;
-    color: #48736f;
+    color: #0a3641;
     font-size: 1.2em;
     padding: 5px 30px;
     text-align: center;
@@ -141,7 +143,7 @@ form.searchbox button:hover {
     color: #0a3641;    
 }
 .continue-shopping-button:hover {
-    background-color: #48736f;
+    background-color: #0a3641;
     border: 2px solid #F2ECE9;
     color: #F2ECE9; 
 }
@@ -150,6 +152,7 @@ form.searchbox button:hover {
     border: 2px solid #48736F;
     background-position: center;
     height: 140px;
+    font-size: 1.1em;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: right;
@@ -234,7 +237,7 @@ aside a {
 .fa-star {
     margin: 0;
     padding: 0;
-    color: #657351;
+    color: #50503A;
 }
 
 /* Product colour swatches
@@ -257,9 +260,6 @@ aside a {
 .wind-rider-swatch-3, .autumns-end-swatch-3, .cliff-climber-swatch-3, .mountain-wanderer-swatch-3 {
     color: #99A1B0;
 }
-.autumn-comfort-swatch-1 {
-    color: #414338;
-}
 .autumn-comfort-swatch-2 {
     color: #5C89CB;
 }
@@ -275,7 +275,7 @@ aside a {
 .dune-discoverer-swatch-3, .forest-walker-swatch-1 {
     color: #85716A;
 }
-.cold-wilderness-swatch-2, .woodland-walker-swatch-2 {
+.autumn-comfort-swatch-1, .cold-wilderness-swatch-2, .woodland-walker-swatch-2 {
     color: #646462;
 }
 .cold-wilderness-swatch-3 {
@@ -327,13 +327,13 @@ aside a {
 /* Footer styling
 -------------*/
 footer {
-    border-top: 2px solid #657351;
-    color: #657351;
+    border-top: 2px solid #50503A;
+    color: #50503A;
     margin-top: 80px;
     padding-bottom: 40px;
 }
 footer a {
-    color: #657351;
+    color: #50503A;
     text-decoration: none;
 }
 .fa-instagram {

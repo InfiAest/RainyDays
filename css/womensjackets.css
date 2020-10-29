@@ -55,7 +55,6 @@ footer{grid-area: footer;}
 -------------*/
 .womens-button {
   background-image: url(../images/womens-jackets-banner-mobile.jpg);
-  font-size: 1.5em;
   color: #f2ece9;
 }
 .banner-name {
