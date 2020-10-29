@@ -112,10 +112,11 @@ form.searchbox button:hover {
     background-repeat: no-repeat;
 }
 .banner-name {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 10px;
+    padding-top: 70px;
     color: #f2ece9;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 /* Button styling (cta and jacket page links)
@@ -391,6 +392,10 @@ footer {
         'footer-section-three footer-section-three'
         ;
     }
+    .banner-name {
+        font-size: 1.8em;
+        margin-left: 20px;
+    }
     .icon-text-container {
         display: block;
     }
@@ -433,6 +438,9 @@ footer {
     }
     .page-banner {
         height: 300px;
+    }
+    .banner-name {
+        padding-top: 120px;
     }
     
 }

@@ -55,10 +55,6 @@ main a:hover {
     }
 }
 /*  Desktop screen sizes-------------*/
-@media(min-width: 801px){
-    .banner-name {
-        margin-top: 120px;
-    }
-}
+
 
 /* Extra Large Screens-------------*/

@@ -103,9 +103,6 @@ footer{grid-area: footer;}
         background-image: url(../images/mens-jackets-banner.jpg);
         height: 240px;
     }
-    .banner-name {
-        padding-top: 90px;
-    }
 }
 /*  Desktop screen sizes-------------*/
 @media(min-width: 801px){
