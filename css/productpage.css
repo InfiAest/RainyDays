@@ -89,6 +89,67 @@ main a:hover {
     float: right;
 }
 
+/* Add to Cart overlay Styling
+-------------*/
+.add-to-cart-overlay, #add-to-cart {
+    display: none;
+}
+#add-to-cart:checked ~ .add-to-cart-overlay {
+    display: block;
+    justify-content: center;
+}
+.add-to-cart-overlay {
+    position: absolute;
+    border: 5px solid #48736F;
+    background-color: #f2ece9;
+    width: 400px;
+    height: 800px;
+    top: 10%;
+}
+.cart-img {
+    display: block;
+    border: 2px solid #48736F;
+    width: 380px;
+    margin-top: 28px;
+}
+.cart-container {
+    padding: 10px;
+}
+.cart-container-title {
+    border-bottom: 2px solid #48736F;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.jacket-name-cart {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: right;
+    height: 20px;
+}
+.colour-name-cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-size: 1.1em;
+    height: 20px;
+    margin-bottom: 50px;
+}
+.stk-price-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.button-container-cart {
+    border-top: 2px solid #48736F;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
@@ -103,6 +164,9 @@ main a:hover {
         'home-section-six home-section-six'
         'home-section-seven home-section-eight'
         ;
+    }
+    .add-to-cart-overlay {
+        right: 18%;
     }
 }
 /*  Desktop screen sizes-------------*/
@@ -119,8 +183,29 @@ main a:hover {
         'zero zero home-section-six'
         ;
     }
+    .add-to-cart-overlay {
+        width: 650px;
+        height: 550px;
+        right: 15%;
+        top: 15%;
+    }
+    .cart-img {
+        float: left;
+    }
+    .jacket-name-cart {
+        height: 40px;
+    }
+    .colour-name-cart {
+        margin-bottom: 150px;
+    }
 }
 /* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+    .add-to-cart-overlay {
+        width: 750px;
+        right: 30%;
+    }
+}
 /* 
 -------------*/
 /* 
