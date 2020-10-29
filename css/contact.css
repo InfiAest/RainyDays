@@ -22,12 +22,6 @@ footer{grid-area: footer;}
 .contact-banner {
     background-image: url(../images/contact-us-banner-mobile.jpg);
 }
-.banner-name {
-    margin: 80px 0 0 10px;
-    color: #f2ece9;
-    font-size: 1.8em;
-    font-weight: 400;
-}
 
 /* content styling
 -------------*/

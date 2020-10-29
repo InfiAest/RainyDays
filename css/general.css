@@ -110,6 +110,12 @@ form.searchbox button:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.banner-name {
+    margin: 0 0 0 20px;
+    color: #f2ece9;
+    font-weight: 400;
+    font-size: 2em;
+}
 
 /* Button styling (cta and jacket page links)
 -------------*/
@@ -151,11 +157,12 @@ form.searchbox button:hover {
 .jacket-pages-button {
     border: 2px solid #48736F;
     background-position: center;
-    height: 140px;
-    font-size: 1.1em;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: right;
+    height: 140px;
+    font-size: 1.1em;
+    padding-right: 10px;
 }
 .womens-button {
     background-image: url(../images/womens-jackets-background.jpg);
@@ -176,7 +183,7 @@ form.searchbox button:hover {
     width: 100%;
     height: auto;
     margin: 0;
-    background-position: left;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }

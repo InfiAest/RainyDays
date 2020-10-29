@@ -92,13 +92,7 @@ footer{grid-area: footer;}
     margin: 0 10px;
     padding-top: 32px;
 }
-.banner-name {
-    margin: 0 0 0 10px;
-    padding-top: 70px;
-    color: #f2ece9;
-    font-weight: 400;
-    font-size: 2em;
-}
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/

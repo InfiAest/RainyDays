@@ -57,10 +57,6 @@ footer{grid-area: footer;}
   background-image: url(../images/womens-jackets-banner-mobile.jpg);
   color: #f2ece9;
 }
-.banner-name {
-    margin: 0;
-    padding: 70px 0 0 10px;
-}
 
 /* Jacket page links styling
 -------------*/
