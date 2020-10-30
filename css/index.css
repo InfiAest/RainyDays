@@ -71,11 +71,7 @@ footer{grid-area: footer;}
     min-width: 300px;
     max-width: 1300px;  
 }
-.womens-button {
-    min-width: 300px;
-    max-width: 600px;
-}
-.mens-button {
+.womens-button, .mens-button {
     min-width: 300px;
     max-width: 600px;
 }

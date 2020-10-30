@@ -19,9 +19,6 @@ footer{grid-area: footer;}
 
 /* Banner styling
 -------------*/
-.page-banner {
-    display: flex;
-}
 .checkout-banner {
     background-image: url(../images/all-jackets-banner.jpg);
 }

@@ -124,21 +124,17 @@ form.searchbox button:hover {
 .button {
     background-color: #0a3641;
     border: 2px solid #F2ECE9;
-    border-radius: 18px;
     color: #F2ECE9;
     font-size: 1.5em;
-    padding: 5px 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 0;
-    cursor: pointer;
 }
 .continue-shopping-button {
     background-color: #F2ECE9;
     border: 2px solid #0a3641;
-    border-radius: 18px;
     color: #0a3641;
     font-size: 1.2em;
+}
+.button, .continue-shopping-button {
+    border-radius: 18px;
     padding: 5px 30px;
     text-align: center;
     text-decoration: none;
@@ -155,7 +151,6 @@ form.searchbox button:hover {
     border: 2px solid #F2ECE9;
     color: #F2ECE9; 
 }
-
 .jacket-pages-button {
     border: 2px solid #48736F;
     background-position: center;
@@ -412,10 +407,7 @@ footer {
     nav {
         display: inline-block;
     }
-    .hamburger-label {
-        display: none;
-    }
-    .search-label {
+    .hamburger-label, .search-label {
         display: none;
     }
     nav {
@@ -442,7 +434,6 @@ footer {
     .banner-name {
         padding-top: 90px;
     }
-    
 }
 /* Extra Large Screens-------------*/
 @media only screen and (min-width: 1281px) {
