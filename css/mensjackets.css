@@ -18,6 +18,7 @@ main {
     grid-template-areas: 
     'home-section-one'
     'home-section-two'
+    'home-section-three'
     ;
 }
 aside {
@@ -39,6 +40,7 @@ header{grid-area: header;}
 main{grid-area: main;}
 .home-section:nth-child(1){grid-area: home-section-one;}
 .home-section:nth-child(2){grid-area: home-section-two;}
+.home-section:nth-child(3){grid-area: home-section-three;}
 aside{grid-area: aside;}
 .aside-section:nth-child(1){grid-area: aside-section-one;}
 .aside-section:nth-child(2){grid-area: aside-section-two;}
@@ -86,6 +88,7 @@ footer{grid-area: footer;}
         grid-template-areas: 
         'home-section-one'
         'home-section-two'
+        'home-section-three'
         ;
     }
     aside {
