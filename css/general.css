@@ -244,6 +244,27 @@ aside a {
     color: #50503A;
 }
 
+
+/* Filter products bar
+-------------*/
+.filter-products-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    border: 2px solid #48736F;
+}
+.filter-title {
+    font-weight: 500;
+}
+.fit-filter-container, .size-filter-container, .colour-filter-container, .stars-filter-container, #fit-filter-menu, #size-filter-menu, #colour-filter-menu, #stars-filter-menu {
+    display: none;
+}
+#fit-filter-menu:checked ~ .fit-filter-container, #size-filter-menu:checked ~ .size-filter-container, #colour-filter-menu:checked ~ .colour-filter-container, #stars-filter-menu:checked ~ .stars-filter-container {
+    display: flex;
+}
+
 /* Product colour swatches
 -------------*/
 .winter-shell-swatch-1, .ocean-explorer-swatch-1, .sheer-drop-swatch-1, .autumn-walks-swatch-2 {
