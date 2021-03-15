@@ -80,31 +80,36 @@
                         <i class="fas fa-circle winter-shell-swatch-3"></i>
                         <label for="Moon">Moon Grey</label>
                     </fieldset>
-                    <label class="CTA-button" for="add-to-cart"><p class="button">Add to Cart</p></label>
-                    <input type="checkbox" id="add-to-cart">
-                    <div class="add-to-cart-overlay">
-                        <section class="cart-container">
-                            <div class="cart-container-title">
+                    <div class="button-container">
+                        <button type="button" class="button" data-open="modal1">
+                          Add to cart
+                        </button>
+                    </div>
+                        <div class="modal" id="modal1">
+                            <div class="modal-dialog">
+                              <header class="modal-header">
                                 <h2>Item successfully added to your cart!</h2>
-                            </div>
+                              </header>
+                              <section class="modal-content">
                                 <img class="cart-img" src="images/1 -winter-shell-jacket.jpg" alt="Man wearing the mahogany red coloured Winter Shell Jacket">
-                            <div class="jacket-name-cart">
-                                <h3>Winter Shell Jacket</h3>
-                            </div>
-                            <div class="colour-name-cart">
-                                <i class="fas fa-circle winter-shell-swatch-1"></i>
-                                <p>Mahogany Red, Size X-Large</p>
-                            </div>
-                            <div class="stk-price-cart">
-                                <p>1 Item</p>
-                                <p>Price</p>
-                            </div>
-                            <div class="button-container-cart">
-                                    <a href="productpage1.html" class="continue-shopping-button" alt="link back to the product page">Continue Shopping</a>
+                                <div class="jacket-name-cart">
+                                    <h3>Winter Shell Jacket</h3> 
+                                </div>
+                                <div class="colour-name-cart">
+                                    <i class="fas fa-circle winter-shell-swatch-1"></i>
+                                    <p>Mahogany Red, Size X-Large</p>
+                                </div>
+                                <div class="stk-price-cart">
+                                    <p>1 Item</p>
+                                    <p>Price</p>
+                                </div>
+                              </section>
+                                <div class="button-container-cart">
+                                    <a href="jackets.html" class="continue-shopping-button" alt="link back to the product page">Continue Shopping</a>
                                     <a href="mycart.html" class="button" alt="link to my cart page">View my cart</a>
                                 </div>
-                        </section>
-                    </div>
+                            </div>
+                        </div>
                 </form>
             </section> 
             <section class="home-section"> 
@@ -142,6 +147,8 @@
                     <p class="contact-info-text">Got a question? Send us a message</p>
             </section>
         </main>
+        <script src="js/addToCart.js"></script>
+    </body>
         <footer>
             <div class="footer-section">
                 <p class="footer-title">Contact us:</p>
@@ -169,5 +176,4 @@
                 &copy; Rainy Days. All rights reserved.
             </div>
         </footer>
-    </body>
 </html>
