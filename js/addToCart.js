@@ -1,21 +1,13 @@
-const openEls = document.querySelectorAll("[data-open]");
-const isVisible = "is-visible";
+const addToCartModal = document.getElementById("add-to-cart-modal");
 
-for (const el of openEls) {
-  el.addEventListener("click", function() {
-    const modalId = this.dataset.open;
-    document.getElementById(modalId).classList.add(isVisible);
-  });
+const addButton = document.getElementById("add-to-cart-button");
+
+addButton.onclick = function() {
+    addToCartModal.style.display = "flex";
 }
 
-for (const el of closeEls) {
-  el.addEventListener("click", function() {
-    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-  });
+window.onclick = function(event) {
+    if (event.target === addToCartModal) {
+        addToCartModal.style.display = "none";
+    }
 }
-
-document.addEventListener("click", e => {
-  if (e.target == document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
-  }
-});

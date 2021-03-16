@@ -115,98 +115,84 @@ main a:hover {
 .form-input {
   display: inline-block;
 }
+
 .button {
   float: right;
 }
 
-/* Add to Cart overlay Styling
+/* Add to Cart modal Styling
 -------------*/
-.modal {
+.cart-modal {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
   transition: all 0.35s ease-in;
 }
 
-.modal.is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.modal-dialog {
-  position: relative;
-  max-width: 800px;
-  max-height: 80vh;
-  background: #f2ece9;
-  overflow: auto;
-  cursor: default;
-}
-
-.modal-dialog > * {
-  padding: 1rem;
-}
-
 .modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #48736f;
+  display: block;
+  background: #0a3641;
   font-size: 1.5rem;
   color: #f2ece9;
 }
 
-.cart-img {
-  display: block;
-  border: 2px solid #48736f;
-  width: 100%;
-  margin-top: 10px;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.cart-container-title {
-  border-bottom: 2px solid #48736f;
-  font-size: 1.5em;
-  text-transform: uppercase;
+.modal-content {
+  position: relative;
+  max-width: 650px;
+  max-height: 80vh;
+  border-radius: 5px;
+  background: #f2ece9;
+  overflow: auto;
+  margin: 0;
 }
-.jacket-name-cart {
+
+.modal-content > * {
+  padding: 1rem;
+}
+
+.button-container-cart {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  height: 20px;
+  justify-content: space-between;
+  border-top: 3px solid #0a3641;
 }
-.colour-name-cart {
+
+.cart-img {
+  border: 3px solid #0a3641;
+  width: 40%;
+}
+
+.cart-info {
+  text-align: right;
+  width: 60%;
+}
+
+.cart-info h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.cart-info p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.colour-size-container {
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  height: 20px;
-}
-.stk-price-cart {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-size: 1.3em;
-  margin-bottom: 10px;
-  padding-left: 5px;
-}
-.button-container-cart {
-  border-top: 2px solid #48736f;
-  font-size: 1.2em;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 /* Media Queries
@@ -222,6 +208,14 @@ main a:hover {
       "home-section-four home-section-five"
       "home-section-six home-section-six"
       "home-section-seven home-section-eight";
+  }
+
+  .modal-header {
+    font-size: 2rem;
+  }
+
+  .cart-info p {
+    padding-top: 1rem;
   }
 }
 /*  Desktop screen sizes-------------*/
