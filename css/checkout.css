@@ -25,11 +25,16 @@ footer{grid-area: footer;}
 
 /* Form styling
 -------------*/
+legend {
+    font-size: 1.4rem;
+}
+
 .total-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .checkout-form {
     display: block;
@@ -37,10 +42,10 @@ footer{grid-area: footer;}
 .new-address-form {
     display: none;
 }
-#newaddress:checked ~ .new-address-form{
+/* #newaddress:checked ~ .new-address-form{
     display: flex;
     flex-direction: column;
-}
+} */
 .form-flex {
     display: flex;
     flex-direction: column;
@@ -50,6 +55,23 @@ footer{grid-area: footer;}
     display: flex;
     justify-content: space-between;
 }
+
+.form-validation {
+    display: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Error code styling
+-------------*/
+.form-error {
+    display: none;
+    color: red;
+    font-size: 1rem;
+    margin-top: 2px;
+  }
+
+
 
 /* Media Queries
 -------------*/

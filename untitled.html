@@ -1,0 +1,63 @@
+<form class="checkout-form" id="checkout-form">
+    <div class="form-flex">
+        <div>
+            <label>
+                Name on card 
+                <input type="text" name="Name" id="cardName" class="form__input">
+            </label>
+            <div class="form-error" id="cardNameError">Please enter your full name</div>
+        </div>
+        <div>
+            <label>
+                Card number 
+                <input type="text" name="Cardnumber" id="cardNumber" class="form__input">
+            </label>
+            <div class="form-error" id="cardNumberError">Please enter valid card number</div>
+        </div>
+        <div>
+            <label>
+                Month of expiration 
+                <select name="Expdatemonth" id="expDateMonth" class="form__input">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </label>
+            <div class="form-error" id="expDateMonthError">Please select month of expiry</div>
+        </div>
+        <div>
+            <label>
+                Year of expiration 
+                <select name="Expdateyear" id="expDateYear" class="form__input">
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </label>
+            <div class="form-error" id="expDateYearError">Please select year of expiry</div>
+        </div>
+        <div>
+            <label>
+                CVC number 
+                <input type="text" name="CVCnumber" id="cvcNumber" class="form__input">
+            </label>
+            <div class="form-error" id="cvcNumberError">Please enter 3 digit cvc number</div>
+        </div>
+    </div>
+
+    <div class="form-flex">
+        
+    </div>
+
+    <button>Submit</button>
+</form>

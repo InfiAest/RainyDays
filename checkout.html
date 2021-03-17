@@ -48,108 +48,190 @@
                     <h1 class="banner-name">Checkout</h1>
                 </div>
             </section>
-                <form class="checkout-form" action="form-success.php" method="POST">
+                <form class="checkout-form" id="checkout-form" action="form-success.php" method="POST">
                     <fieldset class="total-form">
                         <legend>Your Details</legend>
                         <div class="form-flex">
-                            <label for="Firstname">Forename</label>
-                            <input type="text" name="Name" class="form__input" required>
-                            <label for="Surname">Surame</label>
-                            <input type="text" name="Name" class="form__input" required>
+                            <div>
+                                <label>
+                                    Forename 
+                                    <input type="text" name="firstName" id="firstName" class="form__input" >
+                                </label>
+                                <div class="form-error" id="firstNameError">Please enter your first name</div>
+                            </div>
+                            <div>
+                                <label>
+                                    Surname 
+                                    <input type="text" name="lastName" id="lastName" class="form__input">
+                                </label>
+                                <div class="form-error" id="lastNameError">Please enter your last name</div>
+                            </div>
                         </div>
                         <div class="form-flex">
-                            <label for="Phone">Your Phone Number</label>
-                            <input type="tel" name="Phone" class="form__input" required>
-                            <label for="Email">Your Email Address</label>
-                            <input type="email" name="Email" class="form__input" required>
+                            <div>
+                                <label>
+                                    Your phone number
+                                    <input type="tel" name="Phone" id="telephone" class="form__input">
+                                </label>
+                                <div class="form-error" id="telephoneError">Please enter a valid telephone number</div>
+                            </div>
+                            <div>
+                                <label class="form-labels">
+                                    Your email address
+                                    <input type="email" name="Email" id="email" class="form__input">
+                                </label>
+                                <div class="form-error" id="emailError">Please enter a valid email address</div>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset class="total-form">
                         <legend>Delivery Address</legend>
                         <div class="form-flex">
-                            <label for="Streetname">Street Name</label>
-                            <input type="text" name="Streetname" class="form__input" required>
-                            <label for="Housenumber">House Number</label>
-                            <input type="text" name="Housenumber" class="form__input" required>
-                            <label for="Cityname">City</label>
-                            <input type="text" name="Cityname" class="form__input" required>
+                            <div>
+                                <label>
+                                    Street name 
+                                    <input type="text" name="Streetname" id="streetName" class="form__input">
+                                </label>
+                                <div class="form-error" id="streetNameError">Please enter a valid street name, minimum 6 characters</div>
+                            </div>
+                            <div>
+                                <label>
+                                    Street Number 
+                                    <input type="text" name="streetNumber" id="streetNumber" class="form__input">
+                                </label>
+                                <div class="form-error" id="streetNumberError">Please enter a valid street number</div>
+                            </div>
+                            <div>
+                                <label>
+                                    City 
+                                    <input type="text" name="Cityname" id="cityName" class="form__input">
+                                </label>
+                                <div class="form-error" id="cityNameError">Please enter city name</div>
+                            </div>
                         </div>
                         <div class="form-flex">
-                            <label for="Apartmentnumber">Apartment Number</label>
-                            <input type="text" name="Apartmentnumber" class="form__input">
-                            <label for="Coutry">Country</label>
-                            <select name="Country" class="form__input">
-                                <option value="Norway">Norway</option>
-                                <option value="United Kingdom">United Kingdom</option>
-                                <option value="United States of America">United Stated of America</option>
-                            </select>
-                            <label for="Zipcode">Zipcode</label>
-                            <input type="text" name="Zipcode" class="form__input" required>
+                            <div>
+                                <label>
+                                    Apartment number 
+                                    <input type="text" name="Apartmentnumber" class="form__input" placeholder="if applied">
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    Country 
+                                    <select name="Country" class="form__input">
+                                        <option value="Norway">Norway</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States of America">United Stated of America</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    Zipcode 
+                                    <input type="text" name="Zipcode" id="zipcode" class="form__input">
+                                </label>
+                                <div class="form-error" id="zipcodeError">Minimum 4 characters</div>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset class="total-form">
                         <legend>Card Details</legend>
                         <div class="form-flex">
-                            <label for="Name">Name on card</label>
-                            <input type="text" name="Name" class="form__input" required>
-                            <label for="Cardnumber">Card Number</label>
-                            <input type="text" name="Cardnumber" class="form__input" required>
-                            <label for="Expdatemonth">Month of expiration</label>
-                            <select name="Expdatemonth" class="form__input">
-                                <option value="January">January</option>
-                                <option value="February">February</option>
-                                <option value="March">March</option>
-                                <option value="April">April</option>
-                                <option value="May">May</option>
-                                <option value="June">June</option>
-                                <option value="July">July</option>
-                                <option value="August">August</option>
-                                <option value="September">September</option>
-                                <option value="October">October</option>
-                                <option value="November">November</option>
-                                <option value="December">December</option>
-                            </select>
-                            <label for="Expdateyear">Year of expiration</label>
-                            <select name="Expdateyear" class="form__input">
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                            </select>
-                            <label for="CVCnumber">CVC Number</label>
-                            <input type="text" name="CVCnumber" class="form__input" required>
+                            <div>
+                                <label>
+                                    Name on card 
+                                    <input type="text" name="Name" id="cardName" class="form__input">
+                                </label>
+                                <div class="form-error" id="cardNameError">Please enter your full name</div>
+                            </div>
+                            <div>
+                                <label>
+                                    Card number 
+                                    <input type="text" name="Cardnumber" id="cardNumber" class="form__input">
+                                </label>
+                                <div class="form-error" id="cardNumberError">Please enter valid card number</div>
+                            </div>
+                            <div>
+                                <label>
+                                    Date of expiration 
+                                    <input type="month" name="Expdate" id="expDate" class="form__input">
+                                </label>
+                                <div class="form-error" id="expDateError">Please select date of expiry</div>
+                            </div>
+                            <div>
+                                <label>
+                                    CVC number 
+                                    <input type="text" name="CVCnumber" id="cvcNumber" class="form__input">
+                                </label>
+                                <div class="form-error" id="cvcNumberError">Please enter 3 digit cvc number</div>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>Billing Address</legend>
-                            <input type="radio" id="newaddress" name="address" value="newaddress">
+                            <input type="radio" id="newaddress" name="address" onclick="newAddress();">
                             <label for="newaddress">Fill out new address</label>
-                            <input type="radio" id="sameaddress" name="address" value="sameaddress">
+                            <input type="radio" id="sameaddress" name="address" onclick="sameAddress();">
                             <label for="sameaddress">Use same as delivery address</label>
-                        <div class="new-address-form">
-                            <label for="Streetname">Street Name</label>
-                            <input type="text" name="Streetname" class="form__input" required>
-                                <label for="Housenumber">House Number</label>
-                                <input type="text" name="Housenumber" class="form__input" required>
-                                <label for="Apartmentnumber">Apartment Number</label>
-                                <input type="text" name="Apartmentnumber" class="form__input">
-                                <label for="Cityname">City</label>
-                                <input type="text" name="Cityname" class="form__input" required>
-                                <label for="Coutry">Country</label>
-                                <select name="Country" class="form__input">
-                                    <option value="Norway">Norway</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="United States of America">United States of America</option>
-                                </select>
-                                <label for="Zipcode">Zipcode</label>
-                                <input type="text" name="Zipcode" class="form__input" required>
-                            </div>
+                            <div class="new-address-form">
+                                <div>
+                                    <label>
+                                        Street name 
+                                        <input type="text" name="Streetname" id="newStreetName" class="form__input">
+                                    </label>
+                                    <div class="form-error" id="newStreetNameError">Please enter a valid street name, minimum 6 characters</div>
+                                </div>
+                                <div>
+                                    <label>
+                                        Street Number 
+                                        <input type="text" name="streetNumber" id="newStreetNumber" class="form__input">
+                                    </label>
+                                    <div class="form-error" id="newStreetNumberError">Please enter a valid street number</div>
+                                </div>
+                                <div>
+                                    <label>
+                                        City 
+                                        <input type="text" name="Cityname" id="newCityName" class="form__input">
+                                    </label>
+                                    <div class="form-error" id="newCityNameError">Please enter city name</div>
+                                </div>
+                                <div>
+                                    <label>
+                                        Apartment number 
+                                        <input type="text" name="Apartmentnumber" class="form__input" placeholder="if applied">
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        Country 
+                                        <select name="Country" class="form__input">
+                                            <option value="Norway">Norway</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="United States of America">United Stated of America</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        Zipcode 
+                                        <input type="text" name="Zipcode" id="newZipcode" class="form__input">
+                                    </label>
+                                    <div class="form-error" id="newZipcodeError">Minimum 4 characters</div>
+                                </div>
+                        </div>
                     </fieldset>
+                        <div class="form-validation">
+                            <p>You've filled out everything correctly! Click Complete Order!</p>
+                        </div>
                         <div class="button-container">
                             <a href="mycart.html" class="continue-shopping-button">Go back</a>
-                            <a href="checkout-sucess.html" class="button">Complete Order</a>
+                            <button id="complete-order-button" class="button">Confirm details</button>
                         </div>
                 </form>
+            <script src="js/checkoutValidation.js"></script>
         </main>
+        
     </body>
     <footer>
         <div class="footer-section">
