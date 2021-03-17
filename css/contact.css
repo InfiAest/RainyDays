@@ -25,6 +25,12 @@ footer{grid-area: footer;}
 
 /* content styling
 -------------*/
+.contact-page-container {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .contact-info-text {
     font-size: 1.2em;
     display: inline-flex;
@@ -33,7 +39,6 @@ footer{grid-area: footer;}
 .icon-info-container {
     display: flex;
     height: 100px;
-    margin: 20px 0;
 }
 main a {
     color: #48736F;
@@ -41,6 +46,54 @@ main a {
 }
 main a:hover {
     color: #0a3641;
+}
+
+/* contact form styling
+------------------*/
+legend {
+    font-size: 1.4rem;
+}
+
+.contact-form {
+    width: 100%;
+}
+  
+input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px 0;
+    font-size: 16px;
+    border: 2px solid #2b3240;
+}
+  
+button:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+  
+label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+  
+.form-error {
+    display: none;
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+  
+textarea {
+    height: 150px;
+    width: 100%;
+    border: 2px solid #2b3240;
+    padding: 10px 0;
+}
+  
+.validation-message {
+    display: none;
+    color: green;
 }
 
 /* Media Queries
