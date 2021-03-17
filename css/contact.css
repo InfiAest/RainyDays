@@ -35,10 +35,12 @@ footer{grid-area: footer;}
     font-size: 1.2em;
     display: inline-flex;
     align-items: baseline;
+    margin-top: 0;
 }
 .icon-info-container {
     display: flex;
-    height: 100px;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
 }
 main a {
     color: #48736F;
@@ -48,14 +50,21 @@ main a:hover {
     color: #0a3641;
 }
 
-/* contact form styling
-------------------*/
-legend {
-    font-size: 1.4rem;
+main .fa-facebook-square, main .fa-instagram, main .fa-comment-alt, main .fa-phone {
+    font-size: 3rem;
+    float: left;
 }
 
-.contact-form {
-    width: 100%;
+/* contact form styling
+------------------*/
+
+.contact-page-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+legend {
+    font-size: 1.4rem;
 }
   
 input {
@@ -63,12 +72,7 @@ input {
     margin-top: 2px;
     padding: 10px 0;
     font-size: 16px;
-    border: 2px solid #2b3240;
-}
-  
-button:hover {
-    text-transform: uppercase;
-    font-weight: bold;
+    border: 2px solid #48736F;
 }
   
 label {
@@ -76,19 +80,19 @@ label {
     margin-top: 1rem;
     font-size: 1.2rem;
 }
+
+textarea {
+    height: 100px;
+    width: 100%;
+    border: 2px solid #48736F;
+    padding: 10px 0;
+}
   
 .form-error {
     display: none;
     color: red;
     font-size: 1.2rem;
     margin-top: 2px;
-}
-  
-textarea {
-    height: 150px;
-    width: 100%;
-    border: 2px solid #2b3240;
-    padding: 10px 0;
 }
   
 .validation-message {
@@ -105,6 +109,9 @@ textarea {
     }
     .icon-info-container {
         margin: 0;
+    }
+    .contact-info-container {
+        width: 40%;
     }
 }
 /*  Desktop screen sizes-------------*/
