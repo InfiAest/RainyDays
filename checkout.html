@@ -203,13 +203,14 @@
                         <legend>Billing Address</legend>
                         <div class="radio-flex-container">
                             <div class="radio-container">
-                            <input type="radio" id="newaddress" name="address" onclick="newAddress();">
+                            <input type="radio" id="newaddress" name="address" value="newAddress" onclick="newAddress();">
                             <label class="radio-label" for="newaddress">Fill out new address</label>
                             </div>
                             <div class="radio-container">
-                                <input type="radio" id="sameaddress" name="address" onclick="sameAddress();">
+                                <input type="radio" id="sameaddress" name="address" value="sameAddress" onclick="sameAddress();">
                                 <label class="radio-label" for="sameaddress">Use same as delivery address</label>
                             </div>
+                            <div class="form-error" id="deliveryAddressError">Please select delivery address option</div>
                         </div>
                             <div class="new-address-form">
                                 <div>

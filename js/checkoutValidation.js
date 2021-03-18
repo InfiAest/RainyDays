@@ -29,6 +29,9 @@ const expYearError = document.querySelector("#expYearError");
 
 const cvcNumber = document.querySelector("#cvcNumber");
 const cvcNumberError = document.querySelector("#cvcNumberError");
+const deliveryAddress = document.querySelector("#deliveryAddress");
+const deliveryAddressError = document.querySelector("#deliveryAddressError");
+
 const newStreetName = document.querySelector("#newStreetName");
 const newStreetNameError = document.querySelector("#newStreetNameError");
 const newStreetNumber = document.querySelector("#newStreetNumber");
@@ -145,6 +148,13 @@ function validateForm(event) {
         cvcNumberError.style.display = "block";
         formIsValid = false;
     }
+
+    // if (((deliveryAddress).value === 'newAddress') || ((deliveryAddress).value === 'sameAddress')) {
+    //     deliveryAddressError.style.display = "none";
+    // } else {
+    //     deliveryAddressError.style.display = "block";
+    //     formIsValid = false
+    // }
 
 if (validateNewAddress === true) { 
     if (checkLength(newStreetName.value, 6) === true) {
