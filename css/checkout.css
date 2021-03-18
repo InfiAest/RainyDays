@@ -32,24 +32,36 @@ legend {
   font-size: 1.4rem;
 }
 
+fieldset {
+  margin-top: 1rem;
+}
+
 input[type="text"],
 input[type="tel"],
 input[type="email"],
 input[type="month"],
 select {
   width: 99%;
+  margin-top: 2px;
+  padding: 10px 0;
+  font-size: 16px;
+  border: 2px solid #48736f;
 }
 input[type="radio"] {
-  margin: 1rem 0 1rem 1rem;
+  float: left;
+}
+
+input {
+  margin-top: 2px;
+  padding: 10px 0;
+  font-size: 16px;
+  border: 2px solid #48736f;
 }
 
 label {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
-}
-.radio-label {
-  display: inline-block;
 }
 
 .new-address-form {
@@ -59,6 +71,16 @@ label {
 .form-flex-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.radio-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-container {
+  display: flex;
+  width: 50%;
 }
 
 .button-container {

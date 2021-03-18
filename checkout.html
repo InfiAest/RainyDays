@@ -170,10 +170,16 @@
                     </fieldset>
                     <fieldset>
                         <legend>Billing Address</legend>
+                        <div class="radio-flex-container">
+                            <div class="radio-container">
                             <input type="radio" id="newaddress" name="address" onclick="newAddress();">
                             <label for="newaddress">Fill out new address</label>
-                            <input type="radio" id="sameaddress" name="address" onclick="sameAddress();">
-                            <label for="sameaddress">Use same as delivery address</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="sameaddress" name="address" onclick="sameAddress();">
+                                <label for="sameaddress">Use same as delivery address</label>
+                            </div>
+                        </div>
                             <div class="new-address-form">
                                 <div>
                                     <label>
