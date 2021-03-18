@@ -25,13 +25,13 @@ footer {
 }
 
 /* Banner styling
--------------*/
+  -------------*/
 .contact-banner {
   background-image: url(../images/contact-us-banner-mobile.jpg);
 }
 
 /* content styling
--------------*/
+  -------------*/
 .contact-page-container {
   display: inline-flex;
   justify-content: space-between;
@@ -66,7 +66,7 @@ main .fa-phone {
 }
 
 /* contact form styling
-------------------*/
+  ------------------*/
 
 .contact-page-container {
   display: flex;
@@ -113,7 +113,7 @@ textarea {
 }
 
 /* Media Queries
--------------*/
+  -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
   .contact-banner {

@@ -1,0 +1,98 @@
+/* CSS GRID checkoutpage
+-------------*/
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* Banner styling
+  -------------*/
+.checkout-banner {
+  background-image: url(../images/all-jackets-banner.jpg);
+}
+
+/* Form styling
+  -------------*/
+legend {
+  font-size: 1.4rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="month"],
+select {
+  width: 99%;
+}
+input[type="radio"] {
+  margin: 1rem 0 1rem 1rem;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.radio-label {
+  display: inline-block;
+}
+
+.form-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-section {
+  margin-top: 1rem;
+  display: block;
+  flex-grow: 1;
+  height: fit-content;
+  min-width: 400px;
+}
+
+.new-address-form {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-validation {
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Error code styling
+  -------------*/
+.form-error {
+  display: none;
+  color: red;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries
+  -------------*/
+/* Tablet and smaller screen sizes-------------*/
+
+/*  Desktop screen sizes-------------*/
+
+/* Extra Large Screens-------------*/
