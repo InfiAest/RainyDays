@@ -14,14 +14,19 @@ const streetNumber = document.querySelector("#streetNumber");
 const streetNumberError = document.querySelector("#streetNumberError");
 const cityName = document.querySelector("#cityName");
 const cityNameError = document.querySelector("#cityNameError");
+const country = document.querySelector("#select-country");
+const countryError = document.querySelector("#selectCountryError");
 const zipcode = document.querySelector("#zipcode");
 const zipcodeError = document.querySelector("#zipcodeError");
 const cardName = document.querySelector("#cardName");
 const cardNameError = document.querySelector("#cardNameError");
 const cardNumber = document.querySelector("#cardNumber");
 const cardNumberError = document.querySelector("#cardNumberError");
-const expDateMonth = document.querySelector("#expDate");
-const expDateMonthError = document.querySelector("#expDateError");
+const expMonth = document.querySelector("#month");
+const expMonthError = document.querySelector("#expMonthError");
+const expYear = document.querySelector("#year");
+const expYearError = document.querySelector("#expYearError");
+
 const cvcNumber = document.querySelector("#cvcNumber");
 const cvcNumberError = document.querySelector("#cvcNumberError");
 const newStreetName = document.querySelector("#newStreetName");
@@ -30,6 +35,8 @@ const newStreetNumber = document.querySelector("#newStreetNumber");
 const newStreetNumberError = document.querySelector("#newStreetNumberError");
 const newCityName = document.querySelector("#newCityName");
 const newCityNameError = document.querySelector("#newCityNameError");
+const newCountry = document.querySelector("#new-country");
+const newCountryError = document.querySelector("#newCountryError");
 const newZipcode = document.querySelector("#newZipcode");
 const newZipcodeError = document.querySelector("#newZipcodeError");
 const formValidation = document.querySelector(".form-validation");
@@ -90,6 +97,13 @@ function validateForm(event) {
         formIsValid = false;
     }
 
+    if (((country).value === 'Norway') || ((country).value === 'United Kingdom') || ((country).value === 'USA')) {
+        countryError.style.display = "none";
+    } else {
+        countryError.style.display = "block";
+        formIsValid = false
+    }
+
     if (checkLength(zipcode.value, 3) === true) {
         zipcodeError.style.display = "none";
     } else {
@@ -109,6 +123,20 @@ function validateForm(event) {
     } else {
         cardNumberError.style.display = "block";
         formIsValid = false;
+    }
+
+    if (((expMonth).value === 'January') || ((expMonth).value === 'February') || ((expMonth).value === 'March') || ((expMonth).value === 'April') || ((expMonth).value === 'May') || ((expMonth).value === 'June') || ((expMonth).value === 'July') || ((expMonth).value === 'August') || ((expMonth).value === 'September') || ((expMonth).value === 'October') || ((expMonth).value === 'November') || ((expMonth).value === 'December')) {
+        expMonthError.style.display = "none";
+    } else {
+        expMonthError.style.display = "block";
+        formIsValid = false
+    }
+
+    if (((expYear).value === '2021') || ((expYear).value === '2022') || ((expYear).value === '2023') || ((expYear).value === '2024')) {
+        expYearError.style.display = "none";
+    } else {
+        expYearError.style.display = "block";
+        formIsValid = false
     }
 
     if (checkLength(cvcNumber.value, 2) === true) {
@@ -138,6 +166,13 @@ if (validateNewAddress === true) {
     } else {
         newCityNameError.style.display = "block";
         formIsValid = false;
+    }
+
+    if (((newCountry).value === 'Norway') || ((newCountry).value === 'United Kingdom') || ((newCountry).value === 'USA')) {
+        newCountryError.style.display = "none";
+    } else {
+        newCountryError.style.display = "block";
+        formIsValid = false
     }
 
     if (checkLength(newZipcode.value, 3) === true) {

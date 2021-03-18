@@ -119,11 +119,13 @@
                             <div>
                                 <label>
                                     Country 
-                                    <select name="Country" class="form__input">
+                                    <select name="Country" id="select-country" class="form__input">
+                                        <option value="null">-</option>
                                         <option value="Norway">Norway</option>
                                         <option value="United Kingdom">United Kingdom</option>
-                                        <option value="United States of America">United Stated of America</option>
+                                        <option value="USA">United Stated of America</option>
                                     </select>
+                                    <div class="form-error" id="selectCountryError">Please select country</div>
                                 </label>
                             </div>
                             <div>
@@ -152,19 +154,48 @@
                                 </label>
                                 <div class="form-error" id="cardNumberError">Please enter valid card number</div>
                             </div>
-                            <div>
-                                <label>
-                                    Date of expiration 
-                                    <input type="month" name="Expdate" id="expDate" class="form__input">
-                                </label>
-                                <div class="form-error" id="expDateError">Please select date of expiry</div>
+                            <div class="expiry-container">
+                                <div class="month-container">
+                                    <label>
+                                        Month of expiration
+                                        <select id="month" name="month">
+                                            <option value="null">-</option>
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                        </select> 
+                                    </label>
+                                    <div class="form-error" id="expMonthError">Please select month of expiry</div>
+                                </div>
+                                <div class="year-container">
+                                    <label>
+                                        Year of expiration
+                                        <select id="year" name="year">
+                                            <option value="null">-</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                        </select> 
+                                    </label>
+                                    <div class="form-error" id="expYearError">Please select year of expiry</div>
+                                </div>
                             </div>
                             <div>
                                 <label>
                                     CVC number 
                                     <input type="text" name="CVCnumber" id="cvcNumber" class="form__input">
                                 </label>
-                                <div class="form-error" id="cvcNumberError">Please enter 3 digit cvc number</div>
+                                    <div class="form-error" id="cvcNumberError">Please enter 3 digit cvc number</div>
                             </div>
                         </div>
                     </fieldset>
@@ -173,11 +204,11 @@
                         <div class="radio-flex-container">
                             <div class="radio-container">
                             <input type="radio" id="newaddress" name="address" onclick="newAddress();">
-                            <label for="newaddress">Fill out new address</label>
+                            <label class="radio-label" for="newaddress">Fill out new address</label>
                             </div>
                             <div class="radio-container">
                                 <input type="radio" id="sameaddress" name="address" onclick="sameAddress();">
-                                <label for="sameaddress">Use same as delivery address</label>
+                                <label class="radio-label" for="sameaddress">Use same as delivery address</label>
                             </div>
                         </div>
                             <div class="new-address-form">
@@ -211,12 +242,14 @@
                                 <div>
                                     <label>
                                         Country 
-                                        <select name="Country" class="form__input">
+                                        <select name="Country" id="new-country" class="form__input">
+                                            <option value="null">-</option>
                                             <option value="Norway">Norway</option>
                                             <option value="United Kingdom">United Kingdom</option>
-                                            <option value="United States of America">United Stated of America</option>
+                                            <option value="USA">United Stated of America</option>
                                         </select>
                                     </label>
+                                    <div class="form-error" id="newCountryError">Please select country</div>
                                 </div>
                                 <div>
                                     <label>
