@@ -57,10 +57,7 @@ main a:hover {
   color: #0a3641;
 }
 
-main .fa-facebook-square,
-main .fa-instagram,
-main .fa-comment-alt,
-main .fa-phone {
+.contact-icon {
   font-size: 3rem;
   float: left;
 }
@@ -77,7 +74,7 @@ legend {
   font-size: 1.4rem;
 }
 
-input {
+.input-styling {
   width: 100%;
   margin-top: 2px;
   padding: 10px 0;

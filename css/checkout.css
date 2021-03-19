@@ -51,7 +51,6 @@ input[type="radio"] {
   float: left;
 }
 
-
 label {
   display: block;
   font-size: 1.2rem;
@@ -72,7 +71,8 @@ label {
   flex-wrap: wrap;
 }
 
-.radio-flex-container, .expiry-container {
+.radio-flex-container,
+.expiry-container {
   display: flex;
   justify-content: space-between;
 }
@@ -82,7 +82,8 @@ label {
   width: 50%;
 }
 
-.month-container, .year-container {
+.month-container,
+.year-container {
   display: block;
   width: 100%;
 }

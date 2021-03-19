@@ -32,6 +32,11 @@ const cvcNumberError = document.querySelector("#cvcNumberError");
 const deliveryAddress = document.querySelector("#deliveryAddress");
 const deliveryAddressError = document.querySelector("#deliveryAddressError");
 
+
+
+const billingOption = document.getElementsByName("billingaddress");
+const billingAddressError = document.querySelector("#billingAddressError");
+
 const newStreetName = document.querySelector("#newStreetName");
 const newStreetNameError = document.querySelector("#newStreetNameError");
 const newStreetNumber = document.querySelector("#newStreetNumber");
@@ -149,12 +154,12 @@ function validateForm(event) {
         formIsValid = false;
     }
 
-    // if (((deliveryAddress).value === 'newAddress') || ((deliveryAddress).value === 'sameAddress')) {
-    //     deliveryAddressError.style.display = "none";
-    // } else {
-    //     deliveryAddressError.style.display = "block";
-    //     formIsValid = false
-    // }
+    if ((billingOption[0].checked || billingOption[1].checked)) {
+        billingAddressError.style.display = "none";
+    } else {
+        billingAddressError.style.display = "block";
+        formIsValid = false;
+    }
 
 if (validateNewAddress === true) { 
     if (checkLength(newStreetName.value, 6) === true) {
