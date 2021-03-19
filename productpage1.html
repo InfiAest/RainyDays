@@ -54,35 +54,66 @@
             </section>
             <section class="home-section">  
                 <form id="product-details-form" action="form-success.php" method="POST">
-
-                    <!-- <fieldset>
+                    <fieldset>
                         <legend>Choose your details</legend>
-                        <label for="quantity">Quantity.</label>
-                        <input type="number" id="quantity" name="quantity" min="0" value="1" class="form-input" required>
-                        <p>Size:</p>
-                        <input type="radio" id="x-small" name="size" value="X-small" class="form-input">
-                        <label for="x-small">X-small</label>
-                        <input type="radio" id="small" name="size" value="Small" class="form-input">
-                        <label for="small">Small</label>
-                        <input type="radio" id="medium" name="size" value="Medium" class="form-input">
-                        <label for="medium">Medium</label>
-                        <input type="radio" id="large" name="size" value="Large" class="form-input">
-                        <label for="large">Large</label>
-                        <input type="radio" id="x-large" name="size" value="X-large" class="form-input">
-                        <label for="x-large">X-large</label>
-                        <p>Colour:</p>
-                        <input type="radio" id="red" name="colour" value="Mahogany" class="form-input">
-                        <i class="fas fa-circle winter-shell-swatch-1"></i>
-                        <label for="Mahogany">Mahogany Red</label>
-                        <input type="radio" id="green" name="colour" value="Moss" class="form-input">
-                        <i class="fas fa-circle winter-shell-swatch-2"></i>
-                        <label for="Moss">Moss Green</label>
-                        <input type="radio" id="grey" name="colour" value="Moon" class="form-input">
-                        <i class="fas fa-circle winter-shell-swatch-3"></i>
-                        <label for="Moon">Moon Grey</label>
+                        <label>
+                            Quantity:
+                            <input type="number" id="quantity" name="quantity" min="0" value="1" class="form-input">
+                        </label>
+                            <label>
+                                Size:
+                        <div class="details-container">
+                            <div class="size-container">
+                                <label class="radio-label" for="x-small">X-small
+                                    <input type="radio" id="x-small" name="size" value="X-small" class="form-radio">
+                                </label>
+                            </div>
+                            <div class="size-container">
+                                <label class="radio-label" for="small">Small
+                                    <input type="radio" id="small" name="size" value="Small" class="form-radio">
+                                </label>
+                            </div>
+                            <div class="size-container">
+                                <label class="radio-label" for="medium">Medium
+                                    <input type="radio" id="medium" name="size" value="Medium" class="form-radio">
+                                </label>
+                            </div>
+                            <div class="size-container">
+                                <label class="radio-label" for="large">Large
+                                    <input type="radio" id="large" name="size" value="Large" class="form-radio">
+                                </label>
+                            </div>
+                            <div class="size-container">
+                                <label class="radio-label" for="x-large">X-large
+                                    <input type="radio" id="x-large" name="size" value="X-large" class="form-radio">
+                                </label>
+                            </div>
+                            </label>
+                        </div>
+                            <label>
+                                Colour:
+                        <div class="details-container">
+                            <div class="colour-container">
+                                <label for="Mahogany"><i class="fas fa-circle winter-shell-swatch-1"></i>Mahogany Red
+                                    <input type="radio" id="red" name="colour" value="Mahogany" class="form-radio">
+                                </label>
+                            </div>
+                            <div class="colour-container">
+                                <label for="Moss"><i class="fas fa-circle winter-shell-swatch-2"></i>Moss Green
+                                    <input type="radio" id="green" name="colour" value="Moss" class="form-radio">
+                                </label>
+                            </div>
+                            <div class="colour-container">
+                                <label for="Moon"><i class="fas fa-circle winter-shell-swatch-3"></i>Moon Grey
+                                    <input type="radio" id="grey" name="colour" value="Moon" class="form-radio">
+                                </label>
+                            </div>
+                            </label>
+                        </div>
                     </fieldset>
-                    <a href="#" role="button" id="add-to-cart-button" class="button">Add to cart</a> -->
-
+                    <div class="button-container">
+                        <a href="#" role="button" id="add-to-cart-button" class="button">Add to cart</a>
+                    </div>
                     <div id="add-to-cart-modal" class="cart-modal">
          
                         <div class="modal-content">
@@ -146,6 +177,7 @@
                     <a href="#"><i class="far fa-comment-alt"></i><p class="contact-info-text">Got a question? Send us a message</p></a>
             </section>
         </main>
+        <script src="js/chooseDetails.js"></script>
         <script src="js/addToCart.js"></script>
     </body>
         <footer>

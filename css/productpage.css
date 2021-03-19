@@ -112,13 +112,48 @@ main a:hover {
 
 /* Form Styling
 -------------*/
-/* .form-input {
-  display: inline-block;
+legend {
+  font-size: 1.4rem;
 }
 
-.button {
-  float: right;
-} */
+fieldset {
+  border: 2px solid #48736f;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.form-input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px 0;
+  font-size: 16px;
+  border: 2px solid #48736f;
+}
+
+.radio-label {
+  border: 2px solid #48736f;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.form-radio {
+  visibility: hidden;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.size-container,
+.colour-container {
+  display: inline-flex;
+  justify-content: space-between;
+}
 
 /* Add to Cart modal Styling
 -------------*/
