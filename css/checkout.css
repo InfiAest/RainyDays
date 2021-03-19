@@ -32,9 +32,8 @@ legend {
   font-size: 1.4rem;
 }
 
-fieldset {
-  margin-top: 1rem;
-  border: 2px solid #48736f;
+.total-form {
+  margin: 4rem 0;
 }
 
 input[type="text"],

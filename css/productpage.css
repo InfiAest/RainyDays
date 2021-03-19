@@ -141,7 +141,7 @@ label {
 }
 
 .form-radio {
-  visibility: hidden;
+  display: none;
 }
 
 .details-container {
