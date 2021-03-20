@@ -48,22 +48,34 @@
             </div>
         </aside>
         <main>
-            <section class="home-section cart-container">
-                <div class="product-cart-container">
-                    <h2>Winter Shell Jacket</h2>
+            <div class="flex-container">
+                <img class="cart-img" src="images/1 -winter-shell-jacket.jpg" alt="Man wearing the mahogany red coloured Winter Shell Jacket">
+                <div class="cart-info">
+                    <div class="name-size-container">
+                        <h3>Winter Shell Jacket</h3> 
+                        <div class="colour-size-container">
+                            <i class="fas fa-circle winter-shell-swatch-1"></i>
+                            <p>Mahogany Red, Size: X-Large</p>
+                        </div>
+                    </div>
+                    <div class="item-price-container">
+                        <div class="item-container">
+                            <input type="button" value="-" id="minus" class="amount-button" onclick="minus()">
+                            <input type="text" size="25" value="1" id="count" class="amount-text">
+                            <input type="button" value="+" id="plus" class="amount-button" onclick="plus()">
+                        </div>
+                        <div>
+                            <p>Price</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="colour-size-container">
-                    <i class="fas fa-circle winter-shell-swatch-1"></i>
-                    <p>Mahogany Red, Size X-Large</p>
+            </div>
+            <div id="item-amount-modal" class="item-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Amount of items in your cart changed changed!</h2>
                 </div>
-                <div class="quantity-container">
-                    <label for="quantity">Quantity.</label>
-                        <input type="number" id="quantity" name="quantity" min="0" value="1" class="form-input" required>
-                </div>
-                <div class="item-price-container">
-                    <p>Price</p>
-                </div>
-            </section>
+            </div>
             <section class="home-section total-price-container">
                 <p>Total price of the products in your cart</p>
                 <p>Price</p>
@@ -76,6 +88,7 @@
                     <a href="checkout.html" class="button" alt="checkout, link to the checkout page">Checkout</a>
                 </div>
             </section>
+            <script src="js/itemNumberCart.js"></script>
         </main>
         <article>
             <section class="article-section">
