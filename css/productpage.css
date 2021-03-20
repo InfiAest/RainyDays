@@ -114,6 +114,7 @@ main a:hover {
 -------------*/
 legend {
   font-size: 1.4rem;
+  font-weight: 500;
 }
 
 label {
@@ -122,16 +123,27 @@ label {
   font-size: 1.2rem;
 }
 
-.form-input {
-  width: 100%;
+.item-container {
+  display: block;
+}
+.amount-text {
+  width: 30px;
+  text-align: center;
   margin-top: 2px;
-  padding: 10px 0;
-  font-size: 16px;
+  padding: 5px 10px;
+  font-size: 1rem;
   font-weight: 600;
   border: 2px solid #48736f;
-  text-align: center;
 }
-
+input[type="button"] {
+  width: 50px;
+  text-align: center;
+  margin-top: 2px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #48736f;
+}
 input[type="radio"] {
   opacity: 0;
   position: fixed;

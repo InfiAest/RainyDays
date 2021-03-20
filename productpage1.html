@@ -57,7 +57,11 @@
                     <legend>Choose your details</legend>
                     <label>
                         Quantity:
-                        <input type="number" id="quantity" name="quantity" min="0" value="1" class="form-input">
+                        <div class="item-container">
+                            <input type="button" value="-" id="minus" class="amount-button" onclick="subtract()">
+                            <input type="text" size="25" value="1" id="count" class="amount-text">
+                            <input type="button" value="+" id="plus" class="amount-button" onclick="add()">
+                        </div>
                     </label>
                     <label>
                         Size:
@@ -150,6 +154,7 @@
                     <a href="#"><i class="far fa-comment-alt"></i><p class="contact-info-text">Got a question? Send us a message</p></a>
             </section>
         </main>
+        <script src="js/quantityItems.js"></script>
         <script src="js/addToCart.js"></script>
     </body>
         <footer>
