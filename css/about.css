@@ -7,7 +7,6 @@ body {
   padding: 10px;
   grid-template-areas:
     "header"
-    "aside"
     "main"
     "footer";
 }
@@ -17,14 +16,12 @@ main {
   grid-template-areas:
     "home-section-one"
     "home-section-two"
-    "home-section-three";
+    "home-section-three"
+    "home-section-four";
 }
 
 header {
   grid-area: header;
-}
-aside {
-  grid-area: aside;
 }
 main {
   grid-area: main;
@@ -37,6 +34,9 @@ main {
 }
 .home-section:nth-child(3) {
   grid-area: home-section-three;
+}
+.home-section:nth-child(4) {
+  grid-area: home-section-four;
 }
 footer {
   grid-area: footer;

@@ -42,8 +42,6 @@
                 </form>
             </section>
         </header>
-        <aside>
-        </aside>
         <main>
             <section class="home-section title-price-container">
                 <h1 class="jacket-name">Winter Shell</h1>
@@ -130,15 +128,20 @@
                 <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
             </section>
             <section class="home-section">
-                    <H2 class="review-header">Reviews</H2>
-                        <label class="arrow-label" for="reviews-menu"><i class="fas fa-angle-down review-header"></i></label>
-                        <input type="checkbox" id="reviews-menu">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <p class="reviews-tag">18</p>
+                <div class="reviews-dropdown">
+                    <div class="review-label">
+                        <h2 class="review-header">Reviews</h2>
+                        <button id="arrow-button" onclick="toggleReviews()"><i class="fas fa-angle-down review-header"></i></button>
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p class="reviews-tag">18</p>
+                    </div>
+                </div>
                 <div class="reviews-container">
                     <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
                     <p>Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit </p>
@@ -154,6 +157,7 @@
                     <a href="#"><i class="far fa-comment-alt"></i><p class="contact-info-text">Got a question? Send us a message</p></a>
             </section>
         </main>
+        <script src="js/reviewDropdown.js"></script>
         <script src="js/quantityItems.js"></script>
         <script src="js/addToCart.js"></script>
     </body>
