@@ -24,13 +24,18 @@ header {
   background: #f2ece9;
   min-height: 100px;
 }
-.logo {
+/* .logo {
   max-width: 200px;
+} */
+.logo-container {
+  margin: 0 auto;
+  width: 200px;
 }
 nav,
 #hamburger-menu,
 #search-menu {
   display: none;
+  margin-top: 50px;
 }
 nav ul {
   padding: 0;
@@ -545,12 +550,13 @@ footer {
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
-  .logo {
+  .logo-container {
     float: left;
     margin-left: 0;
   }
   nav {
     display: inline-block;
+    margin-top: 0;
   }
   .hamburger-label,
   .search-label {
