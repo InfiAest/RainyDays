@@ -141,19 +141,19 @@ label {
   display: block;
 }
 .amount-text {
-  width: 30px;
+  width: 50px;
   text-align: center;
-  margin-top: 2px;
-  padding: 5px 10px;
+  margin-top: 1rem;
+  padding: 10px 20px;
   font-size: 1rem;
   font-weight: 600;
   border: 2px solid #48736f;
 }
 input[type="button"] {
-  width: 50px;
+  width: 80px;
   text-align: center;
-  margin-top: 2px;
-  padding: 5px 10px;
+  margin-top: 1rem;
+  padding: 10px 20px;
   font-size: 1rem;
   font-weight: 600;
   border: 2px solid #48736f;
@@ -173,7 +173,7 @@ input[type="radio"] {
 }
 .radio-label-size {
   background-color: #f2ece9;
-  padding: 10px 30px;
+  padding: 10px;
   font-size: 1.1rem;
   border: 2px solid #48736f;
 }
@@ -188,7 +188,7 @@ input[type="radio"] {
   align-items: center;
   text-align: center;
   background-color: #f2ece9;
-  padding: 10px 30px;
+  padding: 10px;
   font-size: 1.1rem;
   border: 2px solid #48736f;
 }
@@ -248,14 +248,13 @@ input[type="radio"] {
   position: relative;
   max-width: 650px;
   max-height: 80vh;
-  border-radius: 5px;
   background: #f2ece9;
   overflow: auto;
   margin: 0;
 }
 
 .modal-content > * {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .button-container-cart {
@@ -267,6 +266,7 @@ input[type="radio"] {
 .cart-img {
   border: 3px solid #0a3641;
   width: 40%;
+  height: 50%;
 }
 
 .cart-info {
@@ -307,11 +307,7 @@ input[type="radio"] {
   }
 
   .radio-label-size {
-    padding: 10px 20px;
-  }
-
-  .radio-label-colour {
-    padding: 10px;
+    padding: 10px 30px;
   }
 
   .modal-header {
@@ -320,6 +316,10 @@ input[type="radio"] {
 
   .cart-info p {
     padding-top: 1rem;
+  }
+  .cart-img {
+    width: 40%;
+    height: auto;
   }
 }
 /*  Desktop screen sizes-------------*/
@@ -334,6 +334,10 @@ input[type="radio"] {
       "home-section-four home-section-five home-section-six"
       "home-section-seven home-section-eight home-section-six"
       "zero zero home-section-six";
+  }
+
+  .radio-label-size {
+    padding: 10px 30px;
   }
 
   .radio-label-colour {
