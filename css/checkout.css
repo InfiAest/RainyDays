@@ -37,17 +37,14 @@ legend {
   margin: 4rem 0;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="month"],
-select {
-  width: 99%;
+.input-styling {
+  width: 95%;
   margin-top: 2px;
   padding: 10px;
   font-size: 16px;
   border: 2px solid #48736f;
 }
+
 input[type="radio"] {
   float: left;
 }

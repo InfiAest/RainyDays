@@ -57,14 +57,14 @@
                             <div>
                                 <label>
                                     Forename 
-                                    <input type="text" name="firstName" id="firstName" class="form__input" >
+                                    <input type="text" name="firstName" id="firstName" class="input-styling" >
                                 </label>
                                 <div class="form-error" id="firstNameError">Please enter your first name</div>
                             </div>
                             <div>
                                 <label>
                                     Surname 
-                                    <input type="text" name="lastName" id="lastName" class="form__input">
+                                    <input type="text" name="lastName" id="lastName" class="input-styling">
                                 </label>
                                 <div class="form-error" id="lastNameError">Please enter your last name</div>
                             </div>
@@ -73,14 +73,14 @@
                             <div>
                                 <label>
                                     Your phone number
-                                    <input type="tel" name="Phone" id="telephone" class="form__input">
+                                    <input type="tel" name="Phone" id="telephone" class="input-styling">
                                 </label>
                                 <div class="form-error" id="telephoneError">Please enter a valid telephone number</div>
                             </div>
                             <div>
                                 <label class="form-labels">
                                     Your email address
-                                    <input type="email" name="Email" id="email" class="form__input">
+                                    <input type="email" name="Email" id="email" class="input-styling">
                                 </label>
                                 <div class="form-error" id="emailError">Please enter a valid email address</div>
                             </div>
@@ -92,21 +92,21 @@
                             <div>
                                 <label>
                                     Street name 
-                                    <input type="text" name="Streetname" id="streetName" class="form__input">
+                                    <input type="text" name="Streetname" id="streetName" class="input-styling">
                                 </label>
                                 <div class="form-error" id="streetNameError">Please enter a valid street name, minimum 6 characters</div>
                             </div>
                             <div>
                                 <label>
                                     Street Number 
-                                    <input type="text" name="streetNumber" id="streetNumber" class="form__input">
+                                    <input type="text" name="streetNumber" id="streetNumber" class="input-styling">
                                 </label>
                                 <div class="form-error" id="streetNumberError">Please enter a valid street number</div>
                             </div>
                             <div>
                                 <label>
                                     City 
-                                    <input type="text" name="Cityname" id="cityName" class="form__input">
+                                    <input type="text" name="Cityname" id="cityName" class="input-styling">
                                 </label>
                                 <div class="form-error" id="cityNameError">Please enter city name</div>
                             </div>
@@ -115,13 +115,13 @@
                             <div>
                                 <label>
                                     Apartment number 
-                                    <input type="text" name="Apartmentnumber" class="form__input" placeholder="if applied">
+                                    <input type="text" name="Apartmentnumber" class="input-styling" placeholder="if applied">
                                 </label>
                             </div>
                             <div>
                                 <label>
                                     Country 
-                                    <select name="Country" id="select-country" class="form__input">
+                                    <select name="Country" id="select-country" class="input-styling">
                                         <option value="null">-</option>
                                         <option value="Norway">Norway</option>
                                         <option value="United Kingdom">United Kingdom</option>
@@ -133,7 +133,7 @@
                             <div>
                                 <label>
                                     Zipcode 
-                                    <input type="text" name="Zipcode" id="zipcode" class="form__input">
+                                    <input type="text" name="Zipcode" id="zipcode" class="input-styling">
                                 </label>
                                 <div class="form-error" id="zipcodeError">Minimum 4 characters</div>
                             </div>
@@ -145,14 +145,14 @@
                             <div>
                                 <label>
                                     Name on card 
-                                    <input type="text" name="Name" id="cardName" class="form__input">
+                                    <input type="text" name="Name" id="cardName" class="input-styling">
                                 </label>
                                 <div class="form-error" id="cardNameError">Please enter your full name</div>
                             </div>
                             <div>
                                 <label>
                                     Card number 
-                                    <input type="text" name="Cardnumber" id="cardNumber" class="form__input">
+                                    <input type="text" name="Cardnumber" id="cardNumber" class="input-styling">
                                 </label>
                                 <div class="form-error" id="cardNumberError">Please enter valid card number</div>
                             </div>
@@ -160,7 +160,7 @@
                                 <div class="month-container">
                                     <label>
                                         Month of expiration
-                                        <select id="month" name="month">
+                                        <select id="month" class="input-styling" name="month">
                                             <option value="null">-</option>
                                             <option value="January">January</option>
                                             <option value="February">February</option>
@@ -181,7 +181,7 @@
                                 <div class="year-container">
                                     <label>
                                         Year of expiration
-                                        <select id="year" name="year">
+                                        <select id="year" class="input-styling" name="year">
                                             <option value="null">-</option>
                                             <option value="2021">2021</option>
                                             <option value="2022">2022</option>
@@ -195,7 +195,7 @@
                             <div>
                                 <label>
                                     CVC number 
-                                    <input type="text" name="CVCnumber" id="cvcNumber" class="form__input">
+                                    <input type="text" name="CVCnumber" id="cvcNumber" class="input-styling">
                                 </label>
                                     <div class="form-error" id="cvcNumberError">Please enter 3 digit cvc number</div>
                             </div>
@@ -205,11 +205,11 @@
                         <legend>Billing Address</legend>
                         <div class="radio-flex-container">
                             <div class="radio-container">
-                            <input type="radio" id="newaddress" name="billingaddress" value="newAddress" onclick="newAddress();">
+                            <input type="radio" id="newaddress" class="input-styling" name="billingaddress" value="newAddress" onclick="newAddress();">
                             <label class="radio-label" for="newaddress">Fill out new address</label>
                             </div>
                             <div class="radio-container">
-                                <input type="radio" id="sameaddress" name="billingaddress" value="sameAddress" onclick="sameAddress();">
+                                <input type="radio" id="sameaddress" class="input-styling" name="billingaddress" value="sameAddress" onclick="sameAddress();">
                                 <label class="radio-label" for="sameaddress">Use same as delivery address</label>
                             </div>
                         </div>
@@ -218,34 +218,34 @@
                                 <div>
                                     <label>
                                         Street name 
-                                        <input type="text" name="Streetname" id="newStreetName" class="form__input">
+                                        <input type="text" name="Streetname" id="newStreetName" class="input-styling">
                                     </label>
                                     <div class="form-error" id="newStreetNameError">Please enter a valid street name, minimum 6 characters</div>
                                 </div>
                                 <div>
                                     <label>
                                         Street Number 
-                                        <input type="text" name="streetNumber" id="newStreetNumber" class="form__input">
+                                        <input type="text" name="streetNumber" id="newStreetNumber" class="input-styling">
                                     </label>
                                     <div class="form-error" id="newStreetNumberError">Please enter a valid street number</div>
                                 </div>
                                 <div>
                                     <label>
                                         City 
-                                        <input type="text" name="Cityname" id="newCityName" class="form__input">
+                                        <input type="text" name="Cityname" id="newCityName" class="input-styling">
                                     </label>
                                     <div class="form-error" id="newCityNameError">Please enter city name</div>
                                 </div>
                                 <div>
                                     <label>
                                         Apartment number 
-                                        <input type="text" name="Apartmentnumber" class="form__input" placeholder="if applied">
+                                        <input type="text" name="Apartmentnumber" class="input-styling"" placeholder="if applied">
                                     </label>
                                 </div>
                                 <div>
                                     <label>
                                         Country 
-                                        <select name="Country" id="new-country" class="form__input">
+                                        <select name="Country" id="new-country" class="input-styling">
                                             <option value="null">-</option>
                                             <option value="Norway">Norway</option>
                                             <option value="United Kingdom">United Kingdom</option>
@@ -257,7 +257,7 @@
                                 <div>
                                     <label>
                                         Zipcode 
-                                        <input type="text" name="Zipcode" id="newZipcode" class="form__input">
+                                        <input type="text" name="Zipcode" id="newZipcode" class="input-styling">
                                     </label>
                                     <div class="form-error" id="newZipcodeError">Minimum 4 characters</div>
                                 </div>
@@ -268,7 +268,7 @@
                         </div>
                         <div class="button-container">
                             <a href="mycart.html" class="continue-shopping-button">Go back</a>
-                            <button id="complete-order-button" class="button">Confirm details</button>
+                            <button id="complete-order-button" class="modal-button">Confirm details</button>
                         </div>
                 </form>
             <script src="js/checkoutValidation.js"></script>
