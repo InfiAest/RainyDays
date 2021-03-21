@@ -26,17 +26,12 @@ const expMonth = document.querySelector("#month");
 const expMonthError = document.querySelector("#expMonthError");
 const expYear = document.querySelector("#year");
 const expYearError = document.querySelector("#expYearError");
-
 const cvcNumber = document.querySelector("#cvcNumber");
 const cvcNumberError = document.querySelector("#cvcNumberError");
 const deliveryAddress = document.querySelector("#deliveryAddress");
 const deliveryAddressError = document.querySelector("#deliveryAddressError");
-
-
-
 const billingOption = document.getElementsByName("billingaddress");
 const billingAddressError = document.querySelector("#billingAddressError");
-
 const newStreetName = document.querySelector("#newStreetName");
 const newStreetNameError = document.querySelector("#newStreetNameError");
 const newStreetNumber = document.querySelector("#newStreetNumber");
