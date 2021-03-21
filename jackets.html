@@ -59,78 +59,59 @@
                 </div>
             </section>
             <section class="home-section filter-products-bar">
-                <p class="filter-title">Filter by:</p>
-                <p class="filter-title">Fit</p>
-                <label class="arrow-label" for="fit-filter-menu"><i class="fas fa-angle-down filter-header"></i></label>
-                <input type="checkbox" id="fit-filter-menu">
-                <div class="fit-filter-container">
-                    <form action="#">
-                        <input type="checkbox" id="fit1" name="fit1" value="Men">
-                        <label for="fit1">Men</label>
-                        <input type="checkbox" id="fit2" name="fit2" value="Women">
-                        <label for="fit2">Women</label>
-                        <input type="checkbox" id="fit3" name="fit3" value="Unisex">                            <label for="fit3">Unisex</label>
-                    </form>
+                <div class="filterbar-container">
+                    <div class="filter-by-container">
+                        <p class="filter-title">Filter by:</p>
+                    </div>
+                    <div class="filter-list-container">
+                        <div id="list1" class="fit-check-list" tabindex="100">
+                                <span class="fit-anchor">Fit</span>
+                                <ul class="fit-items">
+                                    <li><input type="checkbox">Men</li>
+                                    <li><input type="checkbox">Women</li>
+                                    <li><input type="checkbox">Unisex</li>
+                                </ul>
+                        </div>
+                        <div id="list2" class="size-check-list" tabindex="100">
+                            <span class="size-anchor">Size</span>
+                            <ul class="size-items">
+                                <li><input type="checkbox">X-Small</li>
+                                <li><input type="checkbox">Small</li>
+                                <li><input type="checkbox">Medium</li>
+                                <li><input type="checkbox">Large</li>
+                                <li><input type="checkbox">X-Large</li>
+                            </ul>
+                        </div>
+                        <div id="list3" class="colour-check-list" tabindex="100">
+                            <span class="colour-anchor">Colour</span>
+                            <ul class="colour-items">
+                                <li><input type="checkbox">Red</li>
+                                <li><input type="checkbox">Blue</li>
+                                <li><input type="checkbox">Green</li>
+                                <li><input type="checkbox">Black</li>
+                                <li><input type="checkbox">Grey</li>
+                                <li><input type="checkbox">Yellow</li>
+                                <li><input type="checkbox">Orange</li>
+                                <li><input type="checkbox">Other</li>
+                            </ul>
+                        </div>
+                        <div id="list4" class="star-check-list" tabindex="100">
+                            <span class="star-anchor">Stars</span>
+                            <ul class="star-items">
+                                <li><input type="checkbox">1-Star</li>
+                                <li><input type="checkbox">2-Star</li>
+                                <li><input type="checkbox">3-Star</li>
+                                <li><input type="checkbox">4-Star</li>
+                                <li><input type="checkbox">5-Star</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-button-container">
+                        <button class="filter-button"><p class="button-text">View Results</p></button>
+                    </div>
                 </div>
-                <p class="filter-title">Size</p>
-                <label class="arrow-label" for="size-filter-menu"><i class="fas fa-angle-down"></i></label>
-                <input type="checkbox" id="size-filter-menu">
-                <div class="size-filter-container">
-                    <form action="#">
-                        <input type="checkbox" id="size1" name="size1" value="X-Small">
-                        <label for="size1">X-Small</label>
-                        <input type="checkbox" id="size2" name="size2" value="Small">
-                        <label for="size2">Small</label>
-                        <input type="checkbox" id="size3" name="size3" value="Medium">
-                        <label for="size3">Medium</label>
-                        <input type="checkbox" id="size4" name="size4" value="Large">
-                        <label for="size4">Large</label>
-                        <input type="checkbox" id="size5" name="size5" value="X-Large">
-                        <label for="size5">X-Large</label>
-                      </form>
-                </div>
-                <p class="filter-title">Colour</p>
-                <label class="arrow-label" for="colour-filter-menu"><i class="fas fa-angle-down"></i></label>
-                <input type="checkbox" id="colour-filter-menu">
-                <div class="colour-filter-container">
-                    <form action="#">
-                        <input type="checkbox" id="colour1" name="colour1" value="Red">
-                        <label for="colour1">Red</label>
-                        <input type="checkbox" id="colour2" name="colour2" value="Blue">
-                        <label for="colour2">Blue</label>
-                        <input type="checkbox" id="colour3" name="colour3" value="Green">
-                        <label for="colour3">Green</label>
-                        <input type="checkbox" id="colour4" name="colour4" value="Black">
-                        <label for="colour4">Black</label>
-                        <input type="checkbox" id="colour5" name="colour5" value="Grey">
-                        <label for="colour5">Grey</label>
-                        <input type="checkbox" id="colour6" name="colour6" value="Yellow">
-                        <label for="colour6">Yellow</label>
-                        <input type="checkbox" id="colour7" name="colour7" value="Orange">
-                        <label for="colour7">Orange</label>
-                        <input type="checkbox" id="colour8" name="colour8" value="Other">
-                        <label for="colour8">Other</label>
-                      </form>
-                </div>
-                <p class="filter-title">Stars</p>
-                <label class="arrow-label" for="stars-filter-menu"><i class="fas fa-angle-down"></i></label>
-                <input type="checkbox" id="stars-filter-menu">
-                <div class="stars-filter-container">
-                    <form action="#">
-                        <input type="checkbox" id="stars1" name="stars1" value="1-Star">
-                        <label for="stars1">1-star</label>
-                        <input type="checkbox" id="stars2" name="stars2" value="2-Star">
-                        <label for="stars2">2-star</label>
-                        <input type="checkbox" id="stars3" name="stars3" value="3-Star">
-                        <label for="stars3">3-star</label>
-                        <input type="checkbox" id="stars4" name="stars4" value="4-Star">
-                        <label for="stars4">4-star</label>
-                        <input type="checkbox" id="stars5" name="stars5" value="5-Star">
-                        <label for="stars5">5-star</label>
-                      </form>
-                </div>
-                <button type="submit"><p>View Results</p></button>
-            </section>     
+            </section>
+            <script src="js/dropdownFilter.js"></script>     
         </main>
         <aside>
             <section class="aside-section">

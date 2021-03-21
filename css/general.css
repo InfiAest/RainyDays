@@ -253,32 +253,111 @@ aside a {
 
 /* Filter products bar
 -------------*/
-.filter-products-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 1.2em;
+.filter-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.button-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 3px;
+}
+
+.filter-button {
+  background-color: #f2ece9;
+  border: 2px solid #48736f;
+  color: #0a3641;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+}
+.filter-button:hover {
+  background-color: #48736f;
+  color: #f2ece9;
+}
+
+.fit-anchor,
+.size-anchor,
+.colour-anchor,
+.star-anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 40px 5px 10px;
   border: 2px solid #48736f;
 }
-.filter-title {
-  font-weight: 500;
+
+.fit-anchor:after,
+.size-anchor:after,
+.colour-anchor:after,
+.star-anchor:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #48736f;
+  border-top: 2px solid #48736f;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
-.fit-filter-container,
-.size-filter-container,
-.colour-filter-container,
-.stars-filter-container,
-#fit-filter-menu,
-#size-filter-menu,
-#colour-filter-menu,
-#stars-filter-menu {
+
+ul.fit-items,
+ul.size-items,
+ul.colour-items,
+ul.star-items {
+  padding: 2px;
   display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
 }
-#fit-filter-menu:checked ~ .fit-filter-container,
-#size-filter-menu:checked ~ .size-filter-container,
-#colour-filter-menu:checked ~ .colour-filter-container,
-#stars-filter-menu:checked ~ .stars-filter-container {
+
+ul.fit-items li,
+ul.size-items li,
+ul.colour-items li,
+ul.star-items li {
+  list-style: none;
+}
+
+.fit-check-list.visible .fit-anchor,
+.size-check-list.visible .size-anchor,
+.colour-check-list.visible .colour-anchor,
+.star-check-list.visible .star-anchor {
+  color: #48736f;
+}
+
+.fit-check-list.visible .fit-items,
+.size-check-list.visible .size-items,
+.colour-check-list.visible .colour-items,
+.star-check-list.visible .star-items {
+  display: block;
+}
+
+.filterbar-container {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+  padding: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #48736f;
+}
+
+.filter-list-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-grow: 2;
+  margin-bottom: 5px;
 }
 
 /* Product colour swatches
