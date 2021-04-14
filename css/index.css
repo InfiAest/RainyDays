@@ -8,7 +8,6 @@ body {
   grid-template-areas:
     "header"
     "main"
-    "aside"
     "footer";
 }
 main {
@@ -19,20 +18,8 @@ main {
     "home-section-one"
     "home-section-two"
     "home-section-three"
-    "home-section-four";
-}
-aside {
-  display: grid;
-  grid-gap: 30px;
-  padding: 10px;
-  grid-template-areas:
-    "aside-section-one"
-    "aside-section-two"
-    "aside-section-three"
-    "aside-section-four"
-    "aside-section-five"
-    "aside-section-six"
-    "aside-section-seven";
+    "home-section-four"
+    "home-section-five";
 }
 
 header {
@@ -53,30 +40,10 @@ main {
 .home-section:nth-child(4) {
   grid-area: home-section-four;
 }
-aside {
-  grid-area: aside;
+.home-section:nth-child(5) {
+  grid-area: home-section-five;
 }
-.aside-section:nth-child(1) {
-  grid-area: aside-section-one;
-}
-.aside-section:nth-child(2) {
-  grid-area: aside-section-two;
-}
-.aside-section:nth-child(3) {
-  grid-area: aside-section-three;
-}
-.aside-section:nth-child(4) {
-  grid-area: aside-section-four;
-}
-.aside-section:nth-child(5) {
-  grid-area: aside-section-five;
-}
-.aside-section:nth-child(6) {
-  grid-area: aside-section-six;
-}
-.aside-section:nth-child(7) {
-  grid-area: aside-section-seven;
-}
+
 footer {
   grid-area: footer;
 }
@@ -130,21 +97,14 @@ footer {
   main {
     display: grid;
     grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "home-section-one home-section-one"
       "home-section-two home-section-two"
-      "home-section-three home-section-four";
+      "home-section-three home-section-four"
+      "home-section-five home-section-five";
   }
-  aside {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "aside-section-one aside-section-one"
-      "aside-section-two aside-section-three"
-      "aside-section-four aside-section-five"
-      "aside-section-six aside-section-seven";
-  }
+
   .slogan-banner {
     background-image: url(../images/Slogan-header-image.jpg);
   }
@@ -157,15 +117,6 @@ footer {
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
-  aside {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "aside-section-one aside-section-one aside-section-one"
-      "aside-section-two aside-section-three aside-section-four"
-      "aside-section-five aside-section-six aside-section-seven";
-  }
 }
 
 /* 

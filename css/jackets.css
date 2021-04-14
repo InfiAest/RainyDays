@@ -1,147 +1,89 @@
 /* CSS GRID Jacketspage
 -------------*/
 body {
-    min-height: 100vh;
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-    grid-template-areas: 
-    'header'
-    'main'
-    'aside'
-    'footer'
-    ;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 main {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: 
-    'home-section-one'
-    'home-section-two'
-    'home-section-three'
-    'home-section-four'
-    ;
-}
-aside {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: 
-    'aside-section-one'
-    'aside-section-two'
-    'aside-section-three'
-    'aside-section-four'
-    'aside-section-five'
-    'aside-section-six'
-    'aside-section-seven'
-    'aside-section-eight'
-    'aside-section-nine'
-    'aside-section-ten'
-    'aside-section-eleven'
-    'aside-section-twelve'
-    'aside-section-thirteen'
-    'aside-section-fourteen'
-    'aside-section-fifteen'
-    'aside-section-sixteen'
-    'aside-section-seventeen'
-    'aside-section-eighteen'
-    ;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "home-section-one"
+    "home-section-two"
+    "home-section-three"
+    "home-section-four";
 }
 
-header{grid-area: header;}
-main{grid-area: main;}
-.home-section:nth-child(1){grid-area: home-section-one;}
-.home-section:nth-child(2){grid-area: home-section-two;}
-.home-section:nth-child(3){grid-area: home-section-three;}
-.home-section:nth-child(4){grid-area: home-section-four;}
-aside{grid-area: aside;}
-.aside-section:nth-child(1){grid-area: aside-section-one;}
-.aside-section:nth-child(2){grid-area: aside-section-two;}
-.aside-section:nth-child(3){grid-area: aside-section-three;}
-.aside-section:nth-child(4){grid-area: aside-section-four;}
-.aside-section:nth-child(5){grid-area: aside-section-five;}
-.aside-section:nth-child(6){grid-area: aside-section-six;}
-.aside-section:nth-child(7){grid-area: aside-section-seven;}
-.aside-section:nth-child(8){grid-area: aside-section-eight;}
-.aside-section:nth-child(9){grid-area: aside-section-nine;}
-.aside-section:nth-child(10){grid-area: aside-section-ten;}
-.aside-section:nth-child(11){grid-area: aside-section-eleven;}
-.aside-section:nth-child(12){grid-area: aside-section-twelve;}
-.aside-section:nth-child(13){grid-area: aside-section-thirteen;}
-.aside-section:nth-child(14){grid-area: aside-section-fourteen;}
-.aside-section:nth-child(15){grid-area: aside-section-fifteen;}
-.aside-section:nth-child(16){grid-area: aside-section-sixteen;}
-.aside-section:nth-child(17){grid-area: aside-section-seventeen;}
-.aside-section:nth-child(18){grid-area: aside-section-eighteen;}
-footer{grid-area: footer;}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+.home-section:nth-child(1) {
+  grid-area: home-section-one;
+}
+.home-section:nth-child(2) {
+  grid-area: home-section-two;
+}
+.home-section:nth-child(3) {
+  grid-area: home-section-three;
+}
+.home-section:nth-child(4) {
+  grid-area: home-section-four;
+}
+footer {
+  grid-area: footer;
+}
 
 /* Buttons and links styling
 -------------*/
-.womens-button, .mens-button {
+.womens-button,
+.mens-button {
   height: 100px;
 }
 .jackets-button {
   background-image: url(../images/all-jackets-banner.jpg);
 }
 .product-page-links {
-    text-decoration: none;
-    color: #48736F;
-    padding: 0;
+  text-decoration: none;
+  color: #48736f;
+  padding: 0;
 }
 .product-page-links:hover {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .link-name {
-    margin: 0 10px;
-    padding-top: 32px;
+  margin: 0 10px;
+  padding-top: 32px;
 }
 
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
-@media(min-width: 641px){
-    main {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-areas: 
-        'home-section-one home-section-two'
-        'home-section-three home-section-three'
-        'home-section-four home-section-four'
-        ;
-    }
-    aside {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-areas: 
-        'aside-section-one aside-section-two'
-        'aside-section-three aside-section-four'
-        'aside-section-five aside-section-six'
-        'aside-section-seven aside-section-eight'
-        'aside-section-nine aside-section-ten'
-        'aside-section-eleven aside-section-twelve'
-        'aside-section-thirteen aside-section-fourteen'
-        'aside-section-fifteen aside-section-sixteen'
-        'aside-section-seventeen aside-section-eighteen'
-        ;
-    }
-    .jackets-button {
-        height: 240px;
-    }
-    
+@media (min-width: 641px) {
+  main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "home-section-one home-section-two"
+      "home-section-three home-section-three"
+      "home-section-four home-section-four";
+  }
+
+  .jackets-button {
+    height: 240px;
+  }
 }
 /*  Desktop screen sizes-------------*/
-@media(min-width: 801px){
-    aside {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-areas: 
-        'aside-section-one aside-section-two aside-section-three'
-        'aside-section-four aside-section-five aside-section-six'
-        'aside-section-seven aside-section-eight aside-section-nine'
-        'aside-section-ten aside-section-eleven aside-section-twelve'
-        'aside-section-thirteen aside-section-fourteen aside-section-fifteen'
-        'aside-section-sixteen aside-section-seventeen aside-section-eighteen'
-        ;
-    }
+@media (min-width: 801px) {
 }
 /* Extra Large Screens-------------*/
 

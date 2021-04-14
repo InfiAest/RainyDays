@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rainy Days Home Page</title>
-        <meta name="description" content="Rainy Days is a company that designs and sells jackets for nature enthusiasts. Mid-range in price and comfortable for whatever adventure you go on.">
+        <title>Rainy Days Winter Shell Jacket</title>
+        <meta name="description" content="Winter Shell is a thicker, waterproof shell jacket designed by Rainy Days for men. The model is wearing the Burgandy Red colour.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.typekit.net/hft0bgo.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link href="css/general.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
+        <link href="css/productpage.css" rel="stylesheet">
         <!-- Hotjar Tracking Code for https://rainydays-charlottelucas.netlify.app/ -->
         <script>
             (function(h,o,t,j,a,r){
@@ -31,7 +31,7 @@
             <input type="checkbox" id="search-menu">
             <nav>
                 <ul>
-                    <li><a href="jackets.html">Jackets</a></li>
+                    <li><a class="current" href="jackets.html">Jackets</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="mycart.html">My Cart</a></li>
@@ -45,35 +45,51 @@
             </section>
         </header>
         <main>
-            <section class="home-section">
-                <div class="page-banner slogan-banner"></div>
-            </section>
-            <section class="home-section">
-                <a class="product-page-links" href="jackets.html"><div class="jacket-pages-button jackets-button">
-                        <h1 class="link-name">All Jackets</h1>
-                    </div></a>
-                </section>
-                <section class="home-section">
-                    <a class="product-page-links" href="womensjackets.html"><div class="jacket-pages-button womens-button">
-                        <h2 class="link-name">Womens</h2>
-                    </div></a>
-                </section>
-                <section class="home-section">
-                    <a class="product-page-links" href="mensjackets.html"><div class="jacket-pages-button mens-button">
-                        <h2 class="link-name">Mens</h2>
-                    </div></a>
-                </section>
-                <section class="home-section">
-                    <div>
-                        <h2>Bestsellers:</h2>
+             
+            <div class="details"></div>
+
+            <div id="add-to-cart-modal" class="cart-modal">
+         
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Item successfully added to your cart!</h2>
+                    </header>
+                    <div class="modal-content">
+                        <div class="flex-container">
+                            <img class="cart-img" src="images/1 -winter-shell-jacket.jpg" alt="Man wearing the mahogany red coloured Winter Shell Jacket">
+                            <div class="cart-info">
+                                <h3>Winter Shell Jacket</h3> 
+                                    <div class="colour-size-container">
+                                        <i class="fas fa-circle winter-shell-swatch-1"></i>
+                                        <p>Mahogany Red, Size: X-Large</p>
+                                    </div>
+                                <p>1 Item</p>
+                                <p>Price</p>
+                            </div>
+                        </div>
                     </div>
-                </section>
-
-                <div class="bestsellers"></div>
-
-        <script src="js/bestsellerDetails.js"></script>
+                    <div class="button-container-cart">
+                        <a href="jackets.html" class="continue-shopping-button" alt="link back to the product page">Continue Shopping</a>
+                        <a href="mycart.html" class="modal-button" alt="link to my cart page">View my cart</a>
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="contact-container-flex">
+                <div class="contact-container">
+                    <a href="#"><i class="fab fa-instagram"></i><p class="contact-info-text">See this style on Instagram</p></a>
+                </div>
+                <div class="contact-container">
+                        <a href="#"><i class="far fa-comment-alt"></i><p class="contact-info-text">Got a question? Send us a message</p></a>
+                </div>
+            </div>
+        <script src="js/productpageDetails.js"></script>
+        <script src="js/reviewDropdown.js"></script>
+        <script src="js/quantityItems.js"></script>
+        <script src="js/addToCart.js"></script>
         </main>
         
+    </body>
         <footer>
             <div class="footer-section">
                 <p class="footer-title">Contact us:</p>
@@ -101,5 +117,4 @@
                 &copy; Rainy Days. All rights reserved.
             </div>
         </footer>
-    </body>
 </html>
