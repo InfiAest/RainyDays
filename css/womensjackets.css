@@ -8,7 +8,6 @@ body {
   grid-template-areas:
     "header"
     "main"
-    "aside"
     "footer";
 }
 main {
@@ -17,22 +16,10 @@ main {
   grid-template-areas:
     "home-section-one"
     "home-section-two"
-    "home-section-three";
+    "home-section-three"
+    "home-section-four";
 }
-aside {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-areas:
-    "aside-section-one"
-    "aside-section-two"
-    "aside-section-three"
-    "aside-section-four"
-    "aside-section-five"
-    "aside-section-six"
-    "aside-section-seven"
-    "aside-section-eight"
-    "aside-section-nine";
-}
+
 header {
   grid-area: header;
 }
@@ -48,36 +35,10 @@ main {
 .home-section:nth-child(3) {
   grid-area: home-section-three;
 }
-aside {
-  grid-area: aside;
+.home-section:nth-child(4) {
+  grid-area: home-section-four;
 }
-.aside-section:nth-child(1) {
-  grid-area: aside-section-one;
-}
-.aside-section:nth-child(2) {
-  grid-area: aside-section-two;
-}
-.aside-section:nth-child(3) {
-  grid-area: aside-section-three;
-}
-.aside-section:nth-child(4) {
-  grid-area: aside-section-four;
-}
-.aside-section:nth-child(5) {
-  grid-area: aside-section-five;
-}
-.aside-section:nth-child(6) {
-  grid-area: aside-section-six;
-}
-.aside-section:nth-child(7) {
-  grid-area: aside-section-seven;
-}
-.aside-section:nth-child(8) {
-  grid-area: aside-section-eight;
-}
-.aside-section:nth-child(9) {
-  grid-area: aside-section-nine;
-}
+
 footer {
   grid-area: footer;
 }
@@ -105,6 +66,14 @@ footer {
   font-size: 1.5em;
   padding: 0 10px 0 0;
 }
+.product-img {
+  width: 100%;
+  border: 2px solid #48736f;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* Media Queries
 -------------*/
@@ -116,32 +85,26 @@ footer {
     grid-template-areas:
       "home-section-one"
       "home-section-two"
-      "home-section-three";
+      "home-section-three"
+      "home-section-four";
   }
-  aside {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas:
-      "aside-section-one aside-section-two"
-      "aside-section-three aside-section-four"
-      "aside-section-five aside-section-six"
-      "aside-section-seven aside-section-eight"
-      "aside-section-nine zero";
-  }
+
   .womens-button {
     background-image: url(../images/womens-jackets-banner.jpg);
     height: 240px;
   }
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
-  aside {
+  .products {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    grid-template-areas:
-      "aside-section-one aside-section-two aside-section-three"
-      "aside-section-four aside-section-five aside-section-six"
-      "aside-section-seven aside-section-eight aside-section-nine";
   }
 }
 /* Extra Large Screens-------------*/

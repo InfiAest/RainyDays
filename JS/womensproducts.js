@@ -2,46 +2,31 @@ const url = "https://charlottelucas.no/wp-json/wc/v3/products/?per_page=20&consu
 
 const productContainer = document.querySelector(".products");
 
-async function getProducts() {
-
+async function getWomens() {
     try {
-
         const response = await fetch(url);
 
-        const result = await response.json();
+        const results = await response.json();
 
-        createHTML(result);
+        for(let i = 0; i < results.length; i++) {
 
-    }
+            const tags = results[i].tags;
 
-    catch(error) {
+            // tags.forEach(tags => { console.log(tags.name) })
 
-        console.log(error);
+            if(tags[0].name == "mens") {
+                continue;
+            }
 
-    }
-}
-
-getProducts();
-
-
-
-
-    function createHTML(result){
-
-        for(let i = 0; i < result.length; i++) {
-
-            const list = result[i];
-
-            console.log(list.name);
-            productContainer.innerHTML += `<div class="product">
+            productContainer.innerHTML +=   `<div class="product-container">
                                                 <div class="image-container">
-                                                    <img class="product-img" src="${list.images[0].src}" alt="${list.name}">
-                                                </div>    
-                                                <div class="name-price-container">
-                                                        <h3 class="jacket-name">${list.name}</h3>
-                                                        <p class="price-tag">£${list.price}.00</p>
-                                                    </div>
-                                                    <div class="colours-reviews-container">
+                                                    <img class="product-img" src="${results[i].images[0].src}" alt="${results[i].name}">
+                                                </div>
+                                                    <div class="name-price-container">
+                                                        <h3 class="jacket-name">${results[i].name}</h3>
+                                                        <p class="price-tag">£${results[i].price}.00</p>
+                                                     </div>
+                                                     <div class="colours-reviews-container">
                                                         <p class="colours-tag">3 colours available</p>
                                                             <div class="colour-container">
                                                                 <i class="fas fa-circle cliff-climber-swatch-1" title="Black"></i>
@@ -54,12 +39,20 @@ getProducts();
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="far fa-star"></i>
-                                                                <p class="reviews-tag">${list.rating_count}</p>
+                                                                <p class="reviews-tag">${results[i].rating_count}</p>
                                                             </div>
                                                             <div class="button-container">
-                                                                <a href="productpage.html?id=${list.id}" class="button" alt="link to Autumn Comfort jacket page">View Jacket</a>
+                                                                <a href="productpage.html?id=${results[i].id}" class="button" alt="link to Autumn Comfort jacket page">View Jacket</a>
                                                             </div>
-                                                    </div>
                                                 </div>`
         }
+
+
+
+
+    } catch (error) {
+        console.log(error);
     }
+}
+
+getWomens();

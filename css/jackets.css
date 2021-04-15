@@ -17,7 +17,8 @@ main {
     "home-section-one"
     "home-section-two"
     "home-section-three"
-    "home-section-four";
+    "home-section-four"
+    "home-section-five";
 }
 
 header {
@@ -37,6 +38,9 @@ main {
 }
 .home-section:nth-child(4) {
   grid-area: home-section-four;
+}
+.home-section:nth-child(5) {
+  grid-area: home-section-five;
 }
 footer {
   grid-area: footer;
@@ -63,6 +67,14 @@ footer {
   margin: 0 10px;
   padding-top: 32px;
 }
+.product-img {
+  width: 100%;
+  border: 2px solid #48736f;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* Media Queries
 -------------*/
@@ -75,15 +87,27 @@ footer {
     grid-template-areas:
       "home-section-one home-section-two"
       "home-section-three home-section-three"
-      "home-section-four home-section-four";
+      "home-section-four home-section-four"
+      "home-section-five home-section-five";
   }
 
   .jackets-button {
     height: 240px;
   }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 /* Extra Large Screens-------------*/
 
