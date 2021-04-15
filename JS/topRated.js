@@ -1,8 +1,8 @@
 const url = "https://charlottelucas.no/wp-json/wc/v3/products/?per_page=20&consumer_key=ck_3ec56e0df1d84b1124aae1a0a1410ca10118e47c&consumer_secret=cs_aecf0438accdd0f441fdb569b49c89666b4806c3";
 
-const bestsellerContainer = document.querySelector(".bestsellers");
+const topRatedContainer = document.querySelector(".top-rated");
 
-async function getBestsellers() {
+async function getTopRated() {
     try {
         const response = await fetch(url);
 
@@ -15,7 +15,7 @@ async function getBestsellers() {
             }
 
 
-            bestsellerContainer.innerHTML +=   `<div class="product-container">
+            topRatedContainer.innerHTML +=   `<div class="product-container">
                                                     <div class="image-container">
                                                     <a href="productpage.html?id=${results[i].id}" alt="link to ${results[i].name} jacket page"><img class="product-img" src="${results[i].images[0].src}" alt="${results[i].name}"></a>
                                                     </div>
@@ -53,4 +53,4 @@ async function getBestsellers() {
     }
 }
 
-getBestsellers();
+getTopRated();
