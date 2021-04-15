@@ -20,10 +20,10 @@ async function getMens() {
 
             productContainer.innerHTML +=   `<div class="product-container">
                                                 <div class="image-container">
-                                                    <img class="product-img" src="${results[i].images[0].src}" alt="${results[i].name}">
+                                                <a href="productpage.html?id=${results[i].id}" alt="link to ${results[i].name} jacket page"><img class="product-img" src="${results[i].images[0].src}" alt="${results[i].name}"></a>
                                                 </div>
                                                     <div class="name-price-container">
-                                                        <h3 class="jacket-name">${results[i].name}</h3>
+                                                    <a href="productpage.html?id=${results[i].id}" alt="link to ${results[i].name} jacket page"><h3 class="jacket-name">${results[i].name}</h3></a>
                                                         <p class="price-tag">£${results[i].price}.00</p>
                                                      </div>
                                                      <div class="colours-reviews-container">
@@ -42,7 +42,7 @@ async function getMens() {
                                                                 <p class="reviews-tag">${results[i].rating_count}</p>
                                                             </div>
                                                             <div class="button-container">
-                                                                <a href="productpage.html?id=${results[i].id}" class="button" alt="link to Autumn Comfort jacket page">View Jacket</a>
+                                                                <a href="productpage.html?id=${results[i].id}" class="button" alt="link to ${results[i].name} jacket page">View Jacket</a>
                                                             </div>
                                                 </div>`
         }

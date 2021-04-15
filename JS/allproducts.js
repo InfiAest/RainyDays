@@ -35,10 +35,10 @@ getProducts();
             console.log(list.name);
             productContainer.innerHTML += `<div class="product">
                                                 <div class="image-container">
-                                                    <img class="product-img" src="${list.images[0].src}" alt="${list.name}">
+                                                <a href="productpage.html?id=${list.id}" alt="link to ${list.name} jacket page"><img class="product-img" src="${list.images[0].src}" alt="${list.name}"></a>
                                                 </div>    
                                                 <div class="name-price-container">
-                                                        <h3 class="jacket-name">${list.name}</h3>
+                                                <a href="productpage.html?id=${list.id}" alt="link to ${list.name} jacket page"><h3 class="jacket-name">${list.name}</h3></a>
                                                         <p class="price-tag">£${list.price}.00</p>
                                                     </div>
                                                     <div class="colours-reviews-container">
@@ -57,7 +57,7 @@ getProducts();
                                                                 <p class="reviews-tag">${list.rating_count}</p>
                                                             </div>
                                                             <div class="button-container">
-                                                                <a href="productpage.html?id=${list.id}" class="button" alt="link to Autumn Comfort jacket page">View Jacket</a>
+                                                                <a href="productpage.html?id=${list.id}" class="button" alt="link to ${list.name} jacket page">View Jacket</a>
                                                             </div>
                                                     </div>
                                                 </div>`
