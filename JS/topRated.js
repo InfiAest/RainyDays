@@ -10,8 +10,10 @@ async function getTopRated() {
 
         for(let i = 0; i < results.length; i++) {
 
-            if(!results[i].rating_count == 1) {
-                continue
+            const averageRating = results[i].average_rating;
+
+            if(parseInt(averageRating) != 5) {
+                continue;
             }
 
 
@@ -35,7 +37,7 @@ async function getTopRated() {
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
-                                                                    <i class="far fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
                                                                     <p class="reviews-tag">${results[i].rating_count}</p>
                                                                 </div>
                                                                 <div class="button-container">
