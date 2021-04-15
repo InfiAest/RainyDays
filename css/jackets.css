@@ -57,7 +57,7 @@ footer {
   padding: 0;
 }
 .product-page-links:hover {
-  text-transform: uppercase;
+  text-decoration: underline;
 }
 .link-name {
   margin: 0 10px;

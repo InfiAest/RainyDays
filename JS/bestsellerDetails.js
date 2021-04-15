@@ -14,7 +14,8 @@ async function getBestsellers() {
                 continue
             }
 
-            bestsellerContainer.innerHTML +=   `<div class="product">
+
+            bestsellerContainer.innerHTML +=   `<section class="bestsellers-section">
                                                     <img src="${results[i].images[0].src}" alt="${results[i].name}">
                                                     <div class="name-price-container">
                                                         <h3 class="jacket-name">${results[i].name}</h3>
@@ -39,7 +40,7 @@ async function getBestsellers() {
                                                                 <a href="productpage.html?id=${results[i].id}" class="button" alt="link to Autumn Comfort jacket page">View Jacket</a>
                                                             </div>
                                                     </div>
-                                                </div>`
+                                                </section>`
         }
 
 
