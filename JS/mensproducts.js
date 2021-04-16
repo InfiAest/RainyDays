@@ -29,9 +29,9 @@ async function getMens() {
                                                      <div class="colours-reviews-container">
                                                         <p class="colours-tag">3 colours available</p>
                                                             <div class="colour-container">
-                                                                <i class="fas fa-circle cliff-climber-swatch-1" title="Black"></i>
-                                                                <i class="fas fa-circle cliff-climber-swatch-2" title="Blueberry Blue"></i>
-                                                                <i class="fas fa-circle cliff-climber-swatch-3" title="Silver Grey"></i>
+                                                                <i class="fas fa-circle ${results[i].name.replace(/\s/g,'-').toLowerCase()}-swatch-1" title="${results[i].attributes[0].options[0]}"></i>
+                                                                <i class="fas fa-circle ${results[i].name.replace(/\s/g,'-').toLowerCase()}-swatch-2" title="${results[i].attributes[0].options[1]}"></i>
+                                                                <i class="fas fa-circle ${results[i].name.replace(/\s/g,'-').toLowerCase()}-swatch-3" title="${results[i].attributes[0].options[2]}"></i>
                                                             </div>
                                                             <div class="star-container">
                                                                 <i class="fas fa-star"></i>

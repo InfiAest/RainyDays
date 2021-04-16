@@ -290,13 +290,16 @@ main a:hover {
 .contact-info-text {
   display: inline;
 }
+.radio-label-size {
+  padding: 10px 5px;
+}
 
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
 @media (min-width: 641px) {
   .radio-label-size {
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
 
   .modal-header {
@@ -328,7 +331,7 @@ main a:hover {
   }
 
   .radio-label-colour {
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1.2rem;
   }
   .contact-container-flex {
