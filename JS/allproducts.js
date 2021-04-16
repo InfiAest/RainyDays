@@ -32,7 +32,7 @@ getProducts();
 
             const list = result[i];
 
-            console.log(list.attributes[0].options[0]);
+            // console.log(list.attributes[0].options[0]);
             productContainer.innerHTML += `<div class="product">
                                                 <div class="image-container">
                                                 <a href="productpage.html?id=${list.id}" alt="link to ${list.name} jacket page"><img class="product-img" src="${list.images[0].src}" alt="${list.name}"></a>
