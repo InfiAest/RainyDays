@@ -254,12 +254,12 @@ main a:hover {
 
 .cart-img {
   border: 3px solid #0a3641;
-  width: 40%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
 }
 
 .cart-info {
-  text-align: right;
+  text-align: left;
   width: 60%;
 }
 
@@ -276,7 +276,7 @@ main a:hover {
 
 .colour-size-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: baseline;
 }
 
@@ -293,6 +293,9 @@ main a:hover {
 .radio-label-colour,
 .radio-label-size {
   padding: 10px 5px;
+}
+.price-container {
+  padding-top: 20px;
 }
 
 /* Media Queries
@@ -312,7 +315,7 @@ main a:hover {
     padding-top: 1rem;
   }
   .cart-img {
-    width: 40%;
+    width: 50%;
     height: auto;
   }
 }

@@ -36,24 +36,26 @@
         <main>
              
             <div class="details"></div>
+            <div class="button-container">
+                <a role="button" id="add-to-cart-button" class="button">Add to cart</a>
+            </div>
 
+            <div class="description"></div>
+        
             <div id="add-to-cart-modal" class="cart-modal">
-         
                 <div class="modal-content">
                     <header class="modal-header">
-                        <h2>Item successfully added to your cart!</h2>
+                        <h2>Item was successfully added to your cart!</h2>
                     </header>
                     <div class="modal-content">
-                        <div class="flex-container">
-                            <img class="cart-img" src="images/1 -winter-shell-jacket.jpg" alt="Man wearing the mahogany red coloured Winter Shell Jacket">
+                        <div class="flex-container cart-img-container">
                             <div class="cart-info">
-                                <h3>Winter Shell Jacket</h3> 
-                                    <div class="colour-size-container">
-                                        <i class="fas fa-circle winter-shell-swatch-1"></i>
-                                        <p>Mahogany Red, Size: X-Large</p>
-                                    </div>
+                                <div class="product-name"></div>
+                                <div class="colour-size-container">
+                                
+                                </div>
                                 <p>1 Item</p>
-                                <p>Price</p>
+                                <div class="price-container"></div>
                             </div>
                         </div>
                     </div>
@@ -74,7 +76,6 @@
             </div>
         <script src="js/productpageDetails.js"></script>
         <script src="js/reviewDropdown.js"></script>
-        <script src="js/quantityItems.js"></script>
         <script src="js/addToCart.js"></script>
         </main>
         

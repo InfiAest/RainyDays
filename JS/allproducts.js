@@ -32,6 +32,8 @@ getProducts();
 
             const list = result[i];
 
+            console.log(list);
+
             // console.log(list.attributes[0].options[0]);
             productContainer.innerHTML += `<div class="product">
                                                 <div class="image-container">

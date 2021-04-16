@@ -1,4 +1,9 @@
 const detailsContainer = document.querySelector(".details");
+const descriptionContainer = document.querySelector(".description");
+const cartImgContainer = document.querySelector(".cart-img-container");
+const cartProductName = document.querySelector(".product-name");
+const cartColourSize = document.querySelector(".colour-size-container");
+const cartPriceContainer = document.querySelector(".price-container");
 
 const queryString = document.location.search;
 
@@ -28,9 +33,6 @@ getProductDetails();
 function createProductDetails(details) {
 
     console.log(details.name.replace(/\s/g,'').toLowerCase());
-
-
-
 
     detailsContainer.innerHTML += `<section class="details-section">
                                         <div class="title-price-container">
@@ -75,33 +77,39 @@ function createProductDetails(details) {
                                             <label>
                                                 Quantity:
                                                 <div class="item-container">
-                                                    <input type="button" value="-" id="minus" class="amount-button" onclick="subtract()">
+                                                    <input type="button" value="-" id="minus" class="amount-button">
                                                     <input type="text" size="25" value="1" id="count" class="amount-text">
-                                                    <input type="button" value="+" id="plus" class="amount-button" onclick="add()">
+                                                    <input type="button" value="+" id="plus" class="amount-button">
                                                 </div>
                                             </label>
                                         </form>
-                                        
-                                        <div class="button-container">
-                                            <a href="#" role="button" id="add-to-cart-button" class="button">Add to cart</a>
-                                        </div>
-                                    </section>
-                                    <section class="details-section">
-                                        <div class="description-container">
-                                            <h2>Description:</h2>
-                                            <p>${details.short_description}</p>
-                                        </div>
-                                    </section>
-                                    <section class="details-section">
-                                        <div class="specs-container">
-                                            <h2>Specs:</h2>
-                                            <p>${details.description}</p>
-                                        </div>
-                                    </section>
-                                    <section class="details-section">
-                                        <div class="reviews-container">
-                                            <h2>Reviews:</h2>
-                                        </div>
                                     </section>`;
 
+    descriptionContainer.innerHTML += `<section class="details-section">
+                                            <div class="description-container">
+                                                <h2>Description:</h2>
+                                                <p>${details.short_description}</p>
+                                            </div>
+                                        </section>
+                                        <section class="details-section">
+                                            <div class="specs-container">
+                                                <h2>Specs:</h2>
+                                                <p>${details.description}</p>
+                                            </div>
+                                        </section>
+                                        <section class="details-section">
+                                            <div class="reviews-container">
+                                                <h2>Reviews:</h2>
+                                            </div>
+                                        </section>`            
+
+
+    cartProductName.innerHTML += `<h2>${details.name}</h2>`
+
+    cartColourSize.innerHTML += `<i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-1"></i>
+                                 <p>${details.attributes[0].terms[0].name}, Size: ${details.attributes[1].terms[0].name}</p>`
+
+    cartPriceContainer.innerHTML += `<p>${details.price_html}</p>`
+
+    cartImgContainer.innerHTML += `<img class="cart-img" src="${details.images[0].src}" alt="${details.name}">`
 }
