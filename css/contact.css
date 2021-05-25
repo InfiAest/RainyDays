@@ -68,14 +68,18 @@ main a:hover {
   justify-content: space-between;
 }
 
+fieldset {
+  border: none;
+}
+
 legend {
   font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .input-styling {
   width: 95%;
   margin-top: 2px;
-  font-size: 16px;
   border: 2px solid #48736f;
   padding: 10px;
 }
@@ -87,10 +91,21 @@ label {
 }
 
 textarea {
+  font-family: "din-condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
   height: 100px;
   width: 100%;
   border: 2px solid #48736f;
   padding: 10px 0;
+}
+
+input {
+  font-family: "din-condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
 }
 
 .form-error {
