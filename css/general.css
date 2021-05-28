@@ -133,6 +133,7 @@ form.searchbox button:hover {
   border: 2px solid #f2ece9;
   color: #f2ece9;
   font-size: 1.5em;
+  font-family: "din-condensed", sans-serif;
   width: 100%;
 }
 .continue-shopping-button {
@@ -140,6 +141,7 @@ form.searchbox button:hover {
   border: 2px solid #0a3641;
   color: #0a3641;
   font-size: 1.2em;
+  font-family: "din-condensed", sans-serif;
 }
 .button,
 .continue-shopping-button {
@@ -154,6 +156,7 @@ form.searchbox button:hover {
   background-color: #0a3641;
   border: 2px solid #f2ece9;
   color: #f2ece9;
+  font-family: "din-condensed", sans-serif;
   font-size: 1.5em;
   width: auto;
   border-radius: 18px;
@@ -163,7 +166,8 @@ form.searchbox button:hover {
   margin: 7px 0;
   cursor: pointer;
 }
-.button:hover {
+.button:hover,
+.modal-button:hover {
   background-color: #f2ece9;
   border: 2px solid #0a3641;
   color: #0a3641;

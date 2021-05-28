@@ -12,7 +12,7 @@ body {
 }
 main {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-areas:
     "home-section-one"
     "home-section-two"
@@ -66,6 +66,27 @@ footer {
   background-image: url(../images/Slogan-header-image-small.jpg);
   opacity: 0.5;
 }
+.test-banner {
+  background-image: url(../images/test-header.jpg);
+}
+.mask-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  width: 100%;
+}
+.text-mask {
+  background: url(../images/test-header.jpg) no-repeat;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+}
 
 /* Jacket page links styling
 -------------*/
@@ -103,6 +124,11 @@ footer {
 .top-rated-title {
   margin-bottom: 0;
 }
+.top-rated {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+}
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
@@ -122,7 +148,10 @@ footer {
   .top-rated {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
+  }
+  .text-mask {
+    font-size: 4rem;
   }
   .slogan-banner {
     background-image: url(../images/Slogan-header-image.jpg);
@@ -139,10 +168,18 @@ footer {
   .top-rated {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
+  }
+  .text-mask {
+    font-size: 4.5rem;
   }
 }
-
+/* Extra Large Screens-------------*/
+@media only screen and (min-width: 1281px) {
+  .text-mask {
+    font-size: 5.3rem;
+  }
+}
 /* 
 -------------*/
 /* 

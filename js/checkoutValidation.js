@@ -30,6 +30,7 @@ const cvcNumber = document.querySelector("#cvcNumber");
 const cvcNumberError = document.querySelector("#cvcNumberError");
 const deliveryAddress = document.querySelector("#deliveryAddress");
 const deliveryAddressError = document.querySelector("#deliveryAddressError");
+const billingOptions = document.querySelectorAll("input[type=text]")
 const billingOption = document.getElementsByName("billingaddress");
 const billingAddressError = document.querySelector("#billingAddressError");
 const newStreetName = document.querySelector("#newStreetName");

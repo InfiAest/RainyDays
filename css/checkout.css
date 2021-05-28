@@ -35,18 +35,15 @@ legend {
 
 .total-form {
   margin: 4rem 0;
+  width: 100%;
 }
 
 .input-styling {
-  width: 95%;
+  width: 100%;
   margin-top: 2px;
-  padding: 10px;
+  padding: 10px 4px;
   font-size: 16px;
   border: 2px solid #48736f;
-}
-
-input[type="radio"] {
-  float: left;
 }
 
 label {
@@ -72,18 +69,28 @@ label {
 .radio-flex-container,
 .expiry-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding-top: 10px;
 }
 
 .radio-container {
   display: flex;
+  justify-content: flex-start;
   width: 50%;
+}
+#newaddress,
+#sameaddress {
+  width: 20px;
 }
 
 .month-container,
 .year-container {
   display: block;
   width: 100%;
+}
+
+#year {
+  margin-left: 12px;
 }
 
 .button-container {

@@ -35,7 +35,29 @@
         </header>
         <main>
              
-            <div class="details"></div>
+            <div class="details">
+                <section class="details-section">
+                    <div class="title-price-container"></div>
+                </section>
+                <section class="details-section">
+                    <div class="image-section"></div>
+                </section>
+                <section class="details-section">
+                    <form id="product-details-form" action="form-success.php" method="POST">
+                        <legend>Choose your details</legend>
+                        <label class="colour-section"></label>
+                        <label class="size-section"></label>
+                        <label class="quantity-section">
+                            Quantity:
+                            <div class="item-container">
+                                <input type="button" value="-" id="minus" class="amount-button" onclick="subtract()">
+                                <input type="text" size="25" value="1" id="count" class="amount-text">
+                                <input type="button" value="+" id="plus" class="amount-button" onclick="add()">
+                            </div>
+                        </label>
+                    </form>
+                </section>
+            </div>
             <div class="button-container">
                 <a role="button" id="add-to-cart-button" class="button">Add to cart</a>
             </div>
@@ -77,6 +99,7 @@
         <script src="js/productpageDetails.js"></script>
         <script src="js/reviewDropdown.js"></script>
         <script src="js/addToCart.js"></script>
+        <script src="js/quantityItems.js"></script>
         </main>
         
     </body>

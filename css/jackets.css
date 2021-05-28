@@ -12,7 +12,7 @@ body {
 }
 main {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-areas:
     "home-section-one"
     "home-section-two"
@@ -76,6 +76,12 @@ footer {
   background-repeat: no-repeat;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+}
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
@@ -98,7 +104,7 @@ footer {
   .products {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
   }
 }
 /*  Desktop screen sizes-------------*/
@@ -106,7 +112,7 @@ footer {
   .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
 }
 /* Extra Large Screens-------------*/

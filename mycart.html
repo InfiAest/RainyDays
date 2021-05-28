@@ -43,7 +43,7 @@
                 <img class="cart-img" src="images/1 -winter-shell-jacket.jpg" alt="Man wearing the mahogany red coloured Winter Shell Jacket">
                 <div class="cart-info">
                     <div class="name-size-container">
-                        <h3>Winter Shell Jacket</h3> 
+                        <a href="productpage.html?id=76" alt="link to Winter Shell jacket page"><h3>Winter Shell Jacket</h3></a> 
                         <div class="colour-size-container">
                             <i class="fas fa-circle winter-shell-swatch-1"></i>
                             <p>Mahogany Red, Size: X-Large</p>
@@ -51,9 +51,9 @@
                     </div>
                     <div class="item-price-container">
                         <div class="item-container">
-                            <input type="button" value="-" id="minus" class="amount-button">
+                            <input type="button" value="-" id="minus" class="amount-button" onclick="subtract()">
                             <input type="text" size="25" value="1" id="count" class="amount-text">
-                            <input type="button" value="+" id="plus" class="amount-button">
+                            <input type="button" value="+" id="plus" class="amount-button" onclick="add()">
                         </div>
                         <div>
                             <p>Price</p>
@@ -78,86 +78,13 @@
         <article>
             <section class="article-section">
                 <h3>Did you forget to add the other jacket you liked to the basket?</h3>
-                <p>Your recently viewed items..</p>
             </section>
             <section class="article-section">
-                <a href="productpage1.html"><img class="best-seller-img" src="images/6 -ocean-explorer-jacket.jpg" alt="Man wearing the green Ocean Explorer Jacket, link to product page"></a>
-                <div class="name-price-container">
-                    <a href="productpage1.html"><h3 class="jacket-name">Ocean Explorer</h3></a>
-                    <p class="price-tag">Price</p>
-                </div>
-                <div class="colours-reviews-container">
-                    <p class="colours-tag">3 colours available</p>
-                        <div class="colour-container">
-                            <i class="fas fa-circle ocean-explorer-swatch-1"></i>
-                            <i class="fas fa-circle ocean-explorer-swatch-2"></i>
-                            <i class="fas fa-circle ocean-explorer-swatch-3"></i>
-                        </div>
-                        <div class="star-container">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <p class="reviews-tag">22</p>
-                        </div>
-                </div>
-                <div class="button-container">
-                    <a href="productpage1.html" class="button" alt="link to Ocean Explorer jacket page">View Jacket</a>
-                </div>
+                <div class="last-minute-items"></div>
             </section>
-            <section class="article-section">
-                <a href="productpage1.html"><img class="best-seller-img" src="images/18 -mountaintop-wanderer-jacket.jpg" alt="Man wearing the orange Mountain Wanderer Jacket, link to product page"></a>
-                <div class="name-price-container">
-                    <a href="productpage1.html"><h3 class="jacket-name">Mountain Wanderer</h3></a>
-                    <p class="price-tag">Price</p>
-                </div>
-                <div class="colours-reviews-container">
-                    <p class="colours-tag">3 colours available</p>
-                        <div class="colour-container">
-                            <i class="fas fa-circle mountain-wanderer-swatch-1"></i>
-                            <i class="fas fa-circle mountain-wanderer-swatch-2"></i>
-                            <i class="fas fa-circle mountain-wanderer-swatch-3"></i>
-                        </div>
-                        <div class="star-container">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <p class="reviews-tag">6</p>
-                        </div>
-                </div>
-                <div class="button-container">
-                    <a href="productpage1.html" class="button" alt="link to Mountain Wanderer jacket page">View Jacket</a>
-                </div>
-            </section>
-            <section class="article-section">
-                <a href="productpage1.html"><img class="best-seller-img" src="images/13 -snowy-peaks-jacket.jpg" alt="Man wearing the black Snowy Peaks Jacket, link to product page"></a>
-                <div class="name-price-container">
-                    <a href="productpage1.html"><h3 class="jacket-name">Snowy Peaks</h3></a>
-                    <p class="price-tag">Price</p>
-                </div>
-                <div class="colours-reviews-container">
-                    <p class="colours-tag">3 colours available</p>
-                        <div class="colour-container">
-                            <i class="fas fa-circle snowy-peaks-swatch-1"></i>
-                            <i class="fas fa-circle snowy-peaks-swatch-2"></i>
-                            <i class="fas fa-circle snowy-peaks-swatch-3"></i>
-                        </div>
-                        <div class="star-container">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <p class="reviews-tag">13</p>
-                        </div>
-                </div>
-                <div class="button-container">
-                    <a href="productpage1.html" class="button" alt="link to Snowy Peaks jacket page">View Jacket</a>
-                </div>
-            </section>
+
+            <script src="js/articleSectionCart.js"></script>
+            <script src="js/quantityItems.js"></script>
         </article>
         <footer>
             <div class="footer-section">
