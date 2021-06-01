@@ -108,6 +108,90 @@ form.searchbox button:hover {
   background: #48736f;
 }
 
+/*Chat popup ------------*/
+.open-chat {
+  background-color: #48736f;
+  color: #f2ece9;
+  font-family: din-condensed, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  width: 50px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  border: 2px solid #0a3641;
+  background-color: #f2ece9;
+  z-index: 10;
+}
+.chat-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #0a3641;
+  margin-bottom: 20px;
+}
+.chat-form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #f2ece9;
+}
+.message-heading {
+  font-size: 1.2rem;
+}
+.message-textarea {
+  width: 266px;
+  padding: 15px;
+  margin: 5px 0;
+  border: 2px solid #48736f;
+  background: #f2ece9;
+  font-family: din-condensed, sans-serif;
+  font-size: 1rem;
+  resize: none;
+  min-height: 200px;
+  color: #0a3641;
+}
+.message-textarea:focus {
+  outline: none;
+  font-size: 1.2rem;
+}
+.close-chat {
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #0a3641;
+  font-weight: bold;
+  background-color: #f2ece9;
+}
+.close-chat:hover {
+  color: #48736f;
+}
+.open-chat:hover {
+  opacity: 1;
+}
+.chat-form-error {
+  display: none;
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+.chat-validation-message {
+  display: none;
+  color: #0a3641;
+  font-size: 1.2rem;
+  width: 400px;
+}
+
 /* Banner img styling
 -------------*/
 .page-banner {

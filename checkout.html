@@ -260,7 +260,29 @@
                             <button id="complete-order-button" class="modal-button">Confirm details</button>
                         </div>
                 </form>
+                <button class="open-chat" onclick="toggleChat()"><i aria-label="chat-button" class="far fa-comment-alt"></i></button>
+                <div class="chat-popup" id="chatForm">
+                    <form class="chat-form-container">
+                        <div class="chat-header">
+                            <h2>Chat</h2>
+                            <button type="button" class="close-chat cancel" onclick="closeChat()">X</button>    
+                        </div>
+                        <div class="chat-message-section">
+                            <label for="message" class="message-heading">Message:</label>
+                            <textarea placeholder="Type message.." name="message" class="message-textarea"></textarea>
+                            <div class="chat-form-error">Please write a message</div>
+                        </div>
+                        <div class="button-container">
+                            <button class="button sendChatButton">Send</button>
+                        </div>
+                        <div class="chat-validation-message">
+                            <p>Message sent successfully!</p>
+                            <p>Keep on shopping and we will reply soon.</p>
+                        </div>
+                    </form>
+                </div>
             <script src="js/checkoutValidation.js"></script>
+            <script src="js/chatPopup.js"></script>
         </main>
         
     </body>
@@ -276,8 +298,8 @@
                 <a href="#"><p class="footer-link-text">Find us on Instagram</p></a>
             </div>
             <div class="icon-text-container">
-                <a href="#"><i class="far fa-comment-alt"></i></a>
-                <a href="#"><p class="footer-link-text">Got a question? Send us a message</p></a>
+                <a role="button" onclick="toggleChat()"><i class="far fa-comment-alt"></i></a>
+                <a role="button" onclick="toggleChat()"><p class="footer-link-text">Got a question? Send us a message</p></a>
             </div>
         </div>
         <div class="footer-section">
