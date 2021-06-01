@@ -1,11 +1,10 @@
 const detailsContainer = document.querySelector(".details");
-
 const titleContainer = document.querySelector(".title-price-container");
 const imageContainer = document.querySelector(".image-section");
 const colourContainer = document.querySelector(".colour-section");
 const sizeContainer = document.querySelector(".size-section");
-
 const descriptionContainer = document.querySelector(".description");
+const specsContainer = document.querySelector(".specs");
 const cartImgContainer = document.querySelector(".cart-img-container");
 const cartProductName = document.querySelector(".product-name");
 const cartColourSize = document.querySelector(".colour-size-container");
@@ -18,6 +17,8 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const url = "https://charlottelucas.no/wp-json/wc/store/products/" + id;
+
+console.log(parseFloat(id));
 
 async function getProductDetails() {
 
@@ -37,8 +38,6 @@ getProductDetails();
 
 
 function createProductDetails(details) {
-
-    // console.log(details.name.replace(/\s/g,'').toLowerCase());
 
     titleContainer.innerHTML += `<h1 class="jacket-name">${details.name}</h1>
                                  <h2 class="price-tag">${details.price_html}</h2>`
@@ -71,24 +70,9 @@ function createProductDetails(details) {
 
    
 
-    descriptionContainer.innerHTML += `<section class="details-section">
-                                            <div class="description-container">
-                                                <h2>Description:</h2>
-                                                <p>${details.short_description}</p>
-                                            </div>
-                                        </section>
-                                        <section class="details-section">
-                                            <div class="specs-container">
-                                                <h2>Specs:</h2>
-                                                <p>${details.description}</p>
-                                            </div>
-                                        </section>
-                                        <section class="details-section">
-                                            <div class="reviews-container">
-                                                <h2>Reviews:</h2>
-                                            </div>
-                                        </section>`            
+    descriptionContainer.innerHTML += `<p>${details.short_description}</p>`
 
+    specsContainer.innerHTML += `<p>${details.description}</p>`                                             
 
     cartProductName.innerHTML += `<h2>${details.name}</h2>`
 
@@ -98,4 +82,71 @@ function createProductDetails(details) {
     cartPriceContainer.innerHTML += `<p>${details.price_html}</p>`
 
     cartImgContainer.innerHTML += `<img class="cart-img" src="${details.images[0].src}" alt="${details.name}">`
+}
+
+
+//get product reviews
+
+const reviewUrl = "https://charlottelucas.no/wp-json/wc/store/products/reviews/";
+
+const reviewsContainer = document.querySelector(".reviews");
+
+async function getReviews() {
+
+    try {
+
+        const response = await fetch(reviewUrl);
+
+        const result = await response.json();
+
+        createProductReviews(result);
+
+    }
+
+    catch(error) {
+
+        console.log(error);
+
+    }
+}
+
+getReviews();
+
+
+function createProductReviews(result) {
+
+    reviewsContainer.innerHTML = `<p>There are currently no reviews to display!</p>`
+
+    for(let i = 0; i < result.length; i++) {
+        // console.log(result[i]);
+        // console.log(result[i].product_id);
+        // reviewsContainer.innerHTML += `<section class="details-section">
+        //                                     <p>Hi</p>
+        //                                 </section>`  
+        if (result[i].product_id === parseFloat(id)) {
+            console.log(result[i]);
+            reviewsContainer.innerHTML = `<div class="review-flexbox">
+                                                <div class="avatar-container">
+                                                    <img src="${result[i].reviewer_avatar_urls[96]}" alt="user avatar">
+                                                </div>
+                                                <div class="review-details">
+                                                    <div class="review-name-rating">
+                                                        <h3 class="reviewHeading">${result[i].reviewer}</h3>
+                                                            <div class="star-container">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <p class="reviews-tag">${result[i].rating}</p>
+                                                            </div>
+                                                    </div>
+                                                    <p class="reviewDate">${result[i].formatted_date_created}</p>
+                                                    <p>${result[i].review}</p>
+                                                </div>
+                                            </div>`
+        }
+        
+    }                                            
+
 }
