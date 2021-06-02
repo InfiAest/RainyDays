@@ -117,11 +117,80 @@ footer {
 .top-rated-title {
   margin-bottom: 0;
 }
-.top-rated {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 40px;
+
+/*SLIDER STYLING -----------*/
+.mobile-slide,
+.tablet-slide,
+.desktop-slide {
+  margin: 0 35px;
 }
+
+.tabletSlideshow,
+.desktopSlideshow {
+  display: none;
+}
+
+.top-products-container {
+  position: static;
+  z-index: 0;
+  background-color: #f2ece9;
+  width: 100%;
+  margin: 30px auto;
+  padding: 5px 0;
+}
+.arrow-container {
+  position: relative;
+  top: -200px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+}
+.prevArrow,
+.nextArrow {
+  cursor: pointer;
+  margin: 0;
+  color: #0a3641;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  user-select: none;
+  z-index: 5;
+}
+.prevArrow {
+  padding: 20px 20px 20px 0;
+}
+.nextArrow {
+  padding: 20px 0 20px 20px;
+}
+.prevArrow:hover,
+.nextArrow:hover {
+  color: #48736f;
+}
+
+.dot-container {
+  margin-top: -30px;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #48736f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #0a3641;
+}
+.dot:hover {
+  background-color: #0a3641;
+}
+
 /* Media Queries
 -------------*/
 /* Tablet and smaller screen sizes-------------*/
@@ -155,6 +224,20 @@ footer {
   .link-name {
     padding-top: 55px;
   }
+  .mobileSlideshow {
+    display: none;
+  }
+  .tabletSlideshow {
+    display: block;
+  }
+  .tabletSlide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .arrow-container {
+    top: -230px;
+  }
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
@@ -166,11 +249,25 @@ footer {
   .text-mask {
     font-size: 4.5rem;
   }
+  .tabletSlideshow {
+    display: none;
+  }
+  .desktopSlideshow {
+    display: block;
+  }
+  .desktopSlide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 /* Extra Large Screens-------------*/
 @media only screen and (min-width: 1281px) {
   .text-mask {
     font-size: 5.3rem;
+  }
+  .arrow-container {
+    top: -240px;
   }
 }
 /* 
