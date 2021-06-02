@@ -61,11 +61,127 @@
                     </div>
                 </section>
                 <section class="home-section">
-                    <div class="top-rated"></div>
+                  
+                    <div class="slideshow-container mobileSlideshow">
+                        <div class="top-products-container">
+
+                            <div class="mobile-slide">
+                                <div class="mobile-top-rated-1"></div>
+                            </div>
+                            <div class="mobile-slide">
+                                <div class="mobile-top-rated-2"></div>
+                            </div>
+                            <div class="mobile-slide">
+                                <div class="mobile-top-rated-3"></div>
+                            </div>
+                            <div class="mobile-slide">
+                                <div class="mobile-top-rated-4"></div>
+                            </div>
+                            <div class="mobile-slide">
+                                <div class="mobile-top-rated-5"></div>
+                            </div>
+                            <div class="mobile-slide">
+                                <div class="mobile-top-rated-6"></div>
+                            </div>
+
+                            <div class="arrow-container">
+                                <div>
+                                    <a class="prevArrow" onclick="plusMobileSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                                </div>
+                                <div>
+                                    <a class="nextArrow" onclick="plusMobileSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                            <br>
+                        <div class="dot-container">
+                            <span class="dot mobileDot" onclick="currentMobileSlide(1)"></span> 
+                            <span class="dot mobileDot" onclick="currentMobileSlide(2)"></span> 
+                            <span class="dot mobileDot" onclick="currentMobileSlide(3)"></span>
+                            <span class="dot mobileDot" onclick="currentMobileSlide(4)"></span>
+                            <span class="dot mobileDot" onclick="currentMobileSlide(5)"></span>
+                            <span class="dot mobileDot" onclick="currentMobileSlide(6)"></span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="slideshow-container tabletSlideshow">
+                        <div class="top-products-container">
+
+                            <div class="tablet-slide">
+                                <div class="tabletSlide">
+                                    <div class="tablet-top-rated-1"></div>
+                                    <div class="tablet-top-rated-2"></div>
+                                </div>
+                            </div>
+                            <div class="tablet-slide">
+                                <div class="tabletSlide">
+                                    <div class="tablet-top-rated-3"></div>
+                                    <div class="tablet-top-rated-4"></div>
+                                </div>
+                            </div>
+                            <div class="tablet-slide">
+                                <div class="tabletSlide">
+                                    <div class="tablet-top-rated-5"></div>
+                                    <div class="tablet-top-rated-6"></div>
+                                </div>
+                            </div>
+
+                            <div class="arrow-container">
+                                <div>
+                                    <a class="prevArrow" onclick="plusTabletSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                                </div>
+                                <div>
+                                    <a class="nextArrow" onclick="plusTabletSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                            <br>
+                        <div class="dot-container">
+                            <span class="dot tabletDot" onclick="currentTabletSlide(1)"></span> 
+                            <span class="dot tabletDot" onclick="currentTabletSlide(2)"></span> 
+                            <span class="dot tabletDot" onclick="currentTabletSlide(3)"></span>
+                        </div>
+                    </div>
+
+                    <div class="slideshow-container desktopSlideshow">
+                        <div class="top-products-container">
+
+                            <div class="desktop-slide">
+                                <div class="desktopSlide">
+                                    <div class="desktop-top-rated-1"></div>
+                                    <div class="desktop-top-rated-2"></div>
+                                    <div class="desktop-top-rated-3"></div>
+                                </div>
+                            </div>
+                            <div class="desktop-slide">
+                                <div class="desktopSlide">
+                                    <div class="desktop-top-rated-4"></div>
+                                    <div class="desktop-top-rated-5"></div>
+                                    <div class="desktop-top-rated-6"></div>
+                                </div>
+                            </div>
+
+                            <div class="arrow-container">
+                                <div>
+                                    <a class="prevArrow" onclick="plusDesktopSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                                </div>
+                                <div>
+                                    <a class="nextArrow" onclick="plusDesktopSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                            <br>
+                        <div class="dot-container">
+                            <span class="dot desktopDot" onclick="currentDesktopSlide(1)"></span> 
+                            <span class="dot desktopDot" onclick="currentDesktopSlide(2)"></span>
+                        </div>
+                    </div>
+                                        
                 </section>
 
                 <button class="open-chat" onclick="toggleChat()"><i aria-label="chat-button" class="far fa-comment-alt"></i></button>
-                <div class="chat-popup" id="chatForm" style="display: none;">
+                <div class="chat-popup" id="chatForm">
                     <form class="chat-form-container">
                         <div class="chat-header">
                             <h2>Chat</h2>
@@ -88,6 +204,7 @@
 
         <script src="js/topRated.js"></script>
         <script src="js/chatPopup.js"></script>
+        <script src="js/productCarousel.js"></script>
         </main>
         
         <footer>
