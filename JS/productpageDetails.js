@@ -46,12 +46,12 @@ function createProductDetails(details) {
     
     colourContainer.innerHTML += `${details.attributes[0].name}:
                                     <div class="radio-colours">
-                                        <input type="radio" name="colour" id="mahoganyRed" value="red">
-                                        <label for="mahoganyRed" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-1"></i>${details.attributes[0].terms[0].name}</label>
-                                        <input type="radio" name="colour" id="mossGreen" value="green">                                
-                                        <label for="mossGreen" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-2"></i>${details.attributes[0].terms[1].name}</label>
-                                        <input type="radio" name="colour" id="moonGrey" value="grey">
-                                        <label for="moonGrey" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-3"></i>${details.attributes[0].terms[2].name}</label>
+                                        <input type="radio" name="colour" class="colour-1" id="${details.attributes[0].terms[0].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[0].name.replace(/\s/g,'-').toLowerCase()}">
+                                        <label for="${details.attributes[0].terms[0].name.replace(/\s/g,'-').toLowerCase()}" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-1"></i>${details.attributes[0].terms[0].name}</label>
+                                        <input type="radio" name="colour" id="${details.attributes[0].terms[1].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[1].name.replace(/\s/g,'-').toLowerCase()}">                                
+                                        <label for="${details.attributes[0].terms[1].name.replace(/\s/g,'-').toLowerCase()}" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-2"></i>${details.attributes[0].terms[1].name}</label>
+                                        <input type="radio" name="colour" id="${details.attributes[0].terms[2].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[2].name.replace(/\s/g,'-').toLowerCase()}">
+                                        <label for="${details.attributes[0].terms[2].name.replace(/\s/g,'-').toLowerCase()}" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-3"></i>${details.attributes[0].terms[2].name}</label>
                                     </div>`
 
     sizeContainer.innerHTML += `${details.attributes[1].name}:
