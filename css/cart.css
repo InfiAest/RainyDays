@@ -118,6 +118,7 @@ article a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .name-size-container,

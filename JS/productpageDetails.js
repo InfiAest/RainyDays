@@ -7,8 +7,7 @@ const descriptionContainer = document.querySelector(".description");
 const specsContainer = document.querySelector(".specs");
 const cartImgContainer = document.querySelector(".cart-img-container");
 const cartProductName = document.querySelector(".product-name");
-const cartColourSize = document.querySelector(".colour-size-container");
-const cartPriceContainer = document.querySelector(".price-container");
+let cartArray = [];
 
 const queryString = document.location.search;
 
@@ -39,6 +38,22 @@ getProductDetails();
 
 function createProductDetails(details) {
 
+    // console.log(details.price_html);
+
+    var el = document.createElement( 'html' );
+    el.innerHTML = details.price_html;
+
+    var spans = el.querySelectorAll('bdi');
+
+    for (i = 0; i < spans.length; i++) {
+        var price = spans[i].innerText;
+        let priceWithoutSymbol = price.slice(1);
+        
+        cartArray.push(priceWithoutSymbol);
+        // console.log(cartArray);
+    }
+    cartArray.push(details.name);
+
     titleContainer.innerHTML += `<h1 class="jacket-name">${details.name}</h1>
                                  <h2 class="price-tag">${details.price_html}</h2>`
 
@@ -46,11 +61,11 @@ function createProductDetails(details) {
     
     colourContainer.innerHTML += `${details.attributes[0].name}:
                                     <div class="radio-colours">
-                                        <input type="radio" name="colour" class="colour-1" id="${details.attributes[0].terms[0].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[0].name.replace(/\s/g,'-').toLowerCase()}">
+                                        <input type="radio" name="colour" id="${details.attributes[0].terms[0].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[0].name}">
                                         <label for="${details.attributes[0].terms[0].name.replace(/\s/g,'-').toLowerCase()}" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-1"></i>${details.attributes[0].terms[0].name}</label>
-                                        <input type="radio" name="colour" id="${details.attributes[0].terms[1].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[1].name.replace(/\s/g,'-').toLowerCase()}">                                
+                                        <input type="radio" name="colour" id="${details.attributes[0].terms[1].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[1].name}">                                
                                         <label for="${details.attributes[0].terms[1].name.replace(/\s/g,'-').toLowerCase()}" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-2"></i>${details.attributes[0].terms[1].name}</label>
-                                        <input type="radio" name="colour" id="${details.attributes[0].terms[2].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[2].name.replace(/\s/g,'-').toLowerCase()}">
+                                        <input type="radio" name="colour" id="${details.attributes[0].terms[2].name.replace(/\s/g,'-').toLowerCase()}" value="${details.attributes[0].terms[2].name}">
                                         <label for="${details.attributes[0].terms[2].name.replace(/\s/g,'-').toLowerCase()}" class="radio-label-colour"><i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-3"></i>${details.attributes[0].terms[2].name}</label>
                                     </div>`
 
@@ -76,13 +91,126 @@ function createProductDetails(details) {
 
     cartProductName.innerHTML += `<h2>${details.name}</h2>`
 
-    cartColourSize.innerHTML += `<i class="fas fa-circle ${details.name.replace(/\s/g,'-').toLowerCase()}-swatch-1"></i>
-                                 <p>${details.attributes[0].terms[0].name}, Size: ${details.attributes[1].terms[0].name}</p>`
-
-    cartPriceContainer.innerHTML += `<p>${details.price_html}</p>`
-
     cartImgContainer.innerHTML += `<img class="cart-img" src="${details.images[0].src}" alt="${details.name}">`
 }
+
+
+// add to cart function
+
+const detailsForm = document.querySelector("#product-details-form");
+const addToCartModal = document.querySelector("#add-to-cart-modal");
+const colourError = document.querySelector("#colourError");
+const sizeError = document.querySelector("#sizeError");
+const addToCartButton = document.querySelector("#add-to-cart-button");
+const quantity = document.querySelector(".amount-text");
+const size = document.getElementsByName('size');
+const colour = document.getElementsByName('colour');
+
+
+function validateDetailsForm(event) {
+
+    event.preventDefault();
+
+    var formIsValid = true;
+
+    if ((colour[0].checked || colour[1].checked || colour[2].checked)) {
+        colourError.style.display = "none";
+    } else {
+        colourError.style.display = "block";
+        formIsValid = false;
+    }
+
+    if ((size[0].checked || size[1].checked || size[2].checked || size[3].checked || size[4].checked)) {
+        sizeError.style.display = "none";
+    } else {
+        sizeError.style.display = "block";
+        formIsValid = false;
+    }
+    
+    // WHY DOES THIS NOT WORK???
+    // for(i = 0; i < colour.length; i++) {
+    //     if(colour[i].checked) {
+    //         colourError.style.display = "none";
+    //     } else {
+    //     colourError.style.display = "block";
+    //     formIsValid = false;
+    //     }
+    // }
+    // for(i = 0; i < size.length; i++) {
+    //     if(size[i].checked) {
+    //         sizeError.style.display = "none";
+    //     } else {
+    //         sizeError.style.display = "block";
+    //         formIsValid = false;
+    //     }
+    // }
+
+    if (formIsValid === true) {
+        
+        addToCartButton.onclick = function() {
+            
+
+            for(i = 0; i < colour.length; i++) {
+                if(colour[i].checked) {
+                    cartArray.push(colour[i].value);
+                }
+            }
+            if (colour[0].checked) {
+                cartArray.push("-swatch-1");
+            }
+            if (colour[1].checked) {
+                cartArray.push("-swatch-2");
+            }
+            if (colour[2].checked) {
+                cartArray.push("-swatch-3");
+            }
+            for(i = 0; i < size.length; i++) {
+                if(size[i].checked) {
+                    cartArray.push(size[i].value);
+                }
+            }
+            cartArray.push(quantity.value);
+            console.log(cartArray);
+            
+            addToCartModal.style.display = "flex";
+
+            addDetailsToCart(cartArray);
+        }
+    }
+    
+}
+
+function addDetailsToCart(cartArray) {
+
+    const cartColour = document.querySelector(".cart-colour");
+    const cartSize = document.querySelector(".cart-size");
+    const cartQuantity = document.querySelector(".quantity-container");
+    const cartPriceContainer = document.querySelector(".price-container");
+
+    var total = parseInt(cartArray[0])*parseInt(cartArray[5]);
+
+    console.log(parseInt(cartArray[0]));
+
+    cartColour.innerHTML += `<i class="fas fa-circle ${cartArray[1].replace(/\s/g,'-').toLowerCase()}${cartArray[3]}"></i>
+                            <p class="cart-colour-name">${cartArray[2]}</p>`
+
+    cartSize.innerHTML += `<p>Size: ${cartArray[4]}</p>`
+
+    cartQuantity.innerHTML += `<p>${cartArray[5]} Item(s)</p>`
+
+    cartPriceContainer.innerHTML += `<p>£${total}</p>`
+}
+
+
+detailsForm.addEventListener("submit", validateDetailsForm, addDetailsToCart);
+
+window.onclick = function(event) {
+    if (event.target === addToCartModal) {
+        addToCartModal.style.display = "none";
+    }
+}
+
+
 
 
 //get product reviews
