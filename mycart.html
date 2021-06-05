@@ -39,38 +39,26 @@
             </div>
         </aside>
         <main>
-            <div class="flex-container">
-                <img class="cart-img" src="images/1 -winter-shell-jacket.jpg" alt="Man wearing the mahogany red coloured Winter Shell Jacket">
-                <div class="cart-info">
-                    <div class="name-size-container">
-                        <a href="productpage.html?id=76" alt="link to Winter Shell jacket page"><h3>Winter Shell Jacket</h3></a> 
-                        <div class="colour-size-container">
-                            <i class="fas fa-circle winter-shell-swatch-1"></i>
-                            <p>Mahogany Red, Size: X-Large</p>
-                        </div>
-                    </div>
-                    <div class="item-price-container">
-                        <div class="item-container">
-                            <input type="button" value="-" id="minus" class="amount-button" onclick="subtract()">
-                            <input type="text" size="25" value="1" id="count" class="amount-text">
-                            <input type="button" value="+" id="plus" class="amount-button" onclick="add()">
-                        </div>
-                        <div>
-                            <p>Price</p>
-                        </div>
+            <div>
+                <h2 class="cart-text">There are no items in your cart right now.</h2>
+                <div class="cart-item-container">
+                    <div class="cart-image"></div>
+                    <div class="item-flex-container">
+                        <div class="cart-item"></div>
+                        <div class="remove-item-button"></div>
                     </div>
                 </div>
             </div>
             <section class="home-section total-price-container">
                 <p>Total price of the products in your cart</p>
-                <p>Price</p>
+                <p class="cart-total-price">£0.00</p>
             </section>
             <section class="home-section cart-button-container">
                 <div>
                     <a href="jackets.html" class="continue-shopping-button" alt="continue shopping, link back to the all jackets page">Continue Shopping</a>
                 </div>
                 <div>
-                    <a href="checkout.html" class="button" alt="checkout, link to the checkout page">Checkout</a>
+                    <a href="#" class="button checkout-button" alt="checkout, link to the checkout page">Checkout</a>
                 </div>
             </section>
 
@@ -108,6 +96,7 @@
 
             <script src="js/articleSectionCart.js"></script>
             <script src="js/quantityItems.js"></script>
+            <script src="js/shoppingCart.js"></script>
         </article>
         <footer>
             <div class="footer-section">

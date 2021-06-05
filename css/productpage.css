@@ -161,6 +161,7 @@ input[type="radio"] {
   justify-content: space-between;
   align-items: baseline;
   text-align: right;
+  padding-right: 5px;
 }
 
 .radio-sizes input[type="radio"]:checked + label {

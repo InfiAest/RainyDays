@@ -18,6 +18,7 @@ const id = params.get("id");
 const url = "https://charlottelucas.no/wp-json/wc/store/products/" + id;
 
 console.log(parseFloat(id));
+cartArray.push(parseFloat(id));
 
 async function getProductDetails() {
 
@@ -53,6 +54,7 @@ function createProductDetails(details) {
         // console.log(cartArray);
     }
     cartArray.push(details.name);
+    cartArray.push(details.images[0].src);
 
     titleContainer.innerHTML += `<h1 class="jacket-name">${details.name}</h1>
                                  <h2 class="price-tag">${details.price_html}</h2>`
@@ -175,6 +177,7 @@ function validateDetailsForm(event) {
             addToCartModal.style.display = "flex";
 
             addDetailsToCart(cartArray);
+            localStorage.setItem("cartList", JSON.stringify(cartArray));
         }
     }
     
@@ -187,28 +190,22 @@ function addDetailsToCart(cartArray) {
     const cartQuantity = document.querySelector(".quantity-container");
     const cartPriceContainer = document.querySelector(".price-container");
 
-    var total = parseInt(cartArray[0])*parseInt(cartArray[5]);
+    var total = parseInt(cartArray[1])*parseInt(cartArray[7]);
 
-    console.log(parseInt(cartArray[0]));
+    // console.log(parseInt(cartArray[0]));
 
-    cartColour.innerHTML += `<i class="fas fa-circle ${cartArray[1].replace(/\s/g,'-').toLowerCase()}${cartArray[3]}"></i>
-                            <p class="cart-colour-name">${cartArray[2]}</p>`
+    cartColour.innerHTML += `<i class="fas fa-circle ${cartArray[2].replace(/\s/g,'-').toLowerCase()}${cartArray[5]}"></i>
+                            <p class="cart-colour-name">${cartArray[4]}</p>`
 
-    cartSize.innerHTML += `<p>Size: ${cartArray[4]}</p>`
+    cartSize.innerHTML += `<p>Size: ${cartArray[6]}</p>`
 
-    cartQuantity.innerHTML += `<p>${cartArray[5]} Item(s)</p>`
+    cartQuantity.innerHTML += `<p>${cartArray[7]} Item(s)</p>`
 
     cartPriceContainer.innerHTML += `<p>£${total}</p>`
 }
 
 
 detailsForm.addEventListener("submit", validateDetailsForm, addDetailsToCart);
-
-window.onclick = function(event) {
-    if (event.target === addToCartModal) {
-        addToCartModal.style.display = "none";
-    }
-}
 
 
 
