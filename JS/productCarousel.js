@@ -1,115 +1,115 @@
+var pageIndex = 1;
+
 /* MOBILE SLIDESHOW --------------*/
 
-var slideIndex = 1;
-showMobileSlides(slideIndex);
+showMobileSlides(pageIndex);
 
-function plusMobileSlides(x) {
-    showMobileSlides(slideIndex += x);
+function nextPageMobile(x) {
+    showMobileSlides(pageIndex += x);
 }
 
-function currentMobileSlide(x) {
-    showMobileSlides(slideIndex = x);
+function currentPageMobile(x) {
+    showMobileSlides(pageIndex = x);
 }
 
 function showMobileSlides(x) {
   const mobileSlides = document.getElementsByClassName("mobile-slide");
-  const mobileDots = document.getElementsByClassName("mobileDot");
+  const mobilePage = document.getElementsByClassName("mobile-page-marker");
 
   if (x > mobileSlides.length) {
-      slideIndex = 1
+    pageIndex = 1
     };
 
   if (x < 1) {
-      slideIndex = mobileSlides.length;
+    pageIndex = mobileSlides.length;
     };
 
   for (var i = 0; i < mobileSlides.length; i++) {
       mobileSlides[i].style.display = "none";  
   };
 
-  for (i = 0; i < mobileDots.length; i++) {
-    mobileDots[i].className = mobileDots[i].className.replace(" active", "");
+  for (i = 0; i < mobilePage.length; i++) {
+    mobilePage[i].className = mobilePage[i].className.replace(" active", "");
   };
 
   
-  mobileSlides[slideIndex-1].style.display = "block";  
-  mobileDots[slideIndex-1].className += " active";
+  mobileSlides[pageIndex-1].style.display = "block";  
+  mobilePage[pageIndex-1].className += " active";
 }
 
 
 /* TABLET SLIDESHOW --------------*/
 
-var slideIndex = 1;
-showTabletSlides(slideIndex);
+showTabletSlides(pageIndex);
 
-function plusTabletSlides(x) {
-    showTabletSlides(slideIndex += x);
+function nextPageTablet(x) {
+    showTabletSlides(pageIndex += x);
 }
 
-function currentTabletSlide(x) {
-    showTabletSlides(slideIndex = x);
+function currentPageTablet(x) {
+    showTabletSlides(pageIndex = x);
 }
 
 function showTabletSlides(x) {
   const tabletSlides = document.getElementsByClassName("tablet-slide");
-  const tabletDots = document.getElementsByClassName("tabletDot");
+  const tabletPage = document.getElementsByClassName("tablet-page-marker");
 
   if (x > tabletSlides.length) {
-      slideIndex = 1
+    pageIndex = 1
     };
 
   if (x < 1) {
-      slideIndex = tabletSlides.length;
+    pageIndex = tabletSlides.length;
     };
 
   for (var i = 0; i < tabletSlides.length; i++) {
     tabletSlides[i].style.display = "none";  
   };
 
-  for (i = 0; i < tabletDots.length; i++) {
-    tabletDots[i].className = tabletDots[i].className.replace(" active", "");
+  for (i = 0; i < tabletPage.length; i++) {
+    tabletPage[i].className = tabletPage[i].className.replace(" active", "");
   };
 
   
-  tabletSlides[slideIndex-1].style.display = "block";  
-  tabletDots[slideIndex-1].className += " active";
+  tabletSlides[pageIndex-1].style.display = "block";  
+  tabletPage[pageIndex-1].className += " active";
 }
 
 /* DESKTOP SLIDESHOW --------------*/
 
-var slideIndex = 1;
-showDesktopSlides(slideIndex);
+var pageIndex = 1;
+showDesktopSlides(pageIndex);
 
-function plusDesktopSlides(x) {
-    showDesktopSlides(slideIndex += x);
+function nextPageDesktop(x) {
+    showDesktopSlides(pageIndex += x);
 }
 
-function currentDesktopSlide(x) {
-    showDesktopSlides(slideIndex = x);
+function currentPageDesktop(x) {
+    showDesktopSlides(pageIndex = x);
 }
 
 function showDesktopSlides(x) {
   const desktopSlides = document.getElementsByClassName("desktop-slide");
-  const desktopDots = document.getElementsByClassName("desktopDot");
+  const desktopPage = document.getElementsByClassName("desktop-page-marker");
 
   if (x > desktopSlides.length) {
-      slideIndex = 1
+    pageIndex = 1
     };
 
   if (x < 1) {
-      slideIndex = desktopSlides.length;
+    pageIndex = desktopSlides.length;
     };
 
   for (var i = 0; i < desktopSlides.length; i++) {
     desktopSlides[i].style.display = "none";  
   };
 
-  for (i = 0; i < desktopDots.length; i++) {
-    desktopDots[i].className = desktopDots[i].className.replace(" active", "");
+  for (i = 0; i < desktopPage.length; i++) {
+    desktopPage[i].className = desktopPage[i].className.replace(" active", "");
   };
 
   
-  desktopSlides[slideIndex-1].style.display = "block";  
-  desktopDots[slideIndex-1].className += " active";
+  desktopSlides[pageIndex-1].style.display = "block";  
+  desktopPage[pageIndex-1].className += " active";
 }
 
